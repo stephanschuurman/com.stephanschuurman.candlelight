@@ -1,1 +1,0 @@
-Bedien je Astro Galaxy Projector moeiteloos. Kies kleuren, stel patronen in, pas de helderheid aan en schakel lasers of nevels aan of uit. Maak automatiseringen voor de perfecte sterrenhemel—om te ontspannen, te focussen of dromerig weg te zweven.

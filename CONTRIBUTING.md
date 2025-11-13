@@ -1,50 +1,48 @@
-# Contributing to Athom and Homey
+# Contributing to Candlelight (Homey IR Candle Controller)
 
-First off all, thank you for taking the time to contribute!
+Thank you for your interest in contributing!\
+This project is small and lightweight, but contributions---such as new
+IR codes, device profiles, or improvements---are always welcome.
 
-The following is a set of guidelines for contributing to Athom and its packages, which are hosted in the [Athom Organization](https://github.com/athombv) on GitHub. These are just guidelines, not rules. Use your best judgment, and feel free to contact us if you have any questions.
+## Before Submitting an Issue
 
-Please join our [community slack](https://slack.athom.com), if you have not done so already.
-We also have a [community forum](https://community.homey.app) for general discussions.
+Please check: - The error message carefully - Existing issues for
+duplicates - Whether your Homey Pro and apps are up to date - That the
+issue is specific to this app (not another IR device or integration)
 
+Clear, reproducible issues increase the chance of a fast fix.
 
-## Before submitting a bug or feature request
+## Bug Reports Should Include
 
-* **Have you actually read the error message**?
-* Have you searched for similar issues?
-* Have you updated homey, all apps, and the development tools (if applicable)?
-* Have you checked that it's not a problem with one of the apps you're using, rather than Homey itself?
-* Have you looked at what's involved in fixing/implementing this?
- 
-Capable programmers should always attempt to investigate and fix problems themselves before asking for others to help. Submit a pull request instead of an issue!
+-   What you were trying to achieve
+-   Exact steps to reproduce the issue
+-   Logs or IDs (if available)
+-   What you already investigated
 
-## A great bug report contains
+## Feature Requests Should Include
 
-* Context – what were you trying to achieve?
-* Detailed steps to reproduce the error from scratch. Try isolating the minimal amount of code needed to reproduce the error.
-* Any applicable log files or ID's.
-* Evidence you've looked into solving the problem and ideally, a theory on the cause and a possible solution.
+-   The current situation
+-   Why it's incomplete or limiting
+-   A concrete proposal or example
+-   Who benefits and why
 
-## A great feature request contains
+## Pull Requests Guidelines
 
-* The current situation.
-* How and why the current situation is problematic.
-* A detailed proposal or pull request that demonstrates how the problem could be solved.
-* A use case – who needs this feature and why?
-* Any caveats.
+-   Keep changes minimal and focused on a single issue
+-   Use a clean commit history (squash if needed)
+-   Rebase on the latest `main` branch before submitting
+-   Follow the existing structure and style of the project
+-   Include documentation updates if needed
+-   Test IR codes before submitting them
 
-## A great pull request contains
+## Development Setup
 
-* Minimal changes. Only submit code relevant to the current issue. Other changes should go in new pull requests.
-* Minimal commits. Please squash to a single commit before sending your pull request.
-* No conflicts. Please rebase off the latest master before submitting.
-* Code conforming to the existing conventions and formats. i.e. Please don't reformat whitespace.
-* Passing tests in the test folder (if applicable). Use existing tests as a reference.
-* Relevant documentation.
+``` bash
+npm install
+homey app run
+```
 
-## Speeding up your pull request
-Merging pull requests takes time. While we always try to merge your pull request as soon as possible, there are certain things you can do to speed up this process.
+## Thank You
 
-* Ask developers to review your code changes and post their feedback.
-* Ask users to test your changes and post their feedback.
-* Keep your changes to the minimal required amount, and dedicated to one issue/feature only.
+Your contributions help improve support for IR-based LED candles and
+tealights for all Homey users.
