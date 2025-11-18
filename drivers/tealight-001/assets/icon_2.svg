@@ -1,0 +1,48 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 960 960"
+  info="https://apps.developer.homey.app/app-store/guidelines#id-1.5.-icons"
+>
+
+  <g
+    fill="none"
+    stroke="#000"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+
+    <!-- Cup / houder: laag, breed, met afgeronde hoeken -->
+    <!-- Bovenrand -->
+    <path d="M220 520 H740" />
+
+    <!-- Zijkanten + onderrand als afgeronde rechthoek -->
+    <path d="
+      M240 520
+      Q200 520 200 560
+      V620
+      Q200 660 240 660
+      H720
+      Q760 660 760 620
+      V560
+      Q760 520 720 520
+      Z
+    " />
+
+    <!-- Optioneel: binnenlijn voor wax-niveau, heel subtiel -->
+    <path d="M280 550 H700" />
+
+    <!-- Lont, kort en centraal -->
+    <line x1="480" y1="480" x2="480" y2="420" />
+
+    <!-- Vlam: simpele druppelvorm -->
+    <path d="
+      M480 240
+      C420 330, 430 390, 470 440
+      C480 455, 500 455, 510 440
+      C550 390, 540 330, 480 240
+      Z
+    " />
+  </g>
+
+</svg>

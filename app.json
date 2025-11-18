@@ -48,20 +48,25 @@
       }
     }
   },
-  "brandColor": "#04091e",
+  "brandColor": "#d78c16",
   "support": "https://apps.stephanschuurman.com/candlelight",
   "tags": {
     "en": [
       "candlelight",
-      "infrared remote",
-      "IR control"
+      "infrared",
+      "remote",
+      "IR",
+      "control"
     ],
     "nl": [
       "kaarslicht",
-      "infrarood afstandsbediening",
-      "IR bediening"
+      "infrarood",
+      "afstandsbediening",
+      "IR",
+      "bediening"
     ]
   },
+  "source": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight",
   "flow": {
     "actions": [
       {
@@ -201,6 +206,90 @@
             ]
           }
         ]
+      },
+      {
+        "id": "on",
+        "title": {
+          "en": "Switch tealights on",
+          "nl": "Zet de theelichten aan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tealight-001"
+          }
+        ]
+      },
+      {
+        "id": "off",
+        "title": {
+          "en": "Switch tealights off",
+          "nl": "Zet de theelichten uit"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tealight-001"
+          }
+        ]
+      },
+      {
+        "id": "timer",
+        "title": {
+          "en": "Switch off the tealights with timer",
+          "nl": "Zet de theelichten uit met timer"
+        },
+        "titleFormatted": {
+          "en": "Switch off the tealights in [[timer_cmd]]",
+          "nl": "Zet de theelichten uit over [[timer_cmd]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tealight-001"
+          },
+          {
+            "type": "dropdown",
+            "name": "timer_cmd",
+            "title": {
+              "en": "duration",
+              "nl": "duur"
+            },
+            "values": [
+              {
+                "id": "2h",
+                "title": {
+                  "en": "2 hours",
+                  "nl": "2 uur"
+                }
+              },
+              {
+                "id": "4h",
+                "title": {
+                  "en": "4 hours",
+                  "nl": "4 uur"
+                }
+              },
+              {
+                "id": "6h",
+                "title": {
+                  "en": "6 hours",
+                  "nl": "6 uur"
+                }
+              },
+              {
+                "id": "8h",
+                "title": {
+                  "en": "8 hours",
+                  "nl": "8 uur"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -262,9 +351,119 @@
         }
       },
       "id": "projector-ir"
+    },
+    {
+      "name": {
+        "en": "Tealight type 1",
+        "nl": "Theelicht type 1"
+      },
+      "class": "light",
+      "capabilities": [
+        "on",
+        "off",
+        "2h",
+        "4h",
+        "6h",
+        "8h"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "infrared": {
+        "satelliteMode": true
+      },
+      "images": {
+        "small": "/drivers/tealight-001/assets/images/small.png",
+        "large": "/drivers/tealight-001/assets/images/large.png",
+        "xlarge": "/drivers/tealight-001/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "device_add_custom",
+          "options": {
+            "title": {
+              "en": "Add Tealights",
+              "nl": "Voeg bediening van Theelichtjes toe"
+            },
+            "instruction": {
+              "en": "Enter a name for your Tealight. Make sure it is powered and within range of your Homey Pro. When using a Satellite, ensure to set this in the settings after pairing is completed.",
+              "nl": "Voer een naam in voor je Theelicht. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro staat. Wanneer je een Satellite gebruikt, zorg er dan voor dat je dit in de instellingen aanpast nadat de koppeling is voltooid."
+            },
+            "deviceIdPrefix": "tealight"
+          }
+        }
+      ],
+      "id": "tealight-001"
     }
   ],
   "capabilities": {
+    "2h": {
+      "type": "boolean",
+      "title": {
+        "en": "2 hour",
+        "nl": "2 uur"
+      },
+      "desc": {
+        "en": "Timer for 2 hours",
+        "nl": "Timer voor 2 uur."
+      },
+      "chartType": "stepLine",
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true
+    },
+    "4h": {
+      "type": "boolean",
+      "title": {
+        "en": "4 hour",
+        "nl": "4 uur"
+      },
+      "desc": {
+        "en": "Timer for 4 hours",
+        "nl": "Timer voor 4 uur."
+      },
+      "chartType": "stepLine",
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true
+    },
+    "6h": {
+      "type": "boolean",
+      "title": {
+        "en": "6 hour",
+        "nl": "6 uur"
+      },
+      "desc": {
+        "en": "Timer for 6 hours",
+        "nl": "Timer voor 6 uur."
+      },
+      "chartType": "stepLine",
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true
+    },
+    "8h": {
+      "type": "boolean",
+      "title": {
+        "en": "8 hour",
+        "nl": "8 uur"
+      },
+      "desc": {
+        "en": "Timer for 8 hours",
+        "nl": "Timer voor 8 uur."
+      },
+      "chartType": "stepLine",
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true
+    },
     "nebula_dim": {
       "type": "number",
       "title": {
@@ -323,6 +522,38 @@
       "step": 1,
       "uiQuickAction": true,
       "icon": "/assets/icons/nebula.svg"
+    },
+    "off": {
+      "type": "boolean",
+      "title": {
+        "en": "Off",
+        "nl": "Uit"
+      },
+      "desc": {
+        "en": "Turn off",
+        "nl": "Zet uit"
+      },
+      "chartType": "stepLine",
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true
+    },
+    "on": {
+      "type": "boolean",
+      "title": {
+        "en": "On",
+        "nl": "Aan"
+      },
+      "desc": {
+        "en": "Turn on",
+        "nl": "Zet aan"
+      },
+      "chartType": "stepLine",
+      "getable": false,
+      "setable": true,
+      "uiComponent": "button",
+      "uiQuickAction": true
     },
     "star_breathing": {
       "type": "number",
@@ -445,7 +676,7 @@
         ],
         "interval": 1000,
         "sensitivity": 0.5,
-        "repetitions": 1,
+        "repetitions": 2,
         "minimalLength": 32,
         "maximalLength": 32,
         "prefixData": [

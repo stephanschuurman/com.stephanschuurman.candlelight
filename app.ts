@@ -2,7 +2,7 @@
 
 import Homey from 'homey';
 
-module.exports = class AstroApp extends Homey.App {
+module.exports = class CandleLightApp extends Homey.App {
 
   async onInit() {
     this.log('✨', this.homey.__('app.initialized'));

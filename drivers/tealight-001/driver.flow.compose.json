@@ -1,0 +1,69 @@
+{
+  "actions": [
+    {
+      "id": "on",
+      "title": {
+        "en": "Switch tealights on",
+        "nl": "Zet de theelichten aan"
+      }
+    },
+    {
+      "id": "off",
+      "title": {
+        "en": "Switch tealights off",
+        "nl": "Zet de theelichten uit"
+      }
+    },
+    {
+      "id": "timer",
+      "title": {
+        "en": "Switch off the tealights with timer",
+        "nl": "Zet de theelichten uit met timer"
+      },
+      "titleFormatted": {
+        "en": "Switch off the tealights in [[timer_cmd]]",
+        "nl": "Zet de theelichten uit over [[timer_cmd]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "timer_cmd",
+          "title": {
+            "en": "duration",
+            "nl": "duur"
+          },
+          "values": [
+            {
+              "id": "2h",
+              "title": {
+                "en": "2 hours",
+                "nl": "2 uur"
+              }
+            },
+            {
+              "id": "4h",
+              "title": {
+                "en": "4 hours",
+                "nl": "4 uur"
+              }
+            },
+            {
+              "id": "6h",
+              "title": {
+                "en": "6 hours",
+                "nl": "6 uur"
+              }
+            }, 
+            {
+              "id": "8h",
+              "title": {
+                "en": "8 hours",
+                "nl": "8 uur"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

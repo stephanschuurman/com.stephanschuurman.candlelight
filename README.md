@@ -1,8 +1,6 @@
 # Candlelight -- Homey Pro IR Candle Controller
 
-A lightweight Homey Pro app to control IR-based LED candle and tealight
-lights. Supports simple on/off commands and is designed for reliable,
-effortless integration with your smart home.
+A lightweight Homey Pro app to control IR-based LED candle and tealight lights. Supports simple on/off commands and is designed for reliable, effortless integration with your smart home.
 
 ## Project Name
 
@@ -67,9 +65,9 @@ homey app run
 ## 🗺 Roadmap
 
 -   [ ] Add more IR remote profiles
--   [ ] Optional learn-mode
 -   [ ] Per-brand candle drivers
 -   [ ] Flow cards for brightness or flicker presets
+-   [ ] Optional learn-mode
 
 ## 🤝 Contributing
 
@@ -82,6 +80,5 @@ This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgements
 
--   Jan van Veen for the iconic Candlelight radio program
 -   Open-source IR projects for reference
 -   Homey Pro developer community

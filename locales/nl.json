@@ -1,9 +1,9 @@
 {
   "app": {
-    "initialized": "Astro projector app is geïnitialiseerd"
+    "initialized": "Kaarslicht app is geïnitialiseerd"
   },
   "driver": {
-    "initialized": "Astro projector IR driver gestart"
+    "initialized": "Kaarslicht IR driver gestart"
   },
   "device": {
     "initialized": "Astro projector apparaat geïnitialiseerd",
@@ -27,12 +27,13 @@
   },
   "pairing": {
     "device_name_placeholder": "Voer apparaatnaam in...",
-    "default_device_name": "Astro",
+    "default_device_name": "Kaarsen",
     "device_number_placeholder": "Nr.",
     "add_device_button": "Apparaat toevoegen",
     "adding_device": "Bezig...",
     "enter_device_name": "Voer een apparaatnaam in",
     "invalid_device_number": "Apparaatnummer moet een getal zijn tussen 1 en 999",
-    "duplicate_device_id": "Dit apparaat ID bestaat al. Kies een ander nummer."
+    "duplicate_device_id": "Dit apparaat ID bestaat al. Kies een ander nummer.",
+    "error_adding_device": "Fout bij toevoegen apparaat. Probeer opnieuw."
   }
 }

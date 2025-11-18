@@ -6,7 +6,7 @@
   "platforms": [
     "local"
   ],
- "name": {
+  "name": {
     "en": "Candlelight",
     "nl": "Kaarslicht"
   },
@@ -47,18 +47,23 @@
       }
     }
   },
-  "brandColor": "#04091e",
+  "brandColor": "#d78c16",
   "support": "https://apps.stephanschuurman.com/candlelight",
   "tags": {
     "en": [
       "candlelight",
-      "infrared remote",
-      "IR control"
+      "infrared",
+      "remote",
+      "IR",
+      "control"
     ],
     "nl": [
       "kaarslicht",
-      "infrarood afstandsbediening",
-      "IR bediening"
+      "infrarood",
+      "afstandsbediening",
+      "IR",
+      "bediening"
     ]
-  }
+  },
+  "source": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight"
 }

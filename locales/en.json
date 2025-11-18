@@ -1,6 +1,6 @@
 {
   "app": {
-    "initialized": "Astro projector app has been initialized"
+    "initialized": "Candlelight app has been initialized"
   },
   "driver": {
     "initialized": "Astro projector IR driver started"
@@ -27,12 +27,13 @@
   },
   "pairing": {
     "device_name_placeholder": "Enter device name...",
-    "default_device_name": "Astro Projector",
+    "default_device_name": "Candles",
     "device_number_placeholder": "No.",
     "add_device_button": "Add Device",
     "adding_device": "Adding...",
     "enter_device_name": "Please enter a device name",
     "invalid_device_number": "Device number must be a number between 1 and 999",
-    "duplicate_device_id": "This device ID already exists. Please choose a different number."
+    "duplicate_device_id": "This device ID already exists. Please choose a different number.",
+    "error_adding_device": "Error adding device. Please try again."
   }
 }
