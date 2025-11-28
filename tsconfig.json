@@ -1,11 +1,14 @@
 {
-  "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "commonjs",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
     "allowJs": true,
     "outDir": ".homeybuild/",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "module": "commonjs",
-    "moduleResolution": "node"
+    "resolveJsonModule": true
   }
 }
