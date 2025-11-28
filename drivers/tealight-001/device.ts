@@ -1,9 +1,9 @@
 import Homey from 'homey';
-import InfraredApi from '../../lib/ir';
+import Infrared from '../../lib/ir';
 
 module.exports = class MyDevice extends Homey.Device {
 
-  ir!: InfraredApi;
+  ir!: Infrared;
 
   /**
    * onInit is called when the device is initialized.
@@ -20,7 +20,7 @@ module.exports = class MyDevice extends Homey.Device {
     this.registerCapabilityListener('8h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '8h'));
 
     // Init API
-    this.ir = new InfraredApi(this);
+    this.ir = new Infrared(this);
     await this.ir.init();
     
   }
