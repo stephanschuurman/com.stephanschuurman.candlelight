@@ -18,14 +18,13 @@ yarn-error.log*
 *.sublime-project
 
 # Build output
-lib/
 dist/
 build/
 temp/
 tmp/
 
-# TypeScript output (if applicable)
-*.js
+# TypeScript output (compiled files are in .homeybuild/)
+# Note: We keep source .ts files in lib/
 *.js.map
 
 # Homey SDK/ENV secrets
