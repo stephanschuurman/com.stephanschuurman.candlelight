@@ -15,3 +15,5 @@ declare module 'homey-rfdriver' {
     // Add any known methods/properties here if needed
   }
 }
+
+// https://athombv.github.io/node-homey-rfdriver/RFDriver.html

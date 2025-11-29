@@ -1,87 +1,113 @@
-# Candlelight -- Homey Pro IR Candle Controller
+# Candlelight
 
-A lightweight Homey Pro app to control IR-based LED candle and tealight lights. Supports simple on/off commands and is designed for reliable, effortless integration with your smart home.
+Control your IR-based LED candles, tealights, and galaxy projectors with Homey Pro. Simple, reliable integration for ambient lighting automation.
 
-## Project Name
+> **Project Name**: Named after the Dutch radio show *Candlelight* by Jan van Veen.
 
-The name is a small nod to the Dutch radio show *Candlelight* by Jan van
-Veen.
+## Features
 
-## ✨ Features
+- **Multiple Device Types**: Supports LED tealights and galaxy star projectors
+- **Full IR Control**: On/off, timers, brightness, nebula and star effects
+- **Satellite Support**: Use Homey Pro's built-in IR or external satellites
+- **Configurable Repetitions**: Adjust IR command reliability via device settings
+- **Flow Integration**: Complete flow card support for all functions
+- **NEC Protocol**: Works with common NEC-based IR remotes
 
--   Control IR-based LED candles and tealights
--   Supports on/off commands
--   Uses the Homey Pro IR capabilities
--   Works with common NEC-based IR candle remotes
--   Minimal, clean implementation
+## Installation
 
-## 📦 Installation
+### From Homey App Store
 
-### From Homey CLI (development)
+*Coming soon*
 
-``` bash
+### Development Install
+
+```bash
 git clone https://github.com/stephanschuurman/com.stephanschuurman.candlelight.git
 cd com.stephanschuurman.candlelight
 npm install
 homey app run
 ```
 
-### From Homey App Store (when published)
+## Supported Devices
 
-Coming soon.
+See [docs/ir-codes.md](docs/ir-codes.md) for complete IR command documentation. 
 
-## 🕹 Usage
+### LED Tealights
 
-1.  Open the Homey app
-2.  Add a new device → choose **Candlelight**
-3.  Aim Homey's IR blaster toward the candle(s)
-4.  Use on/off to control your lights
-5.  Use flows to integrate ambient scenes or automations
-
-## 🔦 Supported Devices
-
-Currently tested with:
-
-| Brand | Model       | Protocol | Notes |
-|-------|--------------|----------|-------|
-| HEMA  | 13550076 - Oplaadbare LED Theelichtjes | NEC | Rebranded item, see Taizhou Sparkle Lights, BAT-LEDS01 |
-| Taizhou Sparkle Lights | BAT-LEDS01 | NEC | Sold under HEMA house brand |
+| Brand | Model | Protocol | Features |
+|-------|-------|----------|----------|
+| HEMA | 13550076 | NEC | On/Off, 2/4/6/8h timers |
+| Taizhou Sparkle | BAT-LEDS01 | NEC | On/Off, 2/4/6/8h timers |
 
 
-More IR sets to be added --- feel free to open an Issue or PR with
-Pronto/Hex codes.
+## Usage
 
-## ⚙️ Configuration
+### Add a Device
 
--   No configuration required
--   Homey uses its internal IR transmitter
--   For custom IR remotes: codes can be added under
-    `/drivers/<driver>/remote.json`
+1. Open the Homey app
+2. Add device → **Candlelight** (Kaarslicht)
+3. Select your device type
+4. Position Homey's IR transmitter toward the device
+5. Complete pairing
 
-## 🛠 Development
+### Device Settings
 
-``` bash
+- **IR Command Repetitions** (1-10, default: 3): Adjust for reliability vs. speed
+- **Satellite Mode**: Select IR antenna (Homey or satellite device)
+
+### Flow Cards
+
+#### Tealights
+- Turn on
+- Turn off
+- Set timer (2h, 4h, 6h, 8h)
+
+## Development
+
+### Requirements
+- Node.js 22+
+- Docker (for `homey app run`)
+- Homey CLI: `npm install -g homey`
+
+### Local Development
+
+```bash
 npm install
 homey app run
 ```
 
-## 🗺 Roadmap
+All logs will be streamed to your terminal.
 
--   [ ] Add more IR remote profiles
--   [ ] Per-brand candle drivers
--   [ ] Flow cards for brightness or flicker presets
--   [ ] Optional learn-mode
+### Project Structure
 
-## 🤝 Contributing
+```
+drivers/
+  hema-tealight/      # LED tealight driver
+lib/
+  ir.ts              # IR communication library
+  ProjectorDeviceApi.ts  # Projector-specific API
+  IRUtils.ts         # NEC protocol utilities
+```
 
-Contributions, IR codes, and feature suggestions are welcome! Please
-open an Issue or create a Pull Request.
+## Roadmap
 
-## 📄 License
+- [ ] Additional IR remote profiles
+- [ ] Per-brand driver variants
+- [ ] IR learning mode
+- [ ] Advanced scene presets
+- [ ] Multi-device synchronization
 
-This project is licensed under the MIT License.
+## Contributing
 
-## 🙏 Acknowledgements
+Contributions welcome! Please submit:
+- New IR codes via PR with Pronto hex or NEC command codes
+- Bug reports via GitHub Issues
+- Feature requests via GitHub Discussions
 
--   Open-source IR projects for reference
--   Homey Pro developer community
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Acknowledgements
+
+- Homey Pro developer community

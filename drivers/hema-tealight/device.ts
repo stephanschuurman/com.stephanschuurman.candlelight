@@ -1,7 +1,7 @@
 import Homey from 'homey';
 import Infrared from '../../lib/ir';
 
-module.exports = class MyDevice extends Homey.Device {
+module.exports = class TealightHemaDevice extends Homey.Device {
 
   ir!: Infrared;
 
@@ -9,7 +9,7 @@ module.exports = class MyDevice extends Homey.Device {
    * onInit is called when the device is initialized.
    */
   async onInit() {
-    this.log('MyDevice has been initialized');
+    this.log(`[${this.constructor.name}] has been initialized`);
 
     // Register capability listeners
     this.registerCapabilityListener('button.on', this.onCapabilityOn.bind(this));
@@ -22,14 +22,14 @@ module.exports = class MyDevice extends Homey.Device {
     // Init API
     this.ir = new Infrared(this);
     await this.ir.init();
-    
+
   }
 
   /**
    * onAdded is called when the user adds the device, called just after pairing.
    */
   async onAdded() {
-    this.log('MyDevice has been added');
+    this.log(`[${this.constructor.name}] has been added`);
   }
 
   /**
@@ -49,7 +49,10 @@ module.exports = class MyDevice extends Homey.Device {
     newSettings: { [key: string]: boolean | string | number | undefined | null };
     changedKeys: string[];
   }): Promise<string | void> {
-    this.log("MyDevice settings where changed");
+    this.log(`[${this.constructor.name}] settings where changed`);
+    this.log('Changed keys:', changedKeys);
+    // this.log('Old settings:', oldSettings);
+    // this.log('New settings:', newSettings);
   }
 
   /**
@@ -58,47 +61,47 @@ module.exports = class MyDevice extends Homey.Device {
    * @param {string} name The new name
    */
   async onRenamed(name: string) {
-    this.log('MyDevice was renamed');
+    this.log(`[${this.constructor.name}] was renamed to: ${name}`);
   }
 
   /**
    * onDeleted is called when the user deleted the device.
    */
   async onDeleted() {
-    this.log('MyDevice has been deleted');
+    this.log(`[${this.constructor.name}] has been deleted`);
   }
 
   async onCapabilityOn(value: boolean, opts: any): Promise<void> {
-    this.log('[Device] onCapabilityOn called with value:', value);
+    this.log(`[${this.constructor.name}] onCapabilityOn`);
     this.ir.sendCommandRaw(0x45);
   }
 
   async onCapabilityOff(value: boolean, opts: any): Promise<void> {
-    this.log('[Device] onCapabilityOff called with value:', value);
+    this.log(`[${this.constructor.name}] onCapabilityOff`);
     this.ir.sendCommandRaw(0x47);
   }
 
   async onCapabilityTimer(value: boolean, opts: any, timer: string): Promise<void> {
-    this.log('[Device] Timer button pressed:', timer);
+    this.log(`[${this.constructor.name}] Timer button pressed:`, timer);
     switch (timer) {
       case '2h':
-        // Handle 2-hour timer logic here
+        // Handle 2-hour timer logic
         this.ir.sendCommandRaw(0x44);
         break;
       case '4h':
-        // Handle 4-hour timer logic here
+        // Handle 4-hour timer logic
         this.ir.sendCommandRaw(0x43);
         break;
       case '6h':
-        // Handle 6-hour timer logic here
+        // Handle 6-hour timer logic
         this.ir.sendCommandRaw(0x07);
         break;
       case '8h':
-        // Handle 8-hour timer logic here
+        // Handle 8-hour timer logic
         this.ir.sendCommandRaw(0x09);
         break;
       default:
-        this.log('[Device] Unknown timer value:', timer);
+        this.log(`[${this.constructor.name}] Unknown timer value:`, timer);
     } 
   }
 

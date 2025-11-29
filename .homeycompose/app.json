@@ -11,8 +11,8 @@
     "nl": "Kaarslicht"
   },
   "description": {
-    "en": "Control candlelights",
-    "nl": "Bedien kaarslichtjes"
+    "en": "Control LED candle lights",
+    "nl": "Bedien LED kaarslichtjes"
   },
   "category": [
     "lights"
@@ -47,7 +47,7 @@
       }
     }
   },
-  "brandColor": "#d78c16",
+  "brandColor": "#ea9822",
   "support": "https://apps.stephanschuurman.com/candlelight",
   "tags": {
     "en": [
@@ -55,14 +55,21 @@
       "infrared",
       "remote",
       "IR",
-      "control"
+      "control",
+      "tealight",
+      "LED",
+      "HEMA"
     ],
     "nl": [
       "kaarslicht",
       "infrarood",
       "afstandsbediening",
       "IR",
-      "bediening"
+      "bediening",
+      "LED",
+      "waxinelichtje",
+      "theelichtjes",
+      "HEMA"
     ]
   },
   "source": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight"

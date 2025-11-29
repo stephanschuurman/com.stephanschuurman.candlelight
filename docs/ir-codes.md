@@ -1,8 +1,10 @@
 # IR Codes of LED Candles
 
+Contributions welcome! Please submit IR codes via Pronto hex or NEC command codes.
+
 
 ## Taizhou Sparkle Lights Co., Ltd - BAT-LEDS01
-The item is also sold under the house brand of HEMA, a well-known Dutch department store.
+The item is also sold under the house brand of HEMA (a well-known Dutch department store).
 
 **Protocol:** NEC  
 **Address:** 0x00
@@ -17,7 +19,9 @@ The item is also sold under the house brand of HEMA, a well-known Dutch departme
 | 8H     | 0x09 |
 
 **Source:**
-https://www.hema.nl/wonen-slapen/wonen/kaarsen/led-kaarsen/oplaadbare-theelichtjes---4-stuks-13550076.html
+- https://www.hema.nl/wonen-slapen/wonen/kaarsen/led-kaarsen/oplaadbare-theelichtjes---4-stuks-13550076.html
+- https://www.hema.nl/wonen-slapen/wonen/kaarsen/led-kaarsen/afstandsbediening-voor-led-kaarsen-13550140.html
+- https://www.hema.nl/wonen-slapen/wonen/kaarsen/led-kaarsen/uitbreidingsset-oplaadbare-led-theelichtjes---2-stuks-13550143.html
 
 ---
 

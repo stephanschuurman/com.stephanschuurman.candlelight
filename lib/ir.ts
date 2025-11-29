@@ -1,5 +1,5 @@
 import Homey from 'homey';
-import { RFDevice } from 'homey-rfdriver';
+import { RFDevice } from 'homey-rfdriver'; // https://github.com/athombv/node-homey-rfdriver/
 import { IRUtils } from './IRUtils';
 
 /**
@@ -12,7 +12,7 @@ class Infrared extends Homey.SimpleClass {
   private signal: any;
   private prontoSignal: any;
   private lastCommandTime: number = 0;
-  private readonly MIN_COMMAND_INTERVAL_MS: number = 500; // Minimaal 250ms tussen commando's
+  private readonly MIN_COMMAND_INTERVAL_MS: number = 250; // Minimale tijd in milliseconden tussen commando's
   private commandQueue: Promise<any> = Promise.resolve(); // Queue voor het serialiseren van commando's
 
   constructor(device: RFDevice) {
@@ -27,9 +27,9 @@ class Infrared extends Homey.SimpleClass {
     try {
       this.signal = this.device.homey.rf.getSignalInfrared('nec');
       this.prontoSignal = this.device.homey.rf.getSignalInfrared('nec-pronto');
-      this.device.log('ProjectorDeviceApi initialized');
+      this.device.log('IR initialized');
     } catch (error) {
-      this.device.error('Failed to initialize ProjectorDeviceApi:', error);
+      this.device.error('Failed to initialize IR:', error);
       throw error;
     }
   }
@@ -40,7 +40,11 @@ class Infrared extends Homey.SimpleClass {
       if (!frameData) {
         throw new Error(`Unknown command: ${commandCode}`);
       }
-      this.signal.tx(frameData, { device: this.device });
+      
+      // Get repetitions setting (default: 3)
+      const repetitions = this.device.getSetting('ir_repetitions') || 3;
+      
+      this.signal.tx(frameData, { device: this.device, repetitions });
       // this.sendRawCommand(frameData, false);
       return true;
 
@@ -60,7 +64,6 @@ class Infrared extends Homey.SimpleClass {
       throw error;
     }
   }
-
 
   async sendCommand(command: string, longPress: boolean = false): Promise<boolean> {
     // Voeg het commando toe aan de queue
@@ -106,8 +109,11 @@ class Infrared extends Homey.SimpleClass {
 
       // Voor long press, verstuur herhaling
       if (longPress) {
+        // Get repetitions setting (default: 3), min. 8 for long press
+        const repetitions = Math.max(8, this.device.getSetting('ir_repetitions') || 3);
+        
         await this.prontoSignal.cmd('Repeat', {
-          repetitions: 10, // min. 8 required for long press
+          repetitions,
           device: this.device
         });
         await this.sleep(200); // Korte pauze na long press
@@ -221,16 +227,21 @@ class Infrared extends Homey.SimpleClass {
         await this.sleep(waitTime);
       }
 
-      this.device.log('📡 Sending raw IR frame:', frameData, 'repeat:', repeat);
+      // Get repetitions setting (default: 3)
+      const repetitions = this.device.getSetting('ir_repetitions') || 3;
+      
+      this.device.log('📡 Sending raw IR frame:', frameData, 'repeat:', repeat, 'repetitions:', repetitions);
 
-      await this.signal.tx(frameData, { device: this.device });
+      await this.signal.tx(frameData, { device: this.device, repetitions });
 
       // Update laatste commando tijd
       this.lastCommandTime = Date.now();
 
       if (repeat) {
+        // Use max of setting or 8 for long press
+        const repeatRepetitions = Math.max(8, repetitions);
         await this.prontoSignal.cmd('Repeat', {
-          repetitions: 8,
+          repetitions: repeatRepetitions,
           device: this.device
         });
         this.lastCommandTime = Date.now(); // Update tijd na repeat
@@ -316,3 +327,4 @@ class Infrared extends Homey.SimpleClass {
 }
 
 export default Infrared;
+

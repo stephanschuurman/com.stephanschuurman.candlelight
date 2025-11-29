@@ -1,0 +1,83 @@
+{
+  "name": {
+    "en": "HEMA rechargeable LED tealights",
+    "nl": "HEMA oplaadbare LED theelichtjes"
+  },
+  "class": "light",
+  "capabilities": [
+    "button.on",
+    "button.off",
+    "button.2h",
+    "button.4h",
+    "button.6h",
+    "button.8h"
+  ],
+  "capabilitiesOptions": {
+    "button.on": {
+      "title": {
+        "en": "On",
+        "nl": "Aan"
+      }
+    },
+    "button.off": {
+      "title": {
+        "en": "Off",
+        "nl": "Uit"
+      }
+    },
+    "button.2h": {
+      "title": {
+        "en": "Timer 2 hours",
+        "nl": "Timer 2 uur"
+      }
+    },
+    "button.4h": {
+      "title": {
+        "en": "Timer 4 hours",
+        "nl": "Timer 4 uur"
+      }
+    },
+    "button.6h": {
+      "title": {
+        "en": "Timer 6 hours",
+        "nl": "Timer 6 uur"
+      }
+    },
+    "button.8h": {
+      "title": {
+        "en": "Timer 8 hours",
+        "nl": "Timer 8 uur"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ], 
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "device_add_custom",
+      "options": {
+        "title": {
+          "en": "Add Tealights",
+          "nl": "Voeg bediening van Theelichtjes toe"
+        },
+        "instruction": {
+          "en": "Enter a name for your Tealight. Make sure it is powered and within range of your Homey Pro or Satellite.",
+          "nl": "Voer een naam in voor je Theelicht. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
+        },
+        "deviceIdPrefix": "tealight"
+      }
+    }
+  ]
+}

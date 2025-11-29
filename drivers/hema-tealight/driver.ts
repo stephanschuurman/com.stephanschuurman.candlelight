@@ -1,47 +1,34 @@
 import Homey from 'homey';
 
-module.exports = class MyDriver extends Homey.Driver {
+module.exports = class TealightHemaDriver extends Homey.Driver {
 
   /**
    * onInit is called when the driver is initialized.
    */
   async onInit() {
-    this.log('MyDriver has been initialized');
+    this.log(`[${this.constructor.name}] has been initialized`);
 
     // Register flow card actions
     this.homey.flow.getActionCard('on')
       .registerRunListener(async (args) => {
         const { device } = args;
-        this.log('On flow action triggered');
-        
-        // Trigger the capability on the device
-        await device.triggerCapabilityListener('on', true);
-        
-        return true;
+        this.log(`[${this.constructor.name}] On flow action triggered`);
+        await device.triggerCapabilityListener('button.on', true);
       });
 
     this.homey.flow.getActionCard('off')
       .registerRunListener(async (args) => {
         const { device } = args;
-        this.log('Off flow action triggered');
-        
-        // Trigger the capability on the device
-        await device.triggerCapabilityListener('off', true);
-        
-        return true;
+        this.log(`[${this.constructor.name}] Off flow action triggered`);
+        await device.triggerCapabilityListener('button.off', true);
       });
 
     this.homey.flow.getActionCard('timer')
       .registerRunListener(async (args) => {
         const { device, timer_cmd } = args;
-        this.log('Timer flow action triggered:', timer_cmd);
-        
-        // Trigger the capability on the device
-        await device.triggerCapabilityListener(timer_cmd, true);
-        
-        return true;
+        this.log(`[${this.constructor.name}] Timer flow action triggered: ${timer_cmd}`);
+        await device.triggerCapabilityListener(`button.${timer_cmd}`, true);
       });
-
 
   }
 
@@ -50,6 +37,8 @@ module.exports = class MyDriver extends Homey.Driver {
    * This should return an array with the data of devices that are available for pairing.
    */
   async onPairListDevices() {
+    this.log('Pairing: listing devices');
+
     return [
       // Example device data, note that `store` is optional
       // {

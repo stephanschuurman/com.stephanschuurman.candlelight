@@ -5,13 +5,16 @@ from PIL import Image
 # Input file
 input_file = "native.png"
 
-# Target files and resolutions for different image types
+# Target files and resolutions for different image types 
+
+# (10:7 aspect ratio)
 app_sizes = {
     "small":  (250, 175),
     "large":  (500, 350),
     "xlarge": (1000, 700)
 }
 
+# (1:1 aspect ratio)
 driver_sizes = {
     "small":  (75, 75),
     "large":  (500, 500),

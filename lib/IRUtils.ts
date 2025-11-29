@@ -73,8 +73,20 @@ export class IRUtils {
         return r;
     }
 
-    static necCommandToHomeyBits(cmd: number): number[] {
-        const hex = this.necCommandToHex(cmd);
-        return this.hexToHomeyBits(hex);
+    // static necCommandToHomeyBits(cmd: number): number[] {
+    //     const hex = this.necCommandToHex(cmd);
+    //     return this.hexToHomeyBits(hex);
+    // }
+
+    static necCommandToHomeyBits(cmd: number, address: number = 0x00): number[] {
+        // Address byte
+        const addrBits = this.hexToHomeyBits((address << 8) | (~address & 0xFF));
+        
+        // Command byte  
+        const rev = this.reverseByte(cmd);
+        const inv = (~rev) & 0xFF;
+        const cmdBits = this.hexToHomeyBits((rev << 8) | inv);
+        
+        return [...addrBits, ...cmdBits]; // 32 bits totaal
     }
 }
