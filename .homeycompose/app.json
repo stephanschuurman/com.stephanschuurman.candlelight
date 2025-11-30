@@ -1,6 +1,6 @@
 {
   "id": "com.stephanschuurman.candlelight",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "compatibility": ">=12.7.0",
   "sdk": 3,
   "platforms": [
@@ -72,5 +72,9 @@
       "HEMA"
     ]
   },
-  "source": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight"
+  "source": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight",
+  "homeyCommunityTopicId": 146172,
+  "bugs": {
+    "url": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight/issues"
+  }
 }

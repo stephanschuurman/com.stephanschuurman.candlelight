@@ -36,9 +36,8 @@ env.json
 .env.test.local
 .env.production.local
 
-# Homey Compose / generated
+# Homey generated
 .homeybuild/
-.homeycompose/
 
 # Coverage
 coverage/
