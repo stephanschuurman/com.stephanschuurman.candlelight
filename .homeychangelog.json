@@ -2,5 +2,8 @@
   "0.1.0": {
     "en": "First version",
     "nl": "Eerste versie"
+  },
+  "0.1.1": {
+    "en": "Fix for sending too rapid commands and added support for Deluxe Homeart"
   }
 }
