@@ -6,6 +6,9 @@ All notable changes to this project are documented here.
 Upcoming items (new devices, fixes, known issues):
 - Add more brands
 
+## 0.1.3 (build 5)
+- Fixed swapped on/off commands for Home Deluxe candles (requested by Anders Pedersen).
+
 ## 0.1.2 (build 4)
 - Added changed tile action to power toggle (onoff capability, requested by Famod).
 

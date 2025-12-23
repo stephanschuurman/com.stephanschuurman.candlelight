@@ -10,5 +10,9 @@
   "0.1.2": {
     "en": "Changed tile action to power toggle (onoff capability, requested by Famod).",
     "nl": "Tegelactie veranderd naar aan/uit schakelaar (onoff capability, op verzoek van Famod)."
+  },
+  "0.1.3": {
+    "en": "Fixed swapped on/off commands for Home Deluxe candles (requested by Anders Pedersen).",
+    "nl": "Opgeloste verwisselde aan/uit commando's voor Home Deluxe kaarsen (op verzoek van Anders Pedersen)."
   }
 }
