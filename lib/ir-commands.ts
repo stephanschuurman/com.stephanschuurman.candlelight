@@ -64,6 +64,36 @@ export const IR_COMMANDS = {
     DIM_DOWN: 0x10,
     DIM_UP: 0x12,
   } as const,
+
+  /**
+   * Lumiz Lantern
+   * Protocol: NEC, Address: 0x00
+   */
+  LUMIZ_LANTERN: {
+    ON: 0x01,
+    OFF: 0x00,
+    DIM_DOWN: 0x0D,
+    DIM_UP: 0x16,
+  } as const,
+
+  /**
+   * Action - 3 Button Remote
+   * Protocol: NEC, Address: 0x00
+   */
+  ACTION_3_BUTTON: {
+    ON: 0x12,
+    OFF: 0x0F,
+    TIMER_6H: 0x15,
+  } as const,
+
+  /**
+   * Action - 8 Button Remote
+   * Protocol: NEC, Address: 0x00
+   */
+  ACTION_8_BUTTON: {
+    ON: 0x45,
+    OFF: 0x47,
+  } as const,
 } as const;
 
 /**

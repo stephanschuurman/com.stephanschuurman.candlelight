@@ -46,6 +46,52 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ---
 
+## Action - 3 Button Remote
+
+**Driver:** ./action-3-button
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button | CMD          |
+|--------|--------------|
+| ON     | 0x12         |
+| OFF    | 0x0F         |
+| 6H     | 0x15         |
+
+**Source:**
+- https://community.homey.app/t/app-pro-candlelight/146172/14
+
+### Product Information (from Rene_de_Ronde):
+
+- EAN: 8721037743549 (tested model)
+- Probable match: [EAN 8721037234962](https://www.bol.com/nl/nl/p/ledkaarsen-set-9-delig-white-kaarsen/9300000248071917/) (likely the same white-label model under a different barcode)
+- Model AX6-200105
+- Remote Model: AX6-200105 (3 buttons: ON, OFF, 6H Timer)
+- Protocol: NEC IR, Address 0x00
+
+---
+
+## Action - 8 Button Remote
+
+**Driver:** ./action-8-button
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button | CMD          |
+|--------|--------------|
+| ON     | 0x45         |
+| OFF    | 0x47         |
+
+**Source:**
+- https://www.action.com/fr-fr/p/3206761/bougies-led/
+
+### Product Information (from Rene_de_Ronde):
+
+- Article no. 3206761
+- Model: 67IZJ2407-00X
+
+---
+
 ## Action - 10 Button Remote
 
 **Driver:** ./action-10-button
@@ -67,6 +113,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 **Source:** 
 - https://leap.tardate.com/electronics101/led/remotecontrolcandles/
+- https://shop.action.com/en-nl/p/8721184890585/luxury-7-piece-led-candle-set-taupe
 
 ---
 
@@ -84,7 +131,6 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 | Brightness +    | 0x12         |
 
 **Source:**
-
 
 ---
 
@@ -121,6 +167,41 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 **Source:**
 - https://homey.app/en-us/app/nl.flinqproducts.candle/Flinq-LED-Candles/
+
+---
+
+## Lumiz Lantern
+
+**Driver:** ./lumiz-lantern
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button          | CMD          |
+|-----------------|--------------|
+| ON              | 0x01         |
+| OFF             | 0x00         |
+| Brighter        | 0x16         |
+| Dimmer.         | 0x0D         |
+
+### Pronto HEX
+
+ON
+
+0000 006D 0022 0000 015C 00AD 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0013 0019 0015 0017 0015 0017 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0015 0017 0015 0017 0016 0016 0015 0017 0015 0017 0015 0017 0015 0017 0014 0018 0041 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0181
+  
+OFF
+0000 006D 0022 0000 015C 00AD 0017 0011 001B 0015 0017 0015 0017 0015 0016 0015 0017 0015 0016 0015 0017 0015 0017 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0015 0017 0016 0016 0015 0017 0015 0016 0016 0015 0016 0016 0016 0016 0015 0017 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0042 0016 0181
+  
+Brighter
+0000 006D 0022 0000 015D 00AD 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0016 0015 0017 0015 0017 0015 0017 0041 0017 0041 0017 0041 0018 0040 0019 003F 0018 0040 0017 0041 0017 0041 0017 0015 0017 0041 0017 0041 0017 0015 0017 0041 0018 0014 0017 0015 0017 0015 0017 0041 0017 0015 0017 0015 0017 0041 0017 0015 0017 0041 0017 0041 0017 0041 0017 0181
+
+Dimmer
+0000 006D 0022 0000 015D 00AD 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0041 0017 0041 0017 0041 0017 0041 0017 0041 0017 0041 0017 0041 0017 0041 0017 0041 0018 0014 0017 0041 0017 0041 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0041 0017 0015 0017 0015 0017 0041 0017 0041 0017 0041 0017 0041 0017 0181
+
+
+**Source:**
+- https://community.home-assistant.io/t/lumiz-lantern-remote-control-with-esphome/937775
+- https://lumiz.nl
 
 ---
 

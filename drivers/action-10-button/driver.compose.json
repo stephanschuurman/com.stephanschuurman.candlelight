@@ -1,18 +1,18 @@
 {
   "name": {
-    "en": "Action LED Candles",
-    "nl": "Action LED Kaarsen",
-    "fr": "Bougies LED Action",
-    "de": "Action LED-Kerzen",
-    "da": "Action LED-lys",
-    "es": "Velas LED Action",
-    "it": "Candele LED Action",
-    "no": "Action LED-lys",
-    "sv": "Action LED-ljus",
-    "pl": "Świece LED Action",
-    "ru": "Светодиодные свечи Action",
-    "ko": "Action LED 양초",
-    "ar": "شموع LED من Action"
+    "en": "Action 10 Button",
+    "nl": "Action 10 Knoppen",
+    "fr": "Action 10 Boutons",
+    "de": "Action 10 Tasten",
+    "da": "Action 10 Knapper",
+    "es": "Action 10 Botones",
+    "it": "Action 10 Pulsanti",
+    "no": "Action 10 Knapper",
+    "sv": "Action 10 Knappar",
+    "pl": "Action 10 Przyciski",
+    "ru": "Action 10 Кнопки",
+    "ko": "Action 10 버튼",
+    "ar": "Action 10 أزرار"
   },
   "class": "light",
   "capabilities": [
@@ -229,19 +229,19 @@
         "instruction": "drivers.common.pair_instruction",
         "deviceIdPrefix": "led_candle_",
         "defaultDeviceName": {
-          "en": "Action LED Candles",
-          "nl": "Action LED Kaarsen",
-          "fr": "Bougies LED Action",
-          "de": "Action LED-Kerzen",
-          "da": "Action LED-lys",
-          "es": "Velas LED Action",
-          "it": "Candele LED Action",
-          "no": "Action LED-lys",
-          "sv": "Action LED-ljus",
-          "pl": "Świece LED Action",
-          "ru": "Светодиодные свечи Action",
-          "ko": "Action LED 양초",
-          "ar": "شموع LED من Action"
+          "en": "Action 10 Button",
+          "nl": "Action 10 Knoppen",
+          "fr": "Action 10 Boutons",
+          "de": "Action 10 Tasten",
+          "da": "Action 10 Knapper",
+          "es": "Action 10 Botones",
+          "it": "Action 10 Pulsanti",
+          "no": "Action 10 Knapper",
+          "sv": "Action 10 Knappar",
+          "pl": "Action 10 Przyciski",
+          "ru": "Action 10 Кнопки",
+          "ko": "Action 10 버튼",
+          "ar": "Action 10 أزرار"
         }
       }
     }

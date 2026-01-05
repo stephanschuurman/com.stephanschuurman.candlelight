@@ -1,0 +1,207 @@
+{
+  "actions": [
+    {
+      "id": "lumiz-lantern_on",
+      "title": {
+        "en": "Switch Lumiz lanterns on",
+        "nl": "Zet de Lumiz lantaarns aan",
+        "fr": "Switch Lumiz lanterns on",
+        "de": "Switch Lumiz lanterns on",
+        "da": "Switch Lumiz lanterns on",
+        "es": "Switch Lumiz lanterns on",
+        "it": "Switch Lumiz lanterns on",
+        "no": "Switch Lumiz lanterns on",
+        "sv": "Switch Lumiz lanterns on",
+        "pl": "Switch Lumiz lanterns on",
+        "ru": "Switch Lumiz lanterns on",
+        "ko": "Switch Lumiz lanterns on",
+        "ar": "Switch Lumiz lanterns on"
+      },
+      "titleFormatted": {
+        "en": "Switch the Lumiz lanterns on",
+        "nl": "Zet de Lumiz lantaarns aan",
+        "fr": "Switch the Lumiz lanterns on",
+        "de": "Switch the Lumiz lanterns on",
+        "da": "Switch the Lumiz lanterns on",
+        "es": "Switch the Lumiz lanterns on",
+        "it": "Switch the Lumiz lanterns on",
+        "no": "Switch the Lumiz lanterns on",
+        "sv": "Switch the Lumiz lanterns on",
+        "pl": "Switch the Lumiz lanterns on",
+        "ru": "Switch the Lumiz lanterns on",
+        "ko": "Switch the Lumiz lanterns on",
+        "ar": "Switch the Lumiz lanterns on"
+      },
+      "hint": {
+        "en": "This action switches the Lumiz lanterns on.",
+        "nl": "Deze actie zet de Lumiz lantaarns aan.",
+        "fr": "This action switches the Lumiz lanterns on.",
+        "de": "This action switches the Lumiz lanterns on.",
+        "da": "This action switches the Lumiz lanterns on.",
+        "es": "This action switches the Lumiz lanterns on.",
+        "it": "This action switches the Lumiz lanterns on.",
+        "no": "This action switches the Lumiz lanterns on.",
+        "sv": "This action switches the Lumiz lanterns on.",
+        "pl": "This action switches the Lumiz lanterns on.",
+        "ru": "This action switches the Lumiz lanterns on.",
+        "ko": "This action switches the Lumiz lanterns on.",
+        "ar": "This action switches the Lumiz lanterns on."
+      }
+    },
+    {
+      "id": "lumiz-lantern_off",
+      "title": {
+        "en": "Switch Lumiz lanterns off",
+        "nl": "Zet de Lumiz lantaarns uit",
+        "fr": "Switch Lumiz lanterns off",
+        "de": "Switch Lumiz lanterns off",
+        "da": "Switch Lumiz lanterns off",
+        "es": "Switch Lumiz lanterns off",
+        "it": "Switch Lumiz lanterns off",
+        "no": "Switch Lumiz lanterns off",
+        "sv": "Switch Lumiz lanterns off",
+        "pl": "Switch Lumiz lanterns off",
+        "ru": "Switch Lumiz lanterns off",
+        "ko": "Switch Lumiz lanterns off",
+        "ar": "Switch Lumiz lanterns off"
+      },
+      "titleFormatted": {
+        "en": "Switch the Lumiz lanterns off",
+        "nl": "Zet de Lumiz lantaarns uit",
+        "fr": "Switch the Lumiz lanterns off",
+        "de": "Switch the Lumiz lanterns off",
+        "da": "Switch the Lumiz lanterns off",
+        "es": "Switch the Lumiz lanterns off",
+        "it": "Switch the Lumiz lanterns off",
+        "no": "Switch the Lumiz lanterns off",
+        "sv": "Switch the Lumiz lanterns off",
+        "pl": "Switch the Lumiz lanterns off",
+        "ru": "Switch the Lumiz lanterns off",
+        "ko": "Switch the Lumiz lanterns off",
+        "ar": "Switch the Lumiz lanterns off"
+      },
+      "hint": {
+        "en": "This action switches the Lumiz lanterns off.",
+        "nl": "Deze actie zet de Lumiz lantaarns uit.",
+        "fr": "This action switches the Lumiz lanterns off.",
+        "de": "This action switches the Lumiz lanterns off.",
+        "da": "This action switches the Lumiz lanterns off.",
+        "es": "This action switches the Lumiz lanterns off.",
+        "it": "This action switches the Lumiz lanterns off.",
+        "no": "This action switches the Lumiz lanterns off.",
+        "sv": "This action switches the Lumiz lanterns off.",
+        "pl": "This action switches the Lumiz lanterns off.",
+        "ru": "This action switches the Lumiz lanterns off.",
+        "ko": "This action switches the Lumiz lanterns off.",
+        "ar": "This action switches the Lumiz lanterns off."
+      }
+    },
+    {
+      "id": "lumiz-lantern_dim",
+      "title": {
+        "en": "Dim Lumiz lanterns",
+        "nl": "Dim de Lumiz lantaarns",
+        "fr": "Dim Lumiz lanterns",
+        "de": "Dim Lumiz lanterns",
+        "da": "Dim Lumiz lanterns",
+        "es": "Dim Lumiz lanterns",
+        "it": "Dim Lumiz lanterns",
+        "no": "Dim Lumiz lanterns",
+        "sv": "Dim Lumiz lanterns",
+        "pl": "Dim Lumiz lanterns",
+        "ru": "Dim Lumiz lanterns",
+        "ko": "Dim Lumiz lanterns",
+        "ar": "Dim Lumiz lanterns"
+      },
+      "titleFormatted": {
+        "en": "Dim Lumiz lanterns [[dim_cmd]]",
+        "nl": "Dim de Lumiz lantaarns [[dim_cmd]]",
+        "fr": "Dim Lumiz lanterns [[dim_cmd]]",
+        "de": "Dim Lumiz lanterns [[dim_cmd]]",
+        "da": "Dim Lumiz lanterns [[dim_cmd]]",
+        "es": "Dim Lumiz lanterns [[dim_cmd]]",
+        "it": "Dim Lumiz lanterns [[dim_cmd]]",
+        "no": "Dim Lumiz lanterns [[dim_cmd]]",
+        "sv": "Dim Lumiz lanterns [[dim_cmd]]",
+        "pl": "Dim Lumiz lanterns [[dim_cmd]]",
+        "ru": "Dim Lumiz lanterns [[dim_cmd]]",
+        "ko": "Dim Lumiz lanterns [[dim_cmd]]",
+        "ar": "Dim Lumiz lanterns [[dim_cmd]]"
+      },
+      "hint": {
+        "en": "This action dims the Lumiz lanterns.",
+        "nl": "Deze actie dimt de Lumiz lantaarns.",
+        "fr": "This action dims the Lumiz lanterns.",
+        "de": "This action dims the Lumiz lanterns.",
+        "da": "This action dims the Lumiz lanterns.",
+        "es": "This action dims the Lumiz lanterns.",
+        "it": "This action dims the Lumiz lanterns.",
+        "no": "This action dims the Lumiz lanterns.",
+        "sv": "This action dims the Lumiz lanterns.",
+        "pl": "This action dims the Lumiz lanterns.",
+        "ru": "This action dims the Lumiz lanterns.",
+        "ko": "This action dims the Lumiz lanterns.",
+        "ar": "This action dims the Lumiz lanterns."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "dim_cmd",
+          "title": {
+            "en": "direction",
+            "nl": "richting",
+            "fr": "direction",
+            "de": "Richtung",
+            "da": "retning",
+            "es": "dirección",
+            "it": "direzione",
+            "no": "retning",
+            "sv": "riktning",
+            "pl": "kierunek",
+            "ru": "направление",
+            "ko": "방향",
+            "ar": "الاتجاه"
+          },
+          "values": [
+            {
+              "id": "dim_down",
+              "title": {
+                "en": "Dim -",
+                "nl": "Dim -",
+                "fr": "Dim -",
+                "de": "Dim -",
+                "da": "Dim -",
+                "es": "Dim -",
+                "it": "Dim -",
+                "no": "Dim -",
+                "sv": "Dim -",
+                "pl": "Dim -",
+                "ru": "Dim -",
+                "ko": "Dim -",
+                "ar": "Dim -"
+              }
+            },
+            {
+              "id": "dim_up",
+              "title": {
+                "en": "Dim +",
+                "nl": "Dim +",
+                "fr": "Dim +",
+                "de": "Dim +",
+                "da": "Dim +",
+                "es": "Dim +",
+                "it": "Dim +",
+                "no": "Dim +",
+                "sv": "Dim +",
+                "pl": "Dim +",
+                "ru": "Dim +",
+                "ko": "Dim +",
+                "ar": "Dim +"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

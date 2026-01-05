@@ -33,9 +33,11 @@ export abstract class BaseCandleDevice extends Homey.Device {
     // Register timer capability listeners
     const timers: TimerDuration[] = ['2h', '4h', '6h', '8h'];
     timers.forEach(timer => {
-      this.registerCapabilityListener(`button.${timer}`, 
-        (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, timer)
-      );
+      const capabilityId = `button.${timer}`;
+      if (!this.hasCapability(capabilityId)) return;
+
+      this.registerCapabilityListener(capabilityId,
+        (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, timer));
     });
 
     // Init IR API
