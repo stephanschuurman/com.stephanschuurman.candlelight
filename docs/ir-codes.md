@@ -54,9 +54,9 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 | Button | CMD          |
 |--------|--------------|
-| ON     | 0x12         |
-| OFF    | 0x0F         |
-| 6H     | 0x15         |
+| ON     | 0x46         |
+| OFF    | 0x15         |
+| 6H     | 0x18         |
 
 **Source:**
 - https://community.homey.app/t/app-pro-candlelight/146172/14

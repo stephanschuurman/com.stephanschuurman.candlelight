@@ -81,9 +81,9 @@ export const IR_COMMANDS = {
    * Protocol: NEC, Address: 0x00
    */
   ACTION_3_BUTTON: {
-    ON: 0x12,
-    OFF: 0x0F,
-    TIMER_6H: 0x15,
+    ON: 0x46,
+    OFF: 0x15,
+    TIMER_6H: 0x18,
   } as const,
 
   /**

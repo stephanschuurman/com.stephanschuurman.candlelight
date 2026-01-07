@@ -1,0 +1,37 @@
+{
+  "name": {
+    "en": "Test Remote",
+    "nl": "Test Afstandsbediening"
+  },
+  "class": "other",
+  "capabilities": [],
+  "capabilitiesOptions": {},
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "device_add_custom",
+      "options": {
+        "title": "drivers.base.pair_title",
+        "instruction": "drivers.common.pair_instruction",
+        "deviceIdPrefix": "test_remote_",
+        "defaultDeviceName": {
+          "en": "Test Remote",
+          "nl": "Test Afstandsbediening"
+        }
+      }
+    }
+  ]
+}

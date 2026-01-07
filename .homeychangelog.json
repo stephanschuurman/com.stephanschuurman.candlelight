@@ -22,5 +22,9 @@
   "0.1.5": {
     "en": "Added support for Action LED candles (3 and 8 button) as reqested by Rene_de_Ronde. Added support for Lumiz lanterns, Anna's Collection (2x) and Lumineo. New driver images and icons for all.",
     "nl": "Ondersteuning toegevoegd voor Action LED kaarsen (3 en 8 knoppen) zoals gevraagd door Rene_de_Ronde. Ondersteuning toegevoegd voor Lumiz lantaarns, Anna's Collection (2x) en Lumineo. Nieuwe driverafbeeldingen en pictogrammen voor alle."
+  },
+  "0.1.6": {
+    "en": "Fixed issue with sending IR commands for Action 3 Button (as reported by Rene_de_Ronde). Added flow action card to switch all candles on or off. Fixed image of Anna's Collection 10 button. Fixed bit flip issue in lib IR for adress.",
+    "nl": "Opgelost probleem met het verzenden van IR-commando's voor Action 3-knops (zoals gerapporteerd door Rene_de_Ronde). Toegevoegd flow-actieve kaart om alle kaarsen aan of uit te schakelen. Afbeelding van Anna's Collection 10-knops gerepareerd. Opgeloste bit flip-probleem in lib IR voor adres."
   }
 }

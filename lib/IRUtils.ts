@@ -79,8 +79,9 @@ export class IRUtils {
     // }
 
     static necCommandToHomeyBits(cmd: number, address: number = 0x00): number[] {
-        // Address byte
-        const addrBits = this.hexToHomeyBits((address << 8) | (~address & 0xFF));
+        // Address byte (NEC uses LSB-first; reverse address byte)
+        const addrRev = this.reverseByte(address);
+        const addrBits = this.hexToHomeyBits((addrRev << 8) | (~addrRev & 0xFF));
         
         // Command byte  
         const rev = this.reverseByte(cmd);

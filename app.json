@@ -2348,6 +2348,73 @@
             ]
           }
         ]
+      },
+      {
+        "id": "test-remote_send_ir_command",
+        "title": {
+          "en": "Send IR command",
+          "nl": "Stuur IR-commando"
+        },
+        "titleFormatted": {
+          "en": "Use [[protocol]] to [[address]] with [[command]]",
+          "nl": "Gebruik [[protocol]] naar [[address]] met [[command]]"
+        },
+        "hint": {
+          "en": "Send a custom IR command (hex like 0x00...0xFF or decimal 0...255).",
+          "nl": "Stuur een aangepast IR-commando (hex zoals 0x00...0xFF of decimaal 0..255)."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=test-remote"
+          },
+          {
+            "type": "dropdown",
+            "name": "protocol",
+            "title": {
+              "en": "protocol",
+              "nl": "protocol"
+            },
+            "values": [
+              {
+                "id": "nec",
+                "title": {
+                  "en": "NEC",
+                  "nl": "NEC"
+                },
+                "hint": {
+                  "en": "Select the protocol to use.",
+                  "nl": "Selecteer het te gebruiken protocol."
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "title": {
+              "en": "address",
+              "nl": "adres"
+            },
+            "hint": {
+              "en": "Enter the address to use.",
+              "nl": "Voer het te gebruiken adres in."
+            }
+          },
+          {
+            "type": "text",
+            "name": "command",
+            "title": {
+              "en": "command",
+              "nl": "commando"
+            },
+            "hint": {
+              "en": "Enter the command to send.",
+              "nl": "Voer het te verzenden commando in."
+            }
+          }
+        ]
       }
     ]
   },
@@ -4344,6 +4411,104 @@
         }
       ],
       "id": "lumiz-lantern",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "IR Settings",
+            "nl": "IR Instellingen",
+            "fr": "Paramètres IR",
+            "de": "IR-Einstellungen",
+            "da": "IR-indstillinger",
+            "es": "Ajustes de IR",
+            "it": "Impostazioni IR",
+            "no": "IR-innstillinger",
+            "sv": "IR-inställningar",
+            "pl": "Ustawienia IR",
+            "ru": "Настройки ИК",
+            "ko": "IR 설정",
+            "ar": "إعدادات IR"
+          },
+          "children": [
+            {
+              "id": "ir_repetitions",
+              "type": "number",
+              "label": {
+                "en": "Repetitions",
+                "nl": "Herhalingen",
+                "fr": "Répétitions",
+                "de": "Wiederholungen",
+                "da": "Gentagelser",
+                "es": "Repeticiones",
+                "it": "Ripetizioni",
+                "no": "Gjentakelser",
+                "sv": "Upprepningar",
+                "pl": "Powtórzenia",
+                "ru": "Повторы",
+                "ko": "반복",
+                "ar": "التكرارات"
+              },
+              "hint": {
+                "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
+                "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen.",
+                "fr": "Nombre de répétitions des commandes IR (1-10). Des valeurs plus élevées améliorent la fiabilité mais peuvent ralentir la réponse.",
+                "de": "Anzahl der Wiederholungen von IR-Befehlen (1-10). Höhere Werte verbessern die Zuverlässigkeit, können aber die Reaktionszeit verlangsamen.",
+                "da": "Antal gange IR-kommandoer skal gentages (1-10). Højere værdier forbedrer pålideligheden, men kan gøre svaret langsommere.",
+                "es": "Número de veces que se repiten los comandos IR (1-10). Valores más altos mejoran la fiabilidad, pero pueden ralentizar la respuesta.",
+                "it": "Numero di volte in cui ripetere i comandi IR (1-10). Valori più alti migliorano l'affidabilità, ma possono rallentare la risposta.",
+                "no": "Antall ganger IR-kommandoer skal gjentas (1-10). Høyere verdier forbedrer påliteligheten, men kan gjøre responsen tregere.",
+                "sv": "Antal gånger IR-kommandon ska upprepas (1–10). Högre värden förbättrar tillförlitligheten men kan göra responsen långsammare.",
+                "pl": "Liczba powtórzeń komend IR (1–10). Wyższe wartości poprawiają niezawodność, ale mogą spowolnić reakcję.",
+                "ru": "Сколько раз повторять ИК-команды (1–10). Более высокие значения повышают надёжность, но могут замедлить отклик.",
+                "ko": "IR 명령을 반복할 횟수(1~10)입니다. 값이 높을수록 신뢰성은 좋아지지만 응답이 느려질 수 있어요.",
+                "ar": "عدد مرات تكرار أوامر IR ‏(1-10). القيم الأعلى تحسّن الاعتمادية لكنها قد تبطّئ الاستجابة."
+              },
+              "value": 1,
+              "min": 1,
+              "max": 10,
+              "step": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Test Remote",
+        "nl": "Test Afstandsbediening"
+      },
+      "class": "other",
+      "capabilities": [],
+      "capabilitiesOptions": {},
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "infrared": {
+        "satelliteMode": true
+      },
+      "images": {
+        "small": "/drivers/test-remote/assets/images/small.png",
+        "large": "/drivers/test-remote/assets/images/large.png",
+        "xlarge": "/drivers/test-remote/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "device_add_custom",
+          "options": {
+            "title": "drivers.base.pair_title",
+            "instruction": "drivers.common.pair_instruction",
+            "deviceIdPrefix": "test_remote_",
+            "defaultDeviceName": {
+              "en": "Test Remote",
+              "nl": "Test Afstandsbediening"
+            }
+          }
+        }
+      ],
+      "id": "test-remote",
       "settings": [
         {
           "type": "group",

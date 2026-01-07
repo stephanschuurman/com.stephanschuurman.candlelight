@@ -1,0 +1,66 @@
+{
+  "actions": [
+    {
+      "id": "test-remote_send_ir_command",
+      "title": {
+        "en": "Send IR command",
+        "nl": "Stuur IR-commando"
+      },
+  "titleFormatted": {
+    "en": "Use [[protocol]] to [[address]] with [[command]]",
+    "nl": "Gebruik [[protocol]] naar [[address]] met [[command]]"
+  },
+      "hint": {
+        "en": "Send a custom IR command (hex like 0x00...0xFF or decimal 0...255).",
+        "nl": "Stuur een aangepast IR-commando (hex zoals 0x00...0xFF of decimaal 0..255)."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "protocol",
+          "title": {
+            "en": "protocol",
+            "nl": "protocol"
+          },
+          "values": [
+            {
+              "id": "nec",
+              "title": {
+                "en": "NEC",
+                "nl": "NEC"
+              },
+              "hint": {
+                "en": "Select the protocol to use.",
+                "nl": "Selecteer het te gebruiken protocol."
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "address",
+          "title": {
+            "en": "address",
+            "nl": "adres"
+          },
+          "hint": {
+            "en": "Enter the address to use.",
+            "nl": "Voer het te gebruiken adres in."
+          }
+        },
+        {
+          "type": "text",
+          "name": "command",
+          "title": {
+            "en": "command",
+            "nl": "commando"
+          }, 
+          "hint": {
+            "en": "Enter the command to send.",
+            "nl": "Voer het te verzenden commando in."
+          }
+        }
+      ]
+    }
+  ]
+}
