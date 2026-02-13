@@ -87,8 +87,8 @@ export abstract class BaseCandleDevice extends Homey.Device {
    */
   async onCapabilityOn(value: boolean, opts: any): Promise<void> {
     this.log(`[${this.constructor.name}] onCapabilityOn`);
-    const commands = this.getCommands();
-    await this.ir.sendCommandRawQueued(commands.ON);
+    const { onCommand } = this.getOnOffCommands();
+    await this.ir.sendCommandRawQueued(onCommand);
     await this.updateOnOffState(true);
   }
 
@@ -97,8 +97,8 @@ export abstract class BaseCandleDevice extends Homey.Device {
    */
   async onCapabilityOff(value: boolean, opts: any): Promise<void> {
     this.log(`[${this.constructor.name}] onCapabilityOff`);
-    const commands = this.getCommands();
-    await this.ir.sendCommandRawQueued(commands.OFF);
+    const { offCommand } = this.getOnOffCommands();
+    await this.ir.sendCommandRawQueued(offCommand);
     await this.updateOnOffState(false);
   }
 
@@ -107,9 +107,8 @@ export abstract class BaseCandleDevice extends Homey.Device {
    */
   async onCapabilityOnOff(value: boolean, opts: any): Promise<void> {
     this.log(`[${this.constructor.name}] onCapabilityOnOff -> ${value ? 'ON' : 'OFF'}`);
-    const commands = this.getCommands();
-    const commandCode = value ? commands.ON : commands.OFF;
-    await this.ir.sendCommandRawQueued(commandCode);
+    const { onCommand, offCommand } = this.getOnOffCommands();
+    await this.ir.sendCommandRawQueued(value ? onCommand : offCommand);
     await this.updateOnOffState(value);
   }
 
@@ -129,9 +128,24 @@ export abstract class BaseCandleDevice extends Homey.Device {
     }
 
     if (this.getSetting('send_on_before_timer')) {
-      await this.ir.sendCommandRawQueued(commands.ON);
+      const { onCommand } = this.getOnOffCommands();
+      await this.ir.sendCommandRawQueued(onCommand);
     }
     await this.ir.sendCommandRawQueued(commandCode);
+  }
+
+  /**
+   * Get ON/OFF command codes, optionally swapped via settings
+   */
+  private getOnOffCommands(): { onCommand: number; offCommand: number } {
+    const commands = this.getCommands();
+    const swapOnOff = this.getSetting('swap_on_off_commands') === true;
+
+    if (swapOnOff) {
+      return { onCommand: commands.OFF, offCommand: commands.ON };
+    }
+
+    return { onCommand: commands.ON, offCommand: commands.OFF };
   }
 
   /**

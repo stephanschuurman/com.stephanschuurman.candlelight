@@ -1,6 +1,6 @@
 {
   "id": "com.stephanschuurman.candlelight",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "compatibility": ">=12.9.0",
   "sdk": 3,
   "platforms": [
@@ -234,5 +234,6 @@
   "homeyCommunityTopicId": 146172,
   "bugs": {
     "url": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight/issues"
-  }
+  },
+  "homepage": "https://dev.stephanschuurman.com/candlelight/"
 }

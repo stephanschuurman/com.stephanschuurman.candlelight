@@ -26,5 +26,10 @@
   "0.1.6": {
     "en": "Fixed issue with sending IR commands for Action 3 Button (as reported by Rene_de_Ronde). Added flow action card to switch all candles on or off. Fixed image of Anna's Collection 10 button. Fixed bit flip issue in lib IR for adress.",
     "nl": "Opgelost probleem met het verzenden van IR-commando's voor Action 3-knops (zoals gerapporteerd door Rene_de_Ronde). Toegevoegd flow-actieve kaart om alle kaarsen aan of uit te schakelen. Afbeelding van Anna's Collection 10-knops gerepareerd. Opgeloste bit flip-probleem in lib IR voor adres."
+  },
+  "0.1.7": {
+    "en": "Reversed change made 0.1.3 and added option to swap on/off commands as a setting. Added support for a new 13 button generic remote.",
+    "nl": "Omgekeerde wijziging gemaakt 0.1.3 en toegevoegd optie om aan/uit commando's te verwisselen als een instelling. Toegevoegd ondersteuning voor een nieuwe 13-knops generieke afstandsbediening."
   }
+
 }

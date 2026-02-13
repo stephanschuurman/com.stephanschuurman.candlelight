@@ -89,6 +89,41 @@
           "ar": "عند تفعيل مؤقت (x ساعة)، أرسل أولاً أمر تشغيل (ON) للتأكد من أن الجهاز قيد التشغيل."
         },
         "value": true
+      },
+      {
+        "id": "swap_on_off_commands",
+        "type": "checkbox",
+        "label": {
+          "en": "Swap ON and OFF commands",
+          "nl": "Wissel AAN- en UIT-commando's om",
+          "fr": "Inverser les commandes ON et OFF",
+          "de": "AN- und AUS-Befehle tauschen",
+          "da": "Byt TÆND- og SLUK-kommandoer om",
+          "es": "Intercambiar comandos de ENCENDER y APAGAR",
+          "it": "Scambia i comandi ACCENSIONE e SPEGNIMENTO",
+          "no": "Bytt PÅ- og AV-kommandoer",
+          "sv": "Byt PÅ- och AV-kommandon",
+          "pl": "Zamień komendy WŁĄCZ i WYŁĄCZ",
+          "ru": "Поменять местами команды ВКЛ и ВЫКЛ",
+          "ko": "켜기(ON)와 끄기(OFF) 명령 바꾸기",
+          "ar": "تبديل أوامر التشغيل (ON) والإيقاف (OFF)"
+        },
+        "hint": {
+          "en": "Enable this if the remote's ON and OFF buttons are reversed for this device.",
+          "nl": "Schakel dit in als de AAN- en UIT-knoppen van de afstandsbediening voor dit apparaat omgedraaid zijn.",
+          "fr": "Activez ceci si les boutons ON et OFF de la télécommande sont inversés pour cet appareil.",
+          "de": "Aktivieren, wenn die AN- und AUS-Tasten der Fernbedienung für dieses Gerät vertauscht sind.",
+          "da": "Aktivér dette, hvis fjernbetjeningens TÆND- og SLUK-knapper er byttet om for denne enhed.",
+          "es": "Actívalo si los botones de ENCENDER y APAGAR del mando están invertidos para este dispositivo.",
+          "it": "Attivalo se i pulsanti ACCENSIONE e SPEGNIMENTO del telecomando sono invertiti per questo dispositivo.",
+          "no": "Aktiver dette hvis fjernkontrollens PÅ- og AV-knapper er byttet om for denne enheten.",
+          "sv": "Aktivera detta om fjärrkontrollens PÅ- och AV-knappar är omkastade för den här enheten.",
+          "pl": "Włącz, jeśli przyciski WŁĄCZ i WYŁĄCZ na pilocie są zamienione dla tego urządzenia.",
+          "ru": "Включите, если кнопки ВКЛ и ВЫКЛ на пульте для этого устройства перепутаны.",
+          "ko": "이 기기에서 리모컨의 켜기(ON)와 끄기(OFF) 버튼이 반대로 동작하면 켜세요.",
+          "ar": "فعّل هذا إذا كانت أزرار التشغيل (ON) والإيقاف (OFF) في جهاز التحكم معكوسة لهذا الجهاز."
+        },
+        "value": false
       }
     ]
   }

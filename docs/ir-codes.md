@@ -178,6 +178,34 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ---
 
+## Simple LED Strip
+
+**Driver:** ./generic-13-button
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button          | CMD          |
+|-----------------|--------------|
+| ON              | 0x45         |
+| OFF             | 0x47         |
+| Timer           | 0x46         |
+| Mode 1          | 0x44         |
+| Mode 2          | 0x43         |
+| Mode 3          | 0x07         |
+| Mode 4          | 0x09         |
+| Mode 5          | 0x16         |
+| Mode 6          | 0x0D         |
+| Mode 7          | 0x0C         |
+| Mode 8          | 0x5E         |
+| Brightness -    | 0x08         |
+| Brightness +    | 0x5A         |
+
+**Source:** 
+- https://nl.aliexpress.com/item/1005010406872342.html
+- Note major overlap with HEMA
+
+---
+
 ## Lumiz Lantern
 
 **Driver:** ./lumiz-lantern

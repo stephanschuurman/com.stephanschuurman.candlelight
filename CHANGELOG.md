@@ -6,7 +6,11 @@ All notable changes to this project are documented here.
 Upcoming items (new devices, fixes, known issues):
 - Add more brands
 
-## 0.1.6 (build 8) - Test
+## 0.1.7 (build 9) - Test
+- Reversed change made 0.1.3 and added optien to swap on/off commands as a setting.
+- Added new 13 button generic remote.
+
+## 0.1.6 (build 8) - Released
 - Fixed issue with sending IR commands for Action 3 Button (as reported by Rene_de_Ronde). Added flow action card to switch all candles on or off. Fixed image of Anna's Collection 10 button. Fixed bit flip issue in lib IR for adress.
 
 ## 0.1.5 (build 7) - Test

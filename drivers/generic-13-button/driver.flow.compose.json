@@ -1,0 +1,470 @@
+{
+  "actions": [
+    {
+      "id": "generic-13-button_on",
+      "title": {
+        "en": "Switch LED candles on",
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Switch the LED candles on",
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
+      },
+      "hint": {
+        "en": "This action switches the LED candles on.",
+        "nl": "Deze actie zet de LED kaarsen aan.",
+        "fr": "Cette action allume les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen ein.",
+        "da": "Denne handling tænder LED-lysene.",
+        "es": "Esta acción enciende las velas LED.",
+        "it": "Questa azione accende le candele LED.",
+        "no": "Denne handlingen slår på LED-lysene.",
+        "sv": "Den här åtgärden slår på LED-ljusen.",
+        "pl": "Ta akcja włącza świece LED.",
+        "ru": "Это действие включает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 켭니다.",
+        "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
+      }
+    },
+    {
+      "id": "generic-13-button_off",
+      "title": {
+        "en": "Switch LED candles off",
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Switch the LED candles off",
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
+      },
+      "hint": {
+        "en": "This action switches the LED candles off.",
+        "nl": "Deze actie zet de LED kaarsen uit.",
+        "fr": "Cette action éteint les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen aus.",
+        "da": "Denne handling slukker LED-lysene.",
+        "es": "Esta acción apaga las velas LED.",
+        "it": "Questa azione spegne le candele LED.",
+        "no": "Denne handlingen slår av LED-lysene.",
+        "sv": "Den här åtgärden slår av LED-ljusen.",
+        "pl": "Ta akcja wyłącza świece LED.",
+        "ru": "Это действие выключает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 끕니다.",
+        "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
+      }
+    },
+    {
+      "id": "generic-13-button_timer",
+      "title": {
+        "en": "Activate the LED candle timer",
+        "nl": "Activate the LED candle timer",
+        "fr": "Activate the LED candle timer",
+        "de": "Activate the LED candle timer",
+        "da": "Activate the LED candle timer",
+        "es": "Activate the LED candle timer",
+        "it": "Activate the LED candle timer",
+        "no": "Activate the LED candle timer",
+        "sv": "Activate the LED candle timer",
+        "pl": "Activate the LED candle timer",
+        "ru": "Activate the LED candle timer",
+        "ko": "Activate the LED candle timer",
+        "ar": "Activate the LED candle timer"
+      },
+      "titleFormatted": {
+        "en": "Activate the LED candle timer",
+        "nl": "Activate the LED candle timer",
+        "fr": "Activate the LED candle timer",
+        "de": "Activate the LED candle timer",
+        "da": "Activate the LED candle timer",
+        "es": "Activate the LED candle timer",
+        "it": "Activate the LED candle timer",
+        "no": "Activate the LED candle timer",
+        "sv": "Activate the LED candle timer",
+        "pl": "Activate the LED candle timer",
+        "ru": "Activate the LED candle timer",
+        "ko": "Activate the LED candle timer",
+        "ar": "Activate the LED candle timer"
+      },
+      "hint": {
+        "en": "This action sends the timer command.",
+        "nl": "This action sends the timer command.",
+        "fr": "This action sends the timer command.",
+        "de": "This action sends the timer command.",
+        "da": "This action sends the timer command.",
+        "es": "This action sends the timer command.",
+        "it": "This action sends the timer command.",
+        "no": "This action sends the timer command.",
+        "sv": "This action sends the timer command.",
+        "pl": "This action sends the timer command.",
+        "ru": "This action sends the timer command.",
+        "ko": "This action sends the timer command.",
+        "ar": "This action sends the timer command."
+      }
+    },
+    {
+      "id": "generic-13-button_mode",
+      "title": {
+        "en": "Set LED candle mode",
+        "nl": "Set LED candle mode",
+        "fr": "Set LED candle mode",
+        "de": "Set LED candle mode",
+        "da": "Set LED candle mode",
+        "es": "Set LED candle mode",
+        "it": "Set LED candle mode",
+        "no": "Set LED candle mode",
+        "sv": "Set LED candle mode",
+        "pl": "Set LED candle mode",
+        "ru": "Set LED candle mode",
+        "ko": "Set LED candle mode",
+        "ar": "Set LED candle mode"
+      },
+      "titleFormatted": {
+        "en": "Set LED candle mode to [[mode_cmd]]",
+        "nl": "Set LED candle mode to [[mode_cmd]]",
+        "fr": "Set LED candle mode to [[mode_cmd]]",
+        "de": "Set LED candle mode to [[mode_cmd]]",
+        "da": "Set LED candle mode to [[mode_cmd]]",
+        "es": "Set LED candle mode to [[mode_cmd]]",
+        "it": "Set LED candle mode to [[mode_cmd]]",
+        "no": "Set LED candle mode to [[mode_cmd]]",
+        "sv": "Set LED candle mode to [[mode_cmd]]",
+        "pl": "Set LED candle mode to [[mode_cmd]]",
+        "ru": "Set LED candle mode to [[mode_cmd]]",
+        "ko": "Set LED candle mode to [[mode_cmd]]",
+        "ar": "Set LED candle mode to [[mode_cmd]]"
+      },
+      "hint": {
+        "en": "This action selects a mode.",
+        "nl": "This action selects a mode.",
+        "fr": "This action selects a mode.",
+        "de": "This action selects a mode.",
+        "da": "This action selects a mode.",
+        "es": "This action selects a mode.",
+        "it": "This action selects a mode.",
+        "no": "This action selects a mode.",
+        "sv": "This action selects a mode.",
+        "pl": "This action selects a mode.",
+        "ru": "This action selects a mode.",
+        "ko": "This action selects a mode.",
+        "ar": "This action selects a mode."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "mode_cmd",
+          "title": {
+            "en": "mode",
+            "nl": "mode",
+            "fr": "mode",
+            "de": "mode",
+            "da": "mode",
+            "es": "mode",
+            "it": "mode",
+            "no": "mode",
+            "sv": "mode",
+            "pl": "mode",
+            "ru": "mode",
+            "ko": "mode",
+            "ar": "mode"
+          },
+          "values": [
+            {
+              "id": "mode_1",
+              "title": {
+                "en": "Mode 1",
+                "nl": "Mode 1",
+                "fr": "Mode 1",
+                "de": "Mode 1",
+                "da": "Mode 1",
+                "es": "Mode 1",
+                "it": "Mode 1",
+                "no": "Mode 1",
+                "sv": "Mode 1",
+                "pl": "Mode 1",
+                "ru": "Mode 1",
+                "ko": "Mode 1",
+                "ar": "Mode 1"
+              }
+            },
+            {
+              "id": "mode_2",
+              "title": {
+                "en": "Mode 2",
+                "nl": "Mode 2",
+                "fr": "Mode 2",
+                "de": "Mode 2",
+                "da": "Mode 2",
+                "es": "Mode 2",
+                "it": "Mode 2",
+                "no": "Mode 2",
+                "sv": "Mode 2",
+                "pl": "Mode 2",
+                "ru": "Mode 2",
+                "ko": "Mode 2",
+                "ar": "Mode 2"
+              }
+            },
+            {
+              "id": "mode_3",
+              "title": {
+                "en": "Mode 3",
+                "nl": "Mode 3",
+                "fr": "Mode 3",
+                "de": "Mode 3",
+                "da": "Mode 3",
+                "es": "Mode 3",
+                "it": "Mode 3",
+                "no": "Mode 3",
+                "sv": "Mode 3",
+                "pl": "Mode 3",
+                "ru": "Mode 3",
+                "ko": "Mode 3",
+                "ar": "Mode 3"
+              }
+            },
+            {
+              "id": "mode_4",
+              "title": {
+                "en": "Mode 4",
+                "nl": "Mode 4",
+                "fr": "Mode 4",
+                "de": "Mode 4",
+                "da": "Mode 4",
+                "es": "Mode 4",
+                "it": "Mode 4",
+                "no": "Mode 4",
+                "sv": "Mode 4",
+                "pl": "Mode 4",
+                "ru": "Mode 4",
+                "ko": "Mode 4",
+                "ar": "Mode 4"
+              }
+            },
+            {
+              "id": "mode_5",
+              "title": {
+                "en": "Mode 5",
+                "nl": "Mode 5",
+                "fr": "Mode 5",
+                "de": "Mode 5",
+                "da": "Mode 5",
+                "es": "Mode 5",
+                "it": "Mode 5",
+                "no": "Mode 5",
+                "sv": "Mode 5",
+                "pl": "Mode 5",
+                "ru": "Mode 5",
+                "ko": "Mode 5",
+                "ar": "Mode 5"
+              }
+            },
+            {
+              "id": "mode_6",
+              "title": {
+                "en": "Mode 6",
+                "nl": "Mode 6",
+                "fr": "Mode 6",
+                "de": "Mode 6",
+                "da": "Mode 6",
+                "es": "Mode 6",
+                "it": "Mode 6",
+                "no": "Mode 6",
+                "sv": "Mode 6",
+                "pl": "Mode 6",
+                "ru": "Mode 6",
+                "ko": "Mode 6",
+                "ar": "Mode 6"
+              }
+            },
+            {
+              "id": "mode_7",
+              "title": {
+                "en": "Mode 7",
+                "nl": "Mode 7",
+                "fr": "Mode 7",
+                "de": "Mode 7",
+                "da": "Mode 7",
+                "es": "Mode 7",
+                "it": "Mode 7",
+                "no": "Mode 7",
+                "sv": "Mode 7",
+                "pl": "Mode 7",
+                "ru": "Mode 7",
+                "ko": "Mode 7",
+                "ar": "Mode 7"
+              }
+            },
+            {
+              "id": "mode_8",
+              "title": {
+                "en": "Mode 8",
+                "nl": "Mode 8",
+                "fr": "Mode 8",
+                "de": "Mode 8",
+                "da": "Mode 8",
+                "es": "Mode 8",
+                "it": "Mode 8",
+                "no": "Mode 8",
+                "sv": "Mode 8",
+                "pl": "Mode 8",
+                "ru": "Mode 8",
+                "ko": "Mode 8",
+                "ar": "Mode 8"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "generic-13-button_brightness",
+      "title": {
+        "en": "Adjust LED candle brightness",
+        "nl": "Adjust LED candle brightness",
+        "fr": "Adjust LED candle brightness",
+        "de": "Adjust LED candle brightness",
+        "da": "Adjust LED candle brightness",
+        "es": "Adjust LED candle brightness",
+        "it": "Adjust LED candle brightness",
+        "no": "Adjust LED candle brightness",
+        "sv": "Adjust LED candle brightness",
+        "pl": "Adjust LED candle brightness",
+        "ru": "Adjust LED candle brightness",
+        "ko": "Adjust LED candle brightness",
+        "ar": "Adjust LED candle brightness"
+      },
+      "titleFormatted": {
+        "en": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "nl": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "fr": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "de": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "da": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "es": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "it": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "no": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "sv": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "pl": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "ru": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "ko": "Adjust LED candle brightness: [[brightness_cmd]]",
+        "ar": "Adjust LED candle brightness: [[brightness_cmd]]"
+      },
+      "hint": {
+        "en": "This action sends the brightness command.",
+        "nl": "This action sends the brightness command.",
+        "fr": "This action sends the brightness command.",
+        "de": "This action sends the brightness command.",
+        "da": "This action sends the brightness command.",
+        "es": "This action sends the brightness command.",
+        "it": "This action sends the brightness command.",
+        "no": "This action sends the brightness command.",
+        "sv": "This action sends the brightness command.",
+        "pl": "This action sends the brightness command.",
+        "ru": "This action sends the brightness command.",
+        "ko": "This action sends the brightness command.",
+        "ar": "This action sends the brightness command."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "brightness_cmd",
+          "title": {
+            "en": "brightness",
+            "nl": "brightness",
+            "fr": "brightness",
+            "de": "brightness",
+            "da": "brightness",
+            "es": "brightness",
+            "it": "brightness",
+            "no": "brightness",
+            "sv": "brightness",
+            "pl": "brightness",
+            "ru": "brightness",
+            "ko": "brightness",
+            "ar": "brightness"
+          },
+          "values": [
+            {
+              "id": "dim_down",
+              "title": {
+                "en": "Brightness -",
+                "nl": "Brightness -",
+                "fr": "Brightness -",
+                "de": "Brightness -",
+                "da": "Brightness -",
+                "es": "Brightness -",
+                "it": "Brightness -",
+                "no": "Brightness -",
+                "sv": "Brightness -",
+                "pl": "Brightness -",
+                "ru": "Brightness -",
+                "ko": "Brightness -",
+                "ar": "Brightness -"
+              }
+            },
+            {
+              "id": "dim_up",
+              "title": {
+                "en": "Brightness +",
+                "nl": "Brightness +",
+                "fr": "Brightness +",
+                "de": "Brightness +",
+                "da": "Brightness +",
+                "es": "Brightness +",
+                "it": "Brightness +",
+                "no": "Brightness +",
+                "sv": "Brightness +",
+                "pl": "Brightness +",
+                "ru": "Brightness +",
+                "ko": "Brightness +",
+                "ar": "Brightness +"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "name": {
+    "en": "Generic 13 Button",
+    "nl": "Algemene 13 Knoppen",
+    "fr": "Générique 13 Boutons",
+    "de": "Generische 13 Tasten",
+    "da": "Generisk 13 Knapper",
+    "es": "Genérico 13 Botones",
+    "it": "Generico 13 Bottoni",
+    "no": "Generisk 13 Knapper",
+    "sv": "Generisk 13 Knappar",
+    "pl": "Generisk 13 Przycisków",
+    "ru": "Генерик 13 Кнопок",
+    "ko": "일반 13 버튼",
+    "ar": "زر 13 عام"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "button.on",
+    "button.off",
+    "button.timer",
+    "button.mode_1",
+    "button.mode_2",
+    "button.mode_3",
+    "button.mode_4",
+    "button.mode_5",
+    "button.mode_6",
+    "button.mode_7",
+    "button.mode_8",
+    "button.dim_down",
+    "button.dim_up"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "uiQuickAction": true
+    },
+    "button.on": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "On",
+        "nl": "Aan",
+        "fr": "Allumer",
+        "de": "An",
+        "da": "Tænd",
+        "es": "Encender",
+        "it": "Accendi",
+        "no": "På",
+        "sv": "På",
+        "pl": "Włącz",
+        "ru": "Вкл.",
+        "ko": "켜기",
+        "ar": "تشغيل"
+      }
+    },
+    "button.off": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "fr": "Éteindre",
+        "de": "Aus",
+        "da": "Sluk",
+        "es": "Apagar",
+        "it": "Spegni",
+        "no": "Av",
+        "sv": "Av",
+        "pl": "Wyłącz",
+        "ru": "Выкл.",
+        "ko": "끄기",
+        "ar": "إيقاف"
+      }
+    },
+    "button.timer": {
+      "title": {
+        "en": "Timer",
+        "nl": "Timer",
+        "fr": "Timer",
+        "de": "Timer",
+        "da": "Timer",
+        "es": "Temporizador",
+        "it": "Timer",
+        "no": "Timer",
+        "sv": "Timer",
+        "pl": "Timer",
+        "ru": "Timer",
+        "ko": "Timer",
+        "ar": "Timer"
+      }
+    },
+    "button.mode_1": {
+      "title": {
+        "en": "Mode 1",
+        "nl": "Mode 1",
+        "fr": "Mode 1",
+        "de": "Mode 1",
+        "da": "Mode 1",
+        "es": "Mode 1",
+        "it": "Mode 1",
+        "no": "Mode 1",
+        "sv": "Mode 1",
+        "pl": "Mode 1",
+        "ru": "Mode 1",
+        "ko": "Mode 1",
+        "ar": "Mode 1"
+      }
+    },
+    "button.mode_2": {
+      "title": {
+        "en": "Mode 2",
+        "nl": "Mode 2",
+        "fr": "Mode 2",
+        "de": "Mode 2",
+        "da": "Mode 2",
+        "es": "Mode 2",
+        "it": "Mode 2",
+        "no": "Mode 2",
+        "sv": "Mode 2",
+        "pl": "Mode 2",
+        "ru": "Mode 2",
+        "ko": "Mode 2",
+        "ar": "Mode 2"
+      }
+    },
+    "button.mode_3": {
+      "title": {
+        "en": "Mode 3",
+        "nl": "Mode 3",
+        "fr": "Mode 3",
+        "de": "Mode 3",
+        "da": "Mode 3",
+        "es": "Mode 3",
+        "it": "Mode 3",
+        "no": "Mode 3",
+        "sv": "Mode 3",
+        "pl": "Mode 3",
+        "ru": "Mode 3",
+        "ko": "Mode 3",
+        "ar": "Mode 3"
+      }
+    },
+    "button.mode_4": {
+      "title": {
+        "en": "Mode 4",
+        "nl": "Mode 4",
+        "fr": "Mode 4",
+        "de": "Mode 4",
+        "da": "Mode 4",
+        "es": "Mode 4",
+        "it": "Mode 4",
+        "no": "Mode 4",
+        "sv": "Mode 4",
+        "pl": "Mode 4",
+        "ru": "Mode 4",
+        "ko": "Mode 4",
+        "ar": "Mode 4"
+      }
+    },
+    "button.mode_5": {
+      "title": {
+        "en": "Mode 5",
+        "nl": "Mode 5",
+        "fr": "Mode 5",
+        "de": "Mode 5",
+        "da": "Mode 5",
+        "es": "Mode 5",
+        "it": "Mode 5",
+        "no": "Mode 5",
+        "sv": "Mode 5",
+        "pl": "Mode 5",
+        "ru": "Mode 5",
+        "ko": "Mode 5",
+        "ar": "Mode 5"
+      }
+    },
+    "button.mode_6": {
+      "title": {
+        "en": "Mode 6",
+        "nl": "Mode 6",
+        "fr": "Mode 6",
+        "de": "Mode 6",
+        "da": "Mode 6",
+        "es": "Mode 6",
+        "it": "Mode 6",
+        "no": "Mode 6",
+        "sv": "Mode 6",
+        "pl": "Mode 6",
+        "ru": "Mode 6",
+        "ko": "Mode 6",
+        "ar": "Mode 6"
+      }
+    },
+    "button.mode_7": {
+      "title": {
+        "en": "Mode 7",
+        "nl": "Mode 7",
+        "fr": "Mode 7",
+        "de": "Mode 7",
+        "da": "Mode 7",
+        "es": "Mode 7",
+        "it": "Mode 7",
+        "no": "Mode 7",
+        "sv": "Mode 7",
+        "pl": "Mode 7",
+        "ru": "Mode 7",
+        "ko": "Mode 7",
+        "ar": "Mode 7"
+      }
+    },
+    "button.mode_8": {
+      "title": {
+        "en": "Mode 8",
+        "nl": "Mode 8",
+        "fr": "Mode 8",
+        "de": "Mode 8",
+        "da": "Mode 8",
+        "es": "Mode 8",
+        "it": "Mode 8",
+        "no": "Mode 8",
+        "sv": "Mode 8",
+        "pl": "Mode 8",
+        "ru": "Mode 8",
+        "ko": "Mode 8",
+        "ar": "Mode 8"
+      }
+    },
+    "button.dim_down": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Brightness -",
+        "nl": "Brightness -",
+        "fr": "Brightness -",
+        "de": "Brightness -",
+        "da": "Brightness -",
+        "es": "Brightness -",
+        "it": "Brightness -",
+        "no": "Brightness -",
+        "sv": "Brightness -",
+        "pl": "Brightness -",
+        "ru": "Brightness -",
+        "ko": "Brightness -",
+        "ar": "Brightness -"
+      }
+    },
+    "button.dim_up": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Brightness +",
+        "nl": "Brightness +",
+        "fr": "Brightness +",
+        "de": "Brightness +",
+        "da": "Brightness +",
+        "es": "Brightness +",
+        "it": "Brightness +",
+        "no": "Brightness +",
+        "sv": "Brightness +",
+        "pl": "Brightness +",
+        "ru": "Brightness +",
+        "ko": "Brightness +",
+        "ar": "Brightness +"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "device_add_custom",
+      "options": {
+        "title": "drivers.base.pair_title",
+        "instruction": "drivers.common.pair_instruction",
+        "deviceIdPrefix": "led_candle_",
+        "defaultDeviceName": {
+          "en": "Generic 13 Button",
+          "nl": "Generic 13 Button",
+          "fr": "Generic 13 Button",
+          "de": "Generic 13 Button",
+          "da": "Generic 13 Button",
+          "es": "Generic 13 Button",
+          "it": "Generic 13 Button",
+          "no": "Generic 13 Button",
+          "sv": "Generic 13 Button",
+          "pl": "Generic 13 Button",
+          "ru": "Generic 13 Button",
+          "ko": "Generic 13 Button",
+          "ar": "Generic 13 Button"
+        }
+      }
+    }
+  ]
+}

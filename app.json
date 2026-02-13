@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.stephanschuurman.candlelight",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "compatibility": ">=12.9.0",
   "sdk": 3,
   "platforms": [
@@ -236,6 +236,7 @@
   "bugs": {
     "url": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight/issues"
   },
+  "homepage": "https://dev.stephanschuurman.com/candlelight/",
   "flow": {
     "actions": [
       {
@@ -1659,6 +1660,503 @@
                   "ru": "8 часов",
                   "ko": "8시간",
                   "ar": "8 ساعات"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "generic-13-button_on",
+        "title": {
+          "en": "Switch LED candles on",
+          "nl": "Zet de LED kaarsen aan",
+          "fr": "Allumer les bougies LED",
+          "de": "LED-Kerzen einschalten",
+          "da": "Tænd LED-lysene",
+          "es": "Enciende las velas LED",
+          "it": "Accendi le candele LED",
+          "no": "Slå på LED-lysene",
+          "sv": "Slå på LED-ljusen",
+          "pl": "Włącz świece LED",
+          "ru": "Включить светодиодные свечи",
+          "ko": "LED 캔들을 켭니다",
+          "ar": "تشغيل شموع LED"
+        },
+        "titleFormatted": {
+          "en": "Switch the LED candles on",
+          "nl": "Zet de LED kaarsen aan",
+          "fr": "Allumer les bougies LED",
+          "de": "LED-Kerzen einschalten",
+          "da": "Tænd LED-lysene",
+          "es": "Enciende las velas LED",
+          "it": "Accendi le candele LED",
+          "no": "Slå på LED-lysene",
+          "sv": "Slå på LED-ljusen",
+          "pl": "Włącz świece LED",
+          "ru": "Включить светодиодные свечи",
+          "ko": "LED 캔들을 켭니다",
+          "ar": "تشغيل شموع LED"
+        },
+        "hint": {
+          "en": "This action switches the LED candles on.",
+          "nl": "Deze actie zet de LED kaarsen aan.",
+          "fr": "Cette action allume les bougies LED.",
+          "de": "Diese Aktion schaltet die LED-Kerzen ein.",
+          "da": "Denne handling tænder LED-lysene.",
+          "es": "Esta acción enciende las velas LED.",
+          "it": "Questa azione accende le candele LED.",
+          "no": "Denne handlingen slår på LED-lysene.",
+          "sv": "Den här åtgärden slår på LED-ljusen.",
+          "pl": "Ta akcja włącza świece LED.",
+          "ru": "Это действие включает светодиодные свечи.",
+          "ko": "이 작업은 LED 캔들을 켭니다.",
+          "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=generic-13-button"
+          }
+        ]
+      },
+      {
+        "id": "generic-13-button_off",
+        "title": {
+          "en": "Switch LED candles off",
+          "nl": "Zet de LED kaarsen uit",
+          "fr": "Éteindre les bougies LED",
+          "de": "LED-Kerzen ausschalten",
+          "da": "Sluk LED-lysene",
+          "es": "Apaga las velas LED",
+          "it": "Spegni le candele LED",
+          "no": "Slå av LED-lysene",
+          "sv": "Slå av LED-ljusen",
+          "pl": "Wyłącz świece LED",
+          "ru": "Выключить светодиодные свечи",
+          "ko": "LED 캔들을 끕니다",
+          "ar": "إيقاف تشغيل شموع LED"
+        },
+        "titleFormatted": {
+          "en": "Switch the LED candles off",
+          "nl": "Zet de LED kaarsen uit",
+          "fr": "Éteindre les bougies LED",
+          "de": "LED-Kerzen ausschalten",
+          "da": "Sluk LED-lysene",
+          "es": "Apaga las velas LED",
+          "it": "Spegni le candele LED",
+          "no": "Slå av LED-lysene",
+          "sv": "Slå av LED-ljusen",
+          "pl": "Wyłącz świece LED",
+          "ru": "Выключить светодиодные свечи",
+          "ko": "LED 캔들을 끕니다",
+          "ar": "إيقاف تشغيل شموع LED"
+        },
+        "hint": {
+          "en": "This action switches the LED candles off.",
+          "nl": "Deze actie zet de LED kaarsen uit.",
+          "fr": "Cette action éteint les bougies LED.",
+          "de": "Diese Aktion schaltet die LED-Kerzen aus.",
+          "da": "Denne handling slukker LED-lysene.",
+          "es": "Esta acción apaga las velas LED.",
+          "it": "Questa azione spegne le candele LED.",
+          "no": "Denne handlingen slår av LED-lysene.",
+          "sv": "Den här åtgärden slår av LED-ljusen.",
+          "pl": "Ta akcja wyłącza świece LED.",
+          "ru": "Это действие выключает светодиодные свечи.",
+          "ko": "이 작업은 LED 캔들을 끕니다.",
+          "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=generic-13-button"
+          }
+        ]
+      },
+      {
+        "id": "generic-13-button_timer",
+        "title": {
+          "en": "Activate the LED candle timer",
+          "nl": "Activate the LED candle timer",
+          "fr": "Activate the LED candle timer",
+          "de": "Activate the LED candle timer",
+          "da": "Activate the LED candle timer",
+          "es": "Activate the LED candle timer",
+          "it": "Activate the LED candle timer",
+          "no": "Activate the LED candle timer",
+          "sv": "Activate the LED candle timer",
+          "pl": "Activate the LED candle timer",
+          "ru": "Activate the LED candle timer",
+          "ko": "Activate the LED candle timer",
+          "ar": "Activate the LED candle timer"
+        },
+        "titleFormatted": {
+          "en": "Activate the LED candle timer",
+          "nl": "Activate the LED candle timer",
+          "fr": "Activate the LED candle timer",
+          "de": "Activate the LED candle timer",
+          "da": "Activate the LED candle timer",
+          "es": "Activate the LED candle timer",
+          "it": "Activate the LED candle timer",
+          "no": "Activate the LED candle timer",
+          "sv": "Activate the LED candle timer",
+          "pl": "Activate the LED candle timer",
+          "ru": "Activate the LED candle timer",
+          "ko": "Activate the LED candle timer",
+          "ar": "Activate the LED candle timer"
+        },
+        "hint": {
+          "en": "This action sends the timer command.",
+          "nl": "This action sends the timer command.",
+          "fr": "This action sends the timer command.",
+          "de": "This action sends the timer command.",
+          "da": "This action sends the timer command.",
+          "es": "This action sends the timer command.",
+          "it": "This action sends the timer command.",
+          "no": "This action sends the timer command.",
+          "sv": "This action sends the timer command.",
+          "pl": "This action sends the timer command.",
+          "ru": "This action sends the timer command.",
+          "ko": "This action sends the timer command.",
+          "ar": "This action sends the timer command."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=generic-13-button"
+          }
+        ]
+      },
+      {
+        "id": "generic-13-button_mode",
+        "title": {
+          "en": "Set LED candle mode",
+          "nl": "Set LED candle mode",
+          "fr": "Set LED candle mode",
+          "de": "Set LED candle mode",
+          "da": "Set LED candle mode",
+          "es": "Set LED candle mode",
+          "it": "Set LED candle mode",
+          "no": "Set LED candle mode",
+          "sv": "Set LED candle mode",
+          "pl": "Set LED candle mode",
+          "ru": "Set LED candle mode",
+          "ko": "Set LED candle mode",
+          "ar": "Set LED candle mode"
+        },
+        "titleFormatted": {
+          "en": "Set LED candle mode to [[mode_cmd]]",
+          "nl": "Set LED candle mode to [[mode_cmd]]",
+          "fr": "Set LED candle mode to [[mode_cmd]]",
+          "de": "Set LED candle mode to [[mode_cmd]]",
+          "da": "Set LED candle mode to [[mode_cmd]]",
+          "es": "Set LED candle mode to [[mode_cmd]]",
+          "it": "Set LED candle mode to [[mode_cmd]]",
+          "no": "Set LED candle mode to [[mode_cmd]]",
+          "sv": "Set LED candle mode to [[mode_cmd]]",
+          "pl": "Set LED candle mode to [[mode_cmd]]",
+          "ru": "Set LED candle mode to [[mode_cmd]]",
+          "ko": "Set LED candle mode to [[mode_cmd]]",
+          "ar": "Set LED candle mode to [[mode_cmd]]"
+        },
+        "hint": {
+          "en": "This action selects a mode.",
+          "nl": "This action selects a mode.",
+          "fr": "This action selects a mode.",
+          "de": "This action selects a mode.",
+          "da": "This action selects a mode.",
+          "es": "This action selects a mode.",
+          "it": "This action selects a mode.",
+          "no": "This action selects a mode.",
+          "sv": "This action selects a mode.",
+          "pl": "This action selects a mode.",
+          "ru": "This action selects a mode.",
+          "ko": "This action selects a mode.",
+          "ar": "This action selects a mode."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=generic-13-button"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode_cmd",
+            "title": {
+              "en": "mode",
+              "nl": "mode",
+              "fr": "mode",
+              "de": "mode",
+              "da": "mode",
+              "es": "mode",
+              "it": "mode",
+              "no": "mode",
+              "sv": "mode",
+              "pl": "mode",
+              "ru": "mode",
+              "ko": "mode",
+              "ar": "mode"
+            },
+            "values": [
+              {
+                "id": "mode_1",
+                "title": {
+                  "en": "Mode 1",
+                  "nl": "Mode 1",
+                  "fr": "Mode 1",
+                  "de": "Mode 1",
+                  "da": "Mode 1",
+                  "es": "Mode 1",
+                  "it": "Mode 1",
+                  "no": "Mode 1",
+                  "sv": "Mode 1",
+                  "pl": "Mode 1",
+                  "ru": "Mode 1",
+                  "ko": "Mode 1",
+                  "ar": "Mode 1"
+                }
+              },
+              {
+                "id": "mode_2",
+                "title": {
+                  "en": "Mode 2",
+                  "nl": "Mode 2",
+                  "fr": "Mode 2",
+                  "de": "Mode 2",
+                  "da": "Mode 2",
+                  "es": "Mode 2",
+                  "it": "Mode 2",
+                  "no": "Mode 2",
+                  "sv": "Mode 2",
+                  "pl": "Mode 2",
+                  "ru": "Mode 2",
+                  "ko": "Mode 2",
+                  "ar": "Mode 2"
+                }
+              },
+              {
+                "id": "mode_3",
+                "title": {
+                  "en": "Mode 3",
+                  "nl": "Mode 3",
+                  "fr": "Mode 3",
+                  "de": "Mode 3",
+                  "da": "Mode 3",
+                  "es": "Mode 3",
+                  "it": "Mode 3",
+                  "no": "Mode 3",
+                  "sv": "Mode 3",
+                  "pl": "Mode 3",
+                  "ru": "Mode 3",
+                  "ko": "Mode 3",
+                  "ar": "Mode 3"
+                }
+              },
+              {
+                "id": "mode_4",
+                "title": {
+                  "en": "Mode 4",
+                  "nl": "Mode 4",
+                  "fr": "Mode 4",
+                  "de": "Mode 4",
+                  "da": "Mode 4",
+                  "es": "Mode 4",
+                  "it": "Mode 4",
+                  "no": "Mode 4",
+                  "sv": "Mode 4",
+                  "pl": "Mode 4",
+                  "ru": "Mode 4",
+                  "ko": "Mode 4",
+                  "ar": "Mode 4"
+                }
+              },
+              {
+                "id": "mode_5",
+                "title": {
+                  "en": "Mode 5",
+                  "nl": "Mode 5",
+                  "fr": "Mode 5",
+                  "de": "Mode 5",
+                  "da": "Mode 5",
+                  "es": "Mode 5",
+                  "it": "Mode 5",
+                  "no": "Mode 5",
+                  "sv": "Mode 5",
+                  "pl": "Mode 5",
+                  "ru": "Mode 5",
+                  "ko": "Mode 5",
+                  "ar": "Mode 5"
+                }
+              },
+              {
+                "id": "mode_6",
+                "title": {
+                  "en": "Mode 6",
+                  "nl": "Mode 6",
+                  "fr": "Mode 6",
+                  "de": "Mode 6",
+                  "da": "Mode 6",
+                  "es": "Mode 6",
+                  "it": "Mode 6",
+                  "no": "Mode 6",
+                  "sv": "Mode 6",
+                  "pl": "Mode 6",
+                  "ru": "Mode 6",
+                  "ko": "Mode 6",
+                  "ar": "Mode 6"
+                }
+              },
+              {
+                "id": "mode_7",
+                "title": {
+                  "en": "Mode 7",
+                  "nl": "Mode 7",
+                  "fr": "Mode 7",
+                  "de": "Mode 7",
+                  "da": "Mode 7",
+                  "es": "Mode 7",
+                  "it": "Mode 7",
+                  "no": "Mode 7",
+                  "sv": "Mode 7",
+                  "pl": "Mode 7",
+                  "ru": "Mode 7",
+                  "ko": "Mode 7",
+                  "ar": "Mode 7"
+                }
+              },
+              {
+                "id": "mode_8",
+                "title": {
+                  "en": "Mode 8",
+                  "nl": "Mode 8",
+                  "fr": "Mode 8",
+                  "de": "Mode 8",
+                  "da": "Mode 8",
+                  "es": "Mode 8",
+                  "it": "Mode 8",
+                  "no": "Mode 8",
+                  "sv": "Mode 8",
+                  "pl": "Mode 8",
+                  "ru": "Mode 8",
+                  "ko": "Mode 8",
+                  "ar": "Mode 8"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "generic-13-button_brightness",
+        "title": {
+          "en": "Adjust LED candle brightness",
+          "nl": "Adjust LED candle brightness",
+          "fr": "Adjust LED candle brightness",
+          "de": "Adjust LED candle brightness",
+          "da": "Adjust LED candle brightness",
+          "es": "Adjust LED candle brightness",
+          "it": "Adjust LED candle brightness",
+          "no": "Adjust LED candle brightness",
+          "sv": "Adjust LED candle brightness",
+          "pl": "Adjust LED candle brightness",
+          "ru": "Adjust LED candle brightness",
+          "ko": "Adjust LED candle brightness",
+          "ar": "Adjust LED candle brightness"
+        },
+        "titleFormatted": {
+          "en": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "nl": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "fr": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "de": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "da": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "es": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "it": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "no": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "sv": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "pl": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "ru": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "ko": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "ar": "Adjust LED candle brightness: [[brightness_cmd]]"
+        },
+        "hint": {
+          "en": "This action sends the brightness command.",
+          "nl": "This action sends the brightness command.",
+          "fr": "This action sends the brightness command.",
+          "de": "This action sends the brightness command.",
+          "da": "This action sends the brightness command.",
+          "es": "This action sends the brightness command.",
+          "it": "This action sends the brightness command.",
+          "no": "This action sends the brightness command.",
+          "sv": "This action sends the brightness command.",
+          "pl": "This action sends the brightness command.",
+          "ru": "This action sends the brightness command.",
+          "ko": "This action sends the brightness command.",
+          "ar": "This action sends the brightness command."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=generic-13-button"
+          },
+          {
+            "type": "dropdown",
+            "name": "brightness_cmd",
+            "title": {
+              "en": "brightness",
+              "nl": "brightness",
+              "fr": "brightness",
+              "de": "brightness",
+              "da": "brightness",
+              "es": "brightness",
+              "it": "brightness",
+              "no": "brightness",
+              "sv": "brightness",
+              "pl": "brightness",
+              "ru": "brightness",
+              "ko": "brightness",
+              "ar": "brightness"
+            },
+            "values": [
+              {
+                "id": "dim_down",
+                "title": {
+                  "en": "Brightness -",
+                  "nl": "Brightness -",
+                  "fr": "Brightness -",
+                  "de": "Brightness -",
+                  "da": "Brightness -",
+                  "es": "Brightness -",
+                  "it": "Brightness -",
+                  "no": "Brightness -",
+                  "sv": "Brightness -",
+                  "pl": "Brightness -",
+                  "ru": "Brightness -",
+                  "ko": "Brightness -",
+                  "ar": "Brightness -"
+                }
+              },
+              {
+                "id": "dim_up",
+                "title": {
+                  "en": "Brightness +",
+                  "nl": "Brightness +",
+                  "fr": "Brightness +",
+                  "de": "Brightness +",
+                  "da": "Brightness +",
+                  "es": "Brightness +",
+                  "it": "Brightness +",
+                  "no": "Brightness +",
+                  "sv": "Brightness +",
+                  "pl": "Brightness +",
+                  "ru": "Brightness +",
+                  "ko": "Brightness +",
+                  "ar": "Brightness +"
                 }
               }
             ]
@@ -3777,6 +4275,405 @@
                 "ar": "عند تفعيل مؤقت (x ساعة)، أرسل أولاً أمر تشغيل (ON) للتأكد من أن الجهاز قيد التشغيل."
               },
               "value": true
+            },
+            {
+              "id": "swap_on_off_commands",
+              "type": "checkbox",
+              "label": {
+                "en": "Swap ON and OFF commands",
+                "nl": "Wissel AAN- en UIT-commando's om",
+                "fr": "Inverser les commandes ON et OFF",
+                "de": "AN- und AUS-Befehle tauschen",
+                "da": "Byt TÆND- og SLUK-kommandoer om",
+                "es": "Intercambiar comandos de ENCENDER y APAGAR",
+                "it": "Scambia i comandi ACCENSIONE e SPEGNIMENTO",
+                "no": "Bytt PÅ- og AV-kommandoer",
+                "sv": "Byt PÅ- och AV-kommandon",
+                "pl": "Zamień komendy WŁĄCZ i WYŁĄCZ",
+                "ru": "Поменять местами команды ВКЛ и ВЫКЛ",
+                "ko": "켜기(ON)와 끄기(OFF) 명령 바꾸기",
+                "ar": "تبديل أوامر التشغيل (ON) والإيقاف (OFF)"
+              },
+              "hint": {
+                "en": "Enable this if the remote's ON and OFF buttons are reversed for this device.",
+                "nl": "Schakel dit in als de AAN- en UIT-knoppen van de afstandsbediening voor dit apparaat omgedraaid zijn.",
+                "fr": "Activez ceci si les boutons ON et OFF de la télécommande sont inversés pour cet appareil.",
+                "de": "Aktivieren, wenn die AN- und AUS-Tasten der Fernbedienung für dieses Gerät vertauscht sind.",
+                "da": "Aktivér dette, hvis fjernbetjeningens TÆND- og SLUK-knapper er byttet om for denne enhed.",
+                "es": "Actívalo si los botones de ENCENDER y APAGAR del mando están invertidos para este dispositivo.",
+                "it": "Attivalo se i pulsanti ACCENSIONE e SPEGNIMENTO del telecomando sono invertiti per questo dispositivo.",
+                "no": "Aktiver dette hvis fjernkontrollens PÅ- og AV-knapper er byttet om for denne enheten.",
+                "sv": "Aktivera detta om fjärrkontrollens PÅ- och AV-knappar är omkastade för den här enheten.",
+                "pl": "Włącz, jeśli przyciski WŁĄCZ i WYŁĄCZ na pilocie są zamienione dla tego urządzenia.",
+                "ru": "Включите, если кнопки ВКЛ и ВЫКЛ на пульте для этого устройства перепутаны.",
+                "ko": "이 기기에서 리모컨의 켜기(ON)와 끄기(OFF) 버튼이 반대로 동작하면 켜세요.",
+                "ar": "فعّل هذا إذا كانت أزرار التشغيل (ON) والإيقاف (OFF) في جهاز التحكم معكوسة لهذا الجهاز."
+              },
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Generic 13 Button",
+        "nl": "Generic 13 Button",
+        "fr": "Generic 13 Button",
+        "de": "Generic 13 Button",
+        "da": "Generic 13 Button",
+        "es": "Generic 13 Button",
+        "it": "Generic 13 Button",
+        "no": "Generic 13 Button",
+        "sv": "Generic 13 Button",
+        "pl": "Generic 13 Button",
+        "ru": "Generic 13 Button",
+        "ko": "Generic 13 Button",
+        "ar": "Generic 13 Button"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "button.on",
+        "button.off",
+        "button.timer",
+        "button.mode_1",
+        "button.mode_2",
+        "button.mode_3",
+        "button.mode_4",
+        "button.mode_5",
+        "button.mode_6",
+        "button.mode_7",
+        "button.mode_8",
+        "button.dim_down",
+        "button.dim_up"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "uiQuickAction": true
+        },
+        "button.on": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "fr": "Allumer",
+            "de": "An",
+            "da": "Tænd",
+            "es": "Encender",
+            "it": "Accendi",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włącz",
+            "ru": "Вкл.",
+            "ko": "켜기",
+            "ar": "تشغيل"
+          }
+        },
+        "button.off": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "fr": "Éteindre",
+            "de": "Aus",
+            "da": "Sluk",
+            "es": "Apagar",
+            "it": "Spegni",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłącz",
+            "ru": "Выкл.",
+            "ko": "끄기",
+            "ar": "إيقاف"
+          }
+        },
+        "button.timer": {
+          "title": {
+            "en": "Timer",
+            "nl": "Timer",
+            "fr": "Timer",
+            "de": "Timer",
+            "da": "Timer",
+            "es": "Temporizador",
+            "it": "Timer",
+            "no": "Timer",
+            "sv": "Timer",
+            "pl": "Timer",
+            "ru": "Timer",
+            "ko": "Timer",
+            "ar": "Timer"
+          }
+        },
+        "button.mode_1": {
+          "title": {
+            "en": "Mode 1",
+            "nl": "Mode 1",
+            "fr": "Mode 1",
+            "de": "Mode 1",
+            "da": "Mode 1",
+            "es": "Mode 1",
+            "it": "Mode 1",
+            "no": "Mode 1",
+            "sv": "Mode 1",
+            "pl": "Mode 1",
+            "ru": "Mode 1",
+            "ko": "Mode 1",
+            "ar": "Mode 1"
+          }
+        },
+        "button.mode_2": {
+          "title": {
+            "en": "Mode 2",
+            "nl": "Mode 2",
+            "fr": "Mode 2",
+            "de": "Mode 2",
+            "da": "Mode 2",
+            "es": "Mode 2",
+            "it": "Mode 2",
+            "no": "Mode 2",
+            "sv": "Mode 2",
+            "pl": "Mode 2",
+            "ru": "Mode 2",
+            "ko": "Mode 2",
+            "ar": "Mode 2"
+          }
+        },
+        "button.mode_3": {
+          "title": {
+            "en": "Mode 3",
+            "nl": "Mode 3",
+            "fr": "Mode 3",
+            "de": "Mode 3",
+            "da": "Mode 3",
+            "es": "Mode 3",
+            "it": "Mode 3",
+            "no": "Mode 3",
+            "sv": "Mode 3",
+            "pl": "Mode 3",
+            "ru": "Mode 3",
+            "ko": "Mode 3",
+            "ar": "Mode 3"
+          }
+        },
+        "button.mode_4": {
+          "title": {
+            "en": "Mode 4",
+            "nl": "Mode 4",
+            "fr": "Mode 4",
+            "de": "Mode 4",
+            "da": "Mode 4",
+            "es": "Mode 4",
+            "it": "Mode 4",
+            "no": "Mode 4",
+            "sv": "Mode 4",
+            "pl": "Mode 4",
+            "ru": "Mode 4",
+            "ko": "Mode 4",
+            "ar": "Mode 4"
+          }
+        },
+        "button.mode_5": {
+          "title": {
+            "en": "Mode 5",
+            "nl": "Mode 5",
+            "fr": "Mode 5",
+            "de": "Mode 5",
+            "da": "Mode 5",
+            "es": "Mode 5",
+            "it": "Mode 5",
+            "no": "Mode 5",
+            "sv": "Mode 5",
+            "pl": "Mode 5",
+            "ru": "Mode 5",
+            "ko": "Mode 5",
+            "ar": "Mode 5"
+          }
+        },
+        "button.mode_6": {
+          "title": {
+            "en": "Mode 6",
+            "nl": "Mode 6",
+            "fr": "Mode 6",
+            "de": "Mode 6",
+            "da": "Mode 6",
+            "es": "Mode 6",
+            "it": "Mode 6",
+            "no": "Mode 6",
+            "sv": "Mode 6",
+            "pl": "Mode 6",
+            "ru": "Mode 6",
+            "ko": "Mode 6",
+            "ar": "Mode 6"
+          }
+        },
+        "button.mode_7": {
+          "title": {
+            "en": "Mode 7",
+            "nl": "Mode 7",
+            "fr": "Mode 7",
+            "de": "Mode 7",
+            "da": "Mode 7",
+            "es": "Mode 7",
+            "it": "Mode 7",
+            "no": "Mode 7",
+            "sv": "Mode 7",
+            "pl": "Mode 7",
+            "ru": "Mode 7",
+            "ko": "Mode 7",
+            "ar": "Mode 7"
+          }
+        },
+        "button.mode_8": {
+          "title": {
+            "en": "Mode 8",
+            "nl": "Mode 8",
+            "fr": "Mode 8",
+            "de": "Mode 8",
+            "da": "Mode 8",
+            "es": "Mode 8",
+            "it": "Mode 8",
+            "no": "Mode 8",
+            "sv": "Mode 8",
+            "pl": "Mode 8",
+            "ru": "Mode 8",
+            "ko": "Mode 8",
+            "ar": "Mode 8"
+          }
+        },
+        "button.dim_down": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Brightness -",
+            "nl": "Brightness -",
+            "fr": "Brightness -",
+            "de": "Brightness -",
+            "da": "Brightness -",
+            "es": "Brightness -",
+            "it": "Brightness -",
+            "no": "Brightness -",
+            "sv": "Brightness -",
+            "pl": "Brightness -",
+            "ru": "Brightness -",
+            "ko": "Brightness -",
+            "ar": "Brightness -"
+          }
+        },
+        "button.dim_up": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Brightness +",
+            "nl": "Brightness +",
+            "fr": "Brightness +",
+            "de": "Brightness +",
+            "da": "Brightness +",
+            "es": "Brightness +",
+            "it": "Brightness +",
+            "no": "Brightness +",
+            "sv": "Brightness +",
+            "pl": "Brightness +",
+            "ru": "Brightness +",
+            "ko": "Brightness +",
+            "ar": "Brightness +"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "infrared": {
+        "satelliteMode": true
+      },
+      "images": {
+        "small": "/drivers/generic-13-button/assets/images/small.png",
+        "large": "/drivers/generic-13-button/assets/images/large.png",
+        "xlarge": "/drivers/generic-13-button/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "device_add_custom",
+          "options": {
+            "title": "drivers.base.pair_title",
+            "instruction": "drivers.common.pair_instruction",
+            "deviceIdPrefix": "led_candle_",
+            "defaultDeviceName": {
+              "en": "Generic 13 Button",
+              "nl": "Generic 13 Button",
+              "fr": "Generic 13 Button",
+              "de": "Generic 13 Button",
+              "da": "Generic 13 Button",
+              "es": "Generic 13 Button",
+              "it": "Generic 13 Button",
+              "no": "Generic 13 Button",
+              "sv": "Generic 13 Button",
+              "pl": "Generic 13 Button",
+              "ru": "Generic 13 Button",
+              "ko": "Generic 13 Button",
+              "ar": "Generic 13 Button"
+            }
+          }
+        }
+      ],
+      "id": "generic-13-button",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "IR Settings",
+            "nl": "IR Instellingen",
+            "fr": "Paramètres IR",
+            "de": "IR-Einstellungen",
+            "da": "IR-indstillinger",
+            "es": "Ajustes de IR",
+            "it": "Impostazioni IR",
+            "no": "IR-innstillinger",
+            "sv": "IR-inställningar",
+            "pl": "Ustawienia IR",
+            "ru": "Настройки ИК",
+            "ko": "IR 설정",
+            "ar": "إعدادات IR"
+          },
+          "children": [
+            {
+              "id": "ir_repetitions",
+              "type": "number",
+              "label": {
+                "en": "Repetitions",
+                "nl": "Herhalingen",
+                "fr": "Répétitions",
+                "de": "Wiederholungen",
+                "da": "Gentagelser",
+                "es": "Repeticiones",
+                "it": "Ripetizioni",
+                "no": "Gjentakelser",
+                "sv": "Upprepningar",
+                "pl": "Powtórzenia",
+                "ru": "Повторы",
+                "ko": "반복",
+                "ar": "التكرارات"
+              },
+              "hint": {
+                "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
+                "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen.",
+                "fr": "Nombre de répétitions des commandes IR (1-10). Des valeurs plus élevées améliorent la fiabilité mais peuvent ralentir la réponse.",
+                "de": "Anzahl der Wiederholungen von IR-Befehlen (1-10). Höhere Werte verbessern die Zuverlässigkeit, können aber die Reaktionszeit verlangsamen.",
+                "da": "Antal gange IR-kommandoer skal gentages (1-10). Højere værdier forbedrer pålideligheden, men kan gøre svaret langsommere.",
+                "es": "Número de veces que se repiten los comandos IR (1-10). Valores más altos mejoran la fiabilidad, pero pueden ralentizar la respuesta.",
+                "it": "Numero di volte in cui ripetere i comandi IR (1-10). Valori più alti migliorano l'affidabilità, ma possono rallentare la risposta.",
+                "no": "Antall ganger IR-kommandoer skal gjentas (1-10). Høyere verdier forbedrer påliteligheten, men kan gjøre responsen tregere.",
+                "sv": "Antal gånger IR-kommandon ska upprepas (1–10). Högre värden förbättrar tillförlitligheten men kan göra responsen långsammare.",
+                "pl": "Liczba powtórzeń komend IR (1–10). Wyższe wartości poprawiają niezawodność, ale mogą spowolnić reakcję.",
+                "ru": "Сколько раз повторять ИК-команды (1–10). Более высокие значения повышают надёжность, но могут замедлить отклик.",
+                "ko": "IR 명령을 반복할 횟수(1~10)입니다. 값이 높을수록 신뢰성은 좋아지지만 응답이 느려질 수 있어요.",
+                "ar": "عدد مرات تكرار أوامر IR ‏(1-10). القيم الأعلى تحسّن الاعتمادية لكنها قد تبطّئ الاستجابة."
+              },
+              "value": 1,
+              "min": 1,
+              "max": 10,
+              "step": 1
             }
           ]
         }

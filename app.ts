@@ -71,6 +71,7 @@ module.exports = class CandleLightApp extends Homey.App {
       'action-3-button',
       'action-8-button',
       'action-10-button',
+      'generic-13-button',
       'lumineo-3-button',
       'anna-2-button',
       'anna-10-button',

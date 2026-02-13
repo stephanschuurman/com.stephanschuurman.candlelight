@@ -10,8 +10,17 @@ export interface CommandSet {
   TIMER_4H?: number;
   TIMER_6H?: number;
   TIMER_8H?: number;
+  TIMER?: number;
   MODE_CANDLE?: number;
   MODE_LIGHT?: number;
+  MODE_1?: number;
+  MODE_2?: number;
+  MODE_3?: number;
+  MODE_4?: number;
+  MODE_5?: number;
+  MODE_6?: number;
+  MODE_7?: number;
+  MODE_8?: number;
   DIM_DOWN?: number;
   DIM_UP?: number;
 }
@@ -40,8 +49,8 @@ export const IR_COMMANDS = {
    * Note: Timer commands may need to be preceded by ON command (0x5E)
    */
   DELUXE: {
-    ON: 0x0C,
-    OFF: 0x5E,
+    ON: 0x5E,
+    OFF: 0x0C,
     TIMER_2H: 0x46,
     TIMER_4H: 0x40,
     TIMER_6H: 0x15,
@@ -104,6 +113,26 @@ export const IR_COMMANDS = {
   ACTION_8_BUTTON: {
     ON: 0x45,
     OFF: 0x47,
+  } as const,
+
+  /**
+   * Generic - 13 Button Remote
+   * Protocol: NEC, Address: 0x00
+   */
+  GENERIC_13_BUTTON: {
+    ON: 0x45,
+    OFF: 0x47,
+    TIMER: 0x46,
+    MODE_1: 0x44,
+    MODE_2: 0x43,
+    MODE_3: 0x07,
+    MODE_4: 0x09,
+    MODE_5: 0x16,
+    MODE_6: 0x0D,
+    MODE_7: 0x0C,
+    MODE_8: 0x5E,
+    DIM_DOWN: 0x08,
+    DIM_UP: 0x5A,
   } as const,
 
   /**
