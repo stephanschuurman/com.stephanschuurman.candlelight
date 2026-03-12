@@ -241,6 +241,33 @@ Dimmer
 
 ---
 
+## Flinq LED ???????????????????????????????
+
+**Driver:** ./flinq-13-button
+**Protocol:** RC5
+**Address:** 0x1F
+
+| Button          | CMD          |
+|-----------------|--------------|
+| ON              | 0x01         | 
+| OFF             | 0x08         |
+| Timer 2H        | 0x10         |
+| Timer 4H        | 0x04         |
+| Timer 6H        | 0x20         |
+| Timer 8H        | 0x12         |
+| Mode BLN        | 0x06         |
+| Mode Light      | 0x0E         |
+| Mode SL         | 0x0C         |
+| Mode FL.        | 0x02         |
+| Brightness -    | 0x0A         |
+| Brightness +    | 0x0B         |
+
+**Source:**
+- https://homey.app/en-us/app/nl.flinqproducts.candle/Flinq-LED-Candles/
+
+---
+
+
 ## Flinq LED
 
 **Driver:** ./flinq

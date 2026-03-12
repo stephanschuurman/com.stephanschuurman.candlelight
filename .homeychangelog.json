@@ -30,6 +30,9 @@
   "0.1.7": {
     "en": "Reversed change made 0.1.3 and added option to swap on/off commands as a setting. Added support for a new 13 button generic remote.",
     "nl": "Omgekeerde wijziging gemaakt 0.1.3 en toegevoegd optie om aan/uit commando's te verwisselen als een instelling. Toegevoegd ondersteuning voor een nieuwe 13-knops generieke afstandsbediening."
+  },
+  "0.1.8": {
+    "en": "Added support for FlinQ LED candles (provided by Danny Focquaert).",
+    "nl": "Ondersteuning toegevoegd voor FlinQ LED kaarsen (geleverd door Danny Focquaert)."
   }
-
 }

@@ -1,0 +1,92 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "IR Settings",
+      "nl": "IR Instellingen",
+      "fr": "Paramètres IR",
+      "de": "IR-Einstellungen",
+      "da": "IR-indstillinger",
+      "es": "Ajustes de IR",
+      "it": "Impostazioni IR",
+      "no": "IR-innstillinger",
+      "sv": "IR-inställningar",
+      "pl": "Ustawienia IR",
+      "ru": "Настройки ИК",
+      "ko": "IR 설정",
+      "ar": "إعدادات IR"
+    },
+    "children": [
+      {
+        "id": "send_on_before_timer",
+        "type": "checkbox",
+        "label": {
+          "en": "Send ON before timer command",
+          "nl": "Stuur AAN voor timer commando",
+          "fr": "Envoyer ON avant la commande de minuterie",
+          "de": "Vor dem Timer-Befehl AN senden",
+          "da": "Send TÆND før timerkommando",
+          "es": "Enviar ENCENDER antes del comando de temporizador",
+          "it": "Invia ACCENSIONE prima del comando del timer",
+          "no": "Send PÅ før timerkommando",
+          "sv": "Skicka PÅ innan timerkommando",
+          "pl": "Wyślij WŁĄCZ przed komendą timera",
+          "ru": "Отправлять ВКЛ перед командой таймера",
+          "ko": "타이머 명령 전에 켜기 보내기",
+          "ar": "إرسال تشغيل قبل أمر المؤقّت"
+        },
+        "hint": {
+          "en": "When activating a timer (x hour), first send an ON command to ensure the device is turned on.",
+          "nl": "Bij activeren van een timer (x uur), eerst een AAN commando sturen om te zorgen dat het apparaat aan staat.",
+          "fr": "Lorsqu'une minuterie est activée (x heure), envoyer d'abord un signal ON pour s'assurer que l'appareil est allumé.",
+          "de": "Wenn ein Timer (x Stunden) aktiviert wird, zuerst einen AN-Befehl senden, um sicherzustellen, dass das Gerät eingeschaltet ist.",
+          "da": "Når du aktiverer en timer (x timer), så send først en TÆND-kommando for at sikre, at enheden er tændt.",
+          "es": "Al activar un temporizador (x horas), primero envía un comando de ENCENDER para asegurarte de que el dispositivo esté encendido.",
+          "it": "Quando attivi un timer (x ore), invia prima un comando di ACCENSIONE per assicurarti che il dispositivo sia acceso.",
+          "no": "Når du aktiverer en timer (x timer), send først en PÅ-kommando for å sikre at enheten er slått på.",
+          "sv": "När du aktiverar en timer (x timmar), skicka först ett PÅ-kommando för att säkerställa att enheten är påslagen.",
+          "pl": "Podczas uruchamiania timera (x godzin) najpierw wyślij komendę WŁĄCZ, aby upewnić się, że urządzenie jest włączone.",
+          "ru": "При включении таймера (x часов) сначала отправьте команду ВКЛ, чтобы убедиться, что устройство включено.",
+          "ko": "타이머(x시간)를 활성화할 때, 기기가 켜져 있는지 확실히 하려면 먼저 켜기(ON) 명령을 보내세요.",
+          "ar": "عند تفعيل مؤقّت (x ساعة)، أرسل أولاً أمر تشغيل للتأكد من أن الجهاز قيد التشغيل."
+        },
+        "value": true
+      },
+      {
+        "id": "swap_on_off_commands",
+        "type": "checkbox",
+        "label": {
+          "en": "Swap ON and OFF commands",
+          "nl": "Wissel AAN- en UIT-commando's om",
+          "fr": "Inverser les commandes ON et OFF",
+          "de": "AN- und AUS-Befehle tauschen",
+          "da": "Byt TÆND- og SLUK-kommandoer om",
+          "es": "Intercambiar comandos de ENCENDER y APAGAR",
+          "it": "Scambia i comandi ACCENSIONE e SPEGNIMENTO",
+          "no": "Bytt PÅ- og AV-kommandoer",
+          "sv": "Byt PÅ- och AV-kommandon",
+          "pl": "Zamień komendy WŁĄCZ i WYŁĄCZ",
+          "ru": "Поменять местами команды ВКЛ и ВЫКЛ",
+          "ko": "켜기(ON)와 끄기(OFF) 명령 바꾸기",
+          "ar": "تبديل أوامر التشغيل (ON) والإيقاف (OFF)"
+        },
+        "hint": {
+          "en": "Enable this if the remote's ON and OFF buttons are reversed for this device.",
+          "nl": "Schakel dit in als de AAN- en UIT-knoppen van de afstandsbediening voor dit apparaat omgedraaid zijn.",
+          "fr": "Activez ceci si les boutons ON et OFF de la télécommande sont inversés pour cet appareil.",
+          "de": "Aktivieren, wenn die AN- und AUS-Tasten der Fernbedienung für dieses Gerät vertauscht sind.",
+          "da": "Aktivér dette, hvis fjernbetjeningens TÆND- og SLUK-knapper er byttet om for denne enhed.",
+          "es": "Actívalo si los botones de ENCENDER y APAGAR del mando están invertidos para este dispositivo.",
+          "it": "Attivalo se i pulsanti ACCENSIONE e SPEGNIMENTO del telecomando sono invertiti per questo dispositivo.",
+          "no": "Aktiver dette hvis fjernkontrollens PÅ- og AV-knapper er byttet om for denne enheten.",
+          "sv": "Aktivera detta om fjärrkontrollens PÅ- och AV-knappar är omkastade för den här enheten.",
+          "pl": "Włącz, jeśli przyciski WŁĄCZ i WYŁĄCZ na pilocie są zamienione dla tego urządzenia.",
+          "ru": "Включите, если кнопки ВКЛ и ВЫКЛ на пульте для этого устройства перепутаны.",
+          "ko": "이 기기에서 리모컨의 켜기(ON)와 끄기(OFF) 버튼이 반대로 동작하면 켜세요.",
+          "ar": "فعّل هذا إذا كانت أزرار التشغيل (ON) والإيقاف (OFF) في جهاز التحكم معكوسة لهذا الجهاز."
+        },
+        "value": false
+      }
+    ]
+  }
+]

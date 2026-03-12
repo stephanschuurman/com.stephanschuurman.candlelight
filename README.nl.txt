@@ -1,3 +1,3 @@
-Met deze app kun je de meeste LED-kaarsen van HEMA of Action en merken zoals Deluxe HomeArt en Lumiz bedienen met eenvoudige infraroodsignalen (IR). Zet ze aan of uit, pas de instellingen aan en creëer precies de sfeer die je wilt.
+Met deze app kun je de meeste LED-kaarsen van HEMA of Action en merken zoals FlinQ, Deluxe HomeArt en Lumiz bedienen met eenvoudige infraroodsignalen (IR). Zet ze aan of uit, pas de instellingen aan en creëer precies de sfeer die je wilt.
 
 Koppel je kaarsen aan Homey flows om alles te automatiseren – van gezellige avonden tot complete sfeerscènes. Heb je een Homey Bridge? Dan kun je die ook als IR-satelliet gebruiken.

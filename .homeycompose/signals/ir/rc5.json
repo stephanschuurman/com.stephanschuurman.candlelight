@@ -1,0 +1,24 @@
+{
+  "carrier": 36000,
+  "manchesterUnit": 889,
+
+  "words": [
+    [0,1],
+    [1,0]
+  ],
+
+  "prefixData": [],
+
+  "cmds": {
+    "rc5_test": [
+      1,1,0,
+      0,0,0,0,0,
+      0,0,1,1,0,0
+    ]
+  },
+
+  "repetitions": 1,
+  "interval": 114,
+  "minimalLength": 14,
+  "maximalLength": 14
+}

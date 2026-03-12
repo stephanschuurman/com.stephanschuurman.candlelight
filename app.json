@@ -1667,6 +1667,524 @@
         ]
       },
       {
+        "id": "flinq-13-button_on",
+        "title": {
+          "en": "Switch LED candles on",
+          "nl": "Zet de LED kaarsen aan",
+          "fr": "Allumer les bougies LED",
+          "de": "LED-Kerzen einschalten",
+          "da": "Tænd LED-lysene",
+          "es": "Enciende las velas LED",
+          "it": "Accendi le candele LED",
+          "no": "Slå på LED-lysene",
+          "sv": "Slå på LED-ljusen",
+          "pl": "Włącz świece LED",
+          "ru": "Включить светодиодные свечи",
+          "ko": "LED 캔들을 켭니다",
+          "ar": "تشغيل شموع LED"
+        },
+        "titleFormatted": {
+          "en": "Switch the LED candles on",
+          "nl": "Zet de LED kaarsen aan",
+          "fr": "Allumer les bougies LED",
+          "de": "LED-Kerzen einschalten",
+          "da": "Tænd LED-lysene",
+          "es": "Enciende las velas LED",
+          "it": "Accendi le candele LED",
+          "no": "Slå på LED-lysene",
+          "sv": "Slå på LED-ljusen",
+          "pl": "Włącz świece LED",
+          "ru": "Включить светодиодные свечи",
+          "ko": "LED 캔들을 켭니다",
+          "ar": "تشغيل شموع LED"
+        },
+        "hint": {
+          "en": "This action switches the LED candles on.",
+          "nl": "Deze actie zet de LED kaarsen aan.",
+          "fr": "Cette action allume les bougies LED.",
+          "de": "Diese Aktion schaltet die LED-Kerzen ein.",
+          "da": "Denne handling tænder LED-lysene.",
+          "es": "Esta acción enciende las velas LED.",
+          "it": "Questa azione accende le candele LED.",
+          "no": "Denne handlingen slår på LED-lysene.",
+          "sv": "Den här åtgärden slår på LED-ljusen.",
+          "pl": "Ta akcja włącza świece LED.",
+          "ru": "Это действие включает светодиодные свечи.",
+          "ko": "이 작업은 LED 캔들을 켭니다.",
+          "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=flinq-12-button"
+          }
+        ]
+      },
+      {
+        "id": "flinq-13-button_off",
+        "title": {
+          "en": "Switch LED candles off",
+          "nl": "Zet de LED kaarsen uit",
+          "fr": "Éteindre les bougies LED",
+          "de": "LED-Kerzen ausschalten",
+          "da": "Sluk LED-lysene",
+          "es": "Apaga las velas LED",
+          "it": "Spegni le candele LED",
+          "no": "Slå av LED-lysene",
+          "sv": "Slå av LED-ljusen",
+          "pl": "Wyłącz świece LED",
+          "ru": "Выключить светодиодные свечи",
+          "ko": "LED 캔들을 끕니다",
+          "ar": "إيقاف تشغيل شموع LED"
+        },
+        "titleFormatted": {
+          "en": "Switch the LED candles off",
+          "nl": "Zet de LED kaarsen uit",
+          "fr": "Éteindre les bougies LED",
+          "de": "LED-Kerzen ausschalten",
+          "da": "Sluk LED-lysene",
+          "es": "Apaga las velas LED",
+          "it": "Spegni le candele LED",
+          "no": "Slå av LED-lysene",
+          "sv": "Slå av LED-ljusen",
+          "pl": "Wyłącz świece LED",
+          "ru": "Выключить светодиодные свечи",
+          "ko": "LED 캔들을 끕니다",
+          "ar": "إيقاف تشغيل شموع LED"
+        },
+        "hint": {
+          "en": "This action switches the LED candles off.",
+          "nl": "Deze actie zet de LED kaarsen uit.",
+          "fr": "Cette action éteint les bougies LED.",
+          "de": "Diese Aktion schaltet die LED-Kerzen aus.",
+          "da": "Denne handling slukker LED-lysene.",
+          "es": "Esta acción apaga las velas LED.",
+          "it": "Questa azione spegne le candele LED.",
+          "no": "Denne handlingen slår av LED-lysene.",
+          "sv": "Den här åtgärden slår av LED-ljusen.",
+          "pl": "Ta akcja wyłącza świece LED.",
+          "ru": "Это действие выключает светодиодные свечи.",
+          "ko": "이 작업은 LED 캔들을 끕니다.",
+          "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=flinq-12-button"
+          }
+        ]
+      },
+      {
+        "id": "flinq-13-button_timer",
+        "title": {
+          "en": "Set LED candle timer",
+          "nl": "Zet LED kaars timer",
+          "fr": "Définir le minuteur de bougie LED",
+          "de": "LED-Kerzen-Timer einstellen",
+          "da": "Indstil LED-lys timer",
+          "es": "Establecer temporizador de vela LED",
+          "it": "Imposta timer candela LED",
+          "no": "Sett LED-lys timer",
+          "sv": "Ställ in LED-ljus timer",
+          "pl": "Ustaw timer świecy LED",
+          "ru": "Установить таймер светодиодной свечи",
+          "ko": "LED 캔들 타이머 설정",
+          "ar": "ضبط مؤقت شمعة LED"
+        },
+        "titleFormatted": {
+          "en": "Set LED candle timer to [[timer_cmd]]",
+          "nl": "Zet LED kaars timer op [[timer_cmd]]",
+          "fr": "Définir le minuteur de bougie LED sur [[timer_cmd]]",
+          "de": "LED-Kerzen-Timer auf [[timer_cmd]] einstellen",
+          "da": "Indstil LED-lys timer til [[timer_cmd]]",
+          "es": "Establecer temporizador de vela LED en [[timer_cmd]]",
+          "it": "Imposta timer candela LED su [[timer_cmd]]",
+          "no": "Sett LED-lys timer til [[timer_cmd]]",
+          "sv": "Ställ in LED-ljus timer på [[timer_cmd]]",
+          "pl": "Ustaw timer świecy LED na [[timer_cmd]]",
+          "ru": "Установить таймер светодиодной свечи на [[timer_cmd]]",
+          "ko": "LED 캔들 타이머를 [[timer_cmd]]로 설정",
+          "ar": "ضبط مؤقت شمعة LED على [[timer_cmd]]"
+        },
+        "hint": {
+          "en": "This action sets the LED candle timer.",
+          "nl": "Deze actie zet de LED kaars timer.",
+          "fr": "Cette action définit le minuteur de bougie LED.",
+          "de": "Diese Aktion stellt den LED-Kerzen-Timer ein.",
+          "da": "Denne handling indstiller LED-lys timeren.",
+          "es": "Esta acción establece el temporizador de vela LED.",
+          "it": "Questa azione imposta il timer della candela LED.",
+          "no": "Denne handlingen setter LED-lys timeren.",
+          "sv": "Den här åtgärden ställer in LED-ljus timern.",
+          "pl": "Ta akcja ustawia timer świecy LED.",
+          "ru": "Это действие устанавливает таймер светодиодной свечи.",
+          "ko": "이 작업은 LED 캔들 타이머를 설정합니다.",
+          "ar": "يقوم هذا الإجراء بضبط مؤقت شمعة LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=flinq-12-button"
+          },
+          {
+            "type": "dropdown",
+            "name": "timer_cmd",
+            "title": {
+              "en": "Duration",
+              "nl": "Duur",
+              "fr": "Durée",
+              "de": "Dauer",
+              "da": "Varighed",
+              "es": "Duración",
+              "it": "Durata",
+              "no": "Varighet",
+              "sv": "Varaktighet",
+              "pl": "Czas trwania",
+              "ru": "Продолжительность",
+              "ko": "기간",
+              "ar": "المدة"
+            },
+            "values": [
+              {
+                "id": "2h",
+                "title": {
+                  "en": "2 hours",
+                  "nl": "2 uur",
+                  "fr": "2 heures",
+                  "de": "2 Stunden",
+                  "da": "2 timer",
+                  "es": "2 horas",
+                  "it": "2 ore",
+                  "no": "2 timer",
+                  "sv": "2 timmar",
+                  "pl": "2 godziny",
+                  "ru": "2 часа",
+                  "ko": "2시간",
+                  "ar": "2 ساعات"
+                }
+              },
+              {
+                "id": "4h",
+                "title": {
+                  "en": "4 hours",
+                  "nl": "4 uur",
+                  "fr": "4 heures",
+                  "de": "4 Stunden",
+                  "da": "4 timer",
+                  "es": "4 horas",
+                  "it": "4 ore",
+                  "no": "4 timer",
+                  "sv": "4 timmar",
+                  "pl": "4 godziny",
+                  "ru": "4 часа",
+                  "ko": "4시간",
+                  "ar": "4 ساعات"
+                }
+              },
+              {
+                "id": "6h",
+                "title": {
+                  "en": "6 hours",
+                  "nl": "6 uur",
+                  "fr": "6 heures",
+                  "de": "6 Stunden",
+                  "da": "6 timer",
+                  "es": "6 horas",
+                  "it": "6 ore",
+                  "no": "6 timer",
+                  "sv": "6 timmar",
+                  "pl": "6 godzin",
+                  "ru": "6 часов",
+                  "ko": "6시간",
+                  "ar": "6 ساعات"
+                }
+              },
+              {
+                "id": "8h",
+                "title": {
+                  "en": "8 hours",
+                  "nl": "8 uur",
+                  "fr": "8 heures",
+                  "de": "8 Stunden",
+                  "da": "8 timer",
+                  "es": "8 horas",
+                  "it": "8 ore",
+                  "no": "8 timer",
+                  "sv": "8 timmar",
+                  "pl": "8 godzin",
+                  "ru": "8 часов",
+                  "ko": "8시간",
+                  "ar": "8 ساعات"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "flinq-13-button_mode",
+        "title": {
+          "en": "Set LED candle mode",
+          "nl": "Zet LED kaars mode",
+          "fr": "Définir le mode de bougie LED",
+          "de": "LED-Kerzen-Modus einstellen",
+          "da": "Indstil LED-lys tilstand",
+          "es": "Establecer modo de vela LED",
+          "it": "Imposta modalità candela LED",
+          "no": "Sett LED-lys modus",
+          "sv": "Ställ in LED-ljus läge",
+          "pl": "Ustaw tryb świecy LED",
+          "ru": "Установить режим светодиодной свечи",
+          "ko": "LED 캔들 모드 설정",
+          "ar": "ضبط وضع شمعة LED"
+        },
+        "titleFormatted": {
+          "en": "Set LED candle mode to [[mode_cmd]]",
+          "nl": "Zet LED kaars mode op [[mode_cmd]]",
+          "fr": "Définir le mode de bougie LED sur [[mode_cmd]]",
+          "de": "LED-Kerzen-Modus auf [[mode_cmd]] einstellen",
+          "da": "Indstil LED-lys tilstand til [[mode_cmd]]",
+          "es": "Establecer modo de vela LED en [[mode_cmd]]",
+          "it": "Imposta modalità candela LED su [[mode_cmd]]",
+          "no": "Sett LED-lys modus til [[mode_cmd]]",
+          "sv": "Ställ in LED-ljus läge på [[mode_cmd]]",
+          "pl": "Ustaw tryb świecy LED na [[mode_cmd]]",
+          "ru": "Установить режим светодиодной свечи на [[mode_cmd]]",
+          "ko": "LED 캔들 모드를 [[mode_cmd]]로 설정",
+          "ar": "ضبط وضع شمعة LED على [[mode_cmd]]"
+        },
+        "hint": {
+          "en": "This action selects a mode.",
+          "nl": "Deze actie selecteert een mode.",
+          "fr": "Cette action sélectionne un mode.",
+          "de": "Diese Aktion wählt einen Modus aus.",
+          "da": "Denne handling vælger en tilstand.",
+          "es": "Esta acción selecciona un modo.",
+          "it": "Questa azione seleziona una modalità.",
+          "no": "Denne handlingen velger en modus.",
+          "sv": "Den här åtgärden väljer ett läge.",
+          "pl": "Ta akcja wybiera tryb.",
+          "ru": "Это действие выбирает режим.",
+          "ko": "이 작업은 모드를 선택합니다.",
+          "ar": "يقوم هذا الإجراء بتحديد وضع."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=flinq-12-button"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode_cmd",
+            "title": {
+              "en": "Mode",
+              "nl": "Mode",
+              "fr": "Mode",
+              "de": "Modus",
+              "da": "Tilstand",
+              "es": "Modo",
+              "it": "Modalità",
+              "no": "Modus",
+              "sv": "Läge",
+              "pl": "Tryb",
+              "ru": "Режим",
+              "ko": "모드",
+              "ar": "وضع"
+            },
+            "values": [
+              {
+                "id": "mode_1",
+                "title": {
+                  "en": "Mode 1",
+                  "nl": "Mode 1",
+                  "fr": "Mode 1",
+                  "de": "Modus 1",
+                  "da": "Tilstand 1",
+                  "es": "Modo 1",
+                  "it": "Modalità 1",
+                  "no": "Modus 1",
+                  "sv": "Läge 1",
+                  "pl": "Tryb 1",
+                  "ru": "Режим 1",
+                  "ko": "모드 1",
+                  "ar": "وضع 1"
+                }
+              },
+              {
+                "id": "mode_2",
+                "title": {
+                  "en": "Mode 2",
+                  "nl": "Mode 2",
+                  "fr": "Mode 2",
+                  "de": "Modus 2",
+                  "da": "Tilstand 2",
+                  "es": "Modo 2",
+                  "it": "Modalità 2",
+                  "no": "Modus 2",
+                  "sv": "Läge 2",
+                  "pl": "Tryb 2",
+                  "ru": "Режим 2",
+                  "ko": "모드 2",
+                  "ar": "وضع 2"
+                }
+              },
+              {
+                "id": "mode_3",
+                "title": {
+                  "en": "Mode 3",
+                  "nl": "Mode 3",
+                  "fr": "Mode 3",
+                  "de": "Modus 3",
+                  "da": "Tilstand 3",
+                  "es": "Modo 3",
+                  "it": "Modalità 3",
+                  "no": "Modus 3",
+                  "sv": "Läge 3",
+                  "pl": "Tryb 3",
+                  "ru": "Режим 3",
+                  "ko": "모드 3",
+                  "ar": "وضع 3"
+                }
+              },
+              {
+                "id": "mode_4",
+                "title": {
+                  "en": "Mode 4",
+                  "nl": "Mode 4",
+                  "fr": "Mode 4",
+                  "de": "Modus 4",
+                  "da": "Tilstand 4",
+                  "es": "Modo 4",
+                  "it": "Modalità 4",
+                  "no": "Modus 4",
+                  "sv": "Läge 4",
+                  "pl": "Tryb 4",
+                  "ru": "Режим 4",
+                  "ko": "모드 4",
+                  "ar": "وضع 4"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "flinq-13-button_brightness",
+        "title": {
+          "en": "Adjust LED candle brightness",
+          "nl": "Pas LED kaars helderheid aan",
+          "fr": "Ajuster la luminosité de la bougie LED",
+          "de": "LED-Kerzen-Helligkeit anpassen",
+          "da": "Juster LED-lys lysstyrke",
+          "es": "Ajustar brillo de vela LED",
+          "it": "Regola luminosità candela LED",
+          "no": "Juster LED-lys lysstyrke",
+          "sv": "Justera LED-ljus ljusstyrka",
+          "pl": "Dostosuj jasność świecy LED",
+          "ru": "Настроить яркость светодиодной свечи",
+          "ko": "LED 캔들 밝기 조정",
+          "ar": "ضبط سطوع شمعة LED"
+        },
+        "titleFormatted": {
+          "en": "Adjust LED candle brightness: [[brightness_cmd]]",
+          "nl": "Pas LED kaars helderheid aan: [[brightness_cmd]]",
+          "fr": "Ajuster la luminosité de la bougie LED: [[brightness_cmd]]",
+          "de": "LED-Kerzen-Helligkeit anpassen: [[brightness_cmd]]",
+          "da": "Juster LED-lys lysstyrke: [[brightness_cmd]]",
+          "es": "Ajustar brillo de vela LED: [[brightness_cmd]]",
+          "it": "Regola luminosità candela LED: [[brightness_cmd]]",
+          "no": "Juster LED-lys lysstyrke: [[brightness_cmd]]",
+          "sv": "Justera LED-ljus ljusstyrka: [[brightness_cmd]]",
+          "pl": "Dostosuj jasność świecy LED: [[brightness_cmd]]",
+          "ru": "Настроить яркость светодиодной свечи: [[brightness_cmd]]",
+          "ko": "LED 캔들 밝기 조정: [[brightness_cmd]]",
+          "ar": "ضبط سطوع شمعة LED: [[brightness_cmd]]"
+        },
+        "hint": {
+          "en": "This action sends the brightness command.",
+          "nl": "Deze actie stuurt het helderheid commando.",
+          "fr": "Cette action envoie la commande de luminosité.",
+          "de": "Diese Aktion sendet den Helligkeitsbefehl.",
+          "da": "Denne handling sender lysstyrke kommandoen.",
+          "es": "Esta acción envía el comando de brillo.",
+          "it": "Questa azione invia il comando di luminosità.",
+          "no": "Denne handlingen sender lysstyrke kommandoen.",
+          "sv": "Den här åtgärden skickar ljusstyrkkommandot.",
+          "pl": "Ta akcja wysyła polecenie jasności.",
+          "ru": "Это действие отправляет команду яркости.",
+          "ko": "이 작업은 밝기 명령을 보냅니다.",
+          "ar": "يقوم هذا الإجراء بإرسال أمر السطوع."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=flinq-12-button"
+          },
+          {
+            "type": "dropdown",
+            "name": "brightness_cmd",
+            "title": {
+              "en": "Brightness",
+              "nl": "Helderheid",
+              "fr": "Luminosité",
+              "de": "Helligkeit",
+              "da": "Lysstyrke",
+              "es": "Brillo",
+              "it": "Luminosità",
+              "no": "Lysstyrke",
+              "sv": "Ljusstyrka",
+              "pl": "Jasność",
+              "ru": "Яркость",
+              "ko": "밝기",
+              "ar": "سطوع"
+            },
+            "values": [
+              {
+                "id": "dim_down",
+                "title": {
+                  "en": "Brightness -",
+                  "nl": "Helderheid -",
+                  "fr": "Luminosité -",
+                  "de": "Helligkeit -",
+                  "da": "Lysstyrke -",
+                  "es": "Brillo -",
+                  "it": "Luminosità -",
+                  "no": "Lysstyrke -",
+                  "sv": "Ljusstyrka -",
+                  "pl": "Jasność -",
+                  "ru": "Яркость -",
+                  "ko": "밝기 -",
+                  "ar": "سطوع -"
+                }
+              },
+              {
+                "id": "dim_up",
+                "title": {
+                  "en": "Brightness +",
+                  "nl": "Helderheid +",
+                  "fr": "Luminosité +",
+                  "de": "Helligkeit +",
+                  "da": "Lysstyrke +",
+                  "es": "Brillo +",
+                  "it": "Luminosità +",
+                  "no": "Lysstyrke +",
+                  "sv": "Ljusstyrka +",
+                  "pl": "Jasność +",
+                  "ru": "Яркость +",
+                  "ko": "밝기 +",
+                  "ar": "سطوع +"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "generic-13-button_on",
         "title": {
           "en": "Switch LED candles on",
@@ -2880,13 +3398,20 @@
                 "title": {
                   "en": "NEC",
                   "nl": "NEC"
-                },
-                "hint": {
-                  "en": "Select the protocol to use.",
-                  "nl": "Selecteer het te gebruiken protocol."
+                }
+              },
+              {
+                "id": "rc5",
+                "title": {
+                  "en": "RC5",
+                  "nl": "RC5"
                 }
               }
-            ]
+            ],
+            "hint": {
+              "en": "Select the protocol to use.",
+              "nl": "Selecteer het te gebruiken protocol."
+            }
           },
           {
             "type": "text",
@@ -4317,19 +4842,397 @@
     },
     {
       "name": {
+        "en": "Flinq 13 Button",
+        "nl": "Flinq 13 Knoppen",
+        "fr": "Flinq 13 Boutons",
+        "de": "Flinq 13 Tasten",
+        "da": "Flinq 13 Knapper",
+        "es": "Flinq 13 Botones",
+        "it": "Flinq 13 Bottoni",
+        "no": "Flinq 13 Knapper",
+        "sv": "Flinq 13 Knappar",
+        "pl": "Flinq 13 Przycisków",
+        "ru": "Flinq 13 Кнопок",
+        "ko": "Flinq 13 버튼",
+        "ar": "Flinq 13 زر"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "button.on",
+        "button.off",
+        "button.2h",
+        "button.4h",
+        "button.6h",
+        "button.8h",
+        "button.mode_1",
+        "button.mode_2",
+        "button.mode_3",
+        "button.mode_4",
+        "button.dim_down",
+        "button.dim_up"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "uiQuickAction": true
+        },
+        "button.on": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "fr": "Allumer",
+            "de": "An",
+            "da": "Tænd",
+            "es": "Encender",
+            "it": "Accendi",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włącz",
+            "ru": "Вкл.",
+            "ko": "켜기",
+            "ar": "تشغيل"
+          }
+        },
+        "button.off": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "fr": "Éteindre",
+            "de": "Aus",
+            "da": "Sluk",
+            "es": "Apagar",
+            "it": "Spegni",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłącz",
+            "ru": "Выкл.",
+            "ko": "끄기",
+            "ar": "إيقاف"
+          }
+        },
+        "button.2h": {
+          "title": {
+            "en": "Timer 2 hours",
+            "nl": "Timer 2 uur",
+            "fr": "Timer 2 heures",
+            "de": "Timer 2 Stunden",
+            "da": "Timer 2 timer",
+            "es": "Temporizador 2 horas",
+            "it": "Timer 2 ore",
+            "no": "Timer 2 timer",
+            "sv": "Timer 2 timmar",
+            "pl": "Timer 2 godzin",
+            "ru": "Таймер 2 часа",
+            "ko": "타이머 2시간",
+            "ar": "مؤقت 2 ساعات"
+          }
+        },
+        "button.4h": {
+          "title": {
+            "en": "Timer 4 hours",
+            "nl": "Timer 4 uur",
+            "fr": "Timer 4 heures",
+            "de": "Timer 4 Stunden",
+            "da": "Timer 4 timer",
+            "es": "Temporizador 4 horas",
+            "it": "Timer 4 ore",
+            "no": "Timer 4 timer",
+            "sv": "Timer 4 timmar",
+            "pl": "Timer 4 godzin",
+            "ru": "Таймер 4 часа",
+            "ko": "타이머 4시간",
+            "ar": "مؤقت 4 ساعات"
+          }
+        },
+        "button.6h": {
+          "title": {
+            "en": "Timer 6 hours",
+            "nl": "Timer 6 uur",
+            "fr": "Timer 6 heures",
+            "de": "Timer 6 Stunden",
+            "da": "Timer 6 timer",
+            "es": "Temporizador 6 horas",
+            "it": "Timer 6 ore",
+            "no": "Timer 6 timer",
+            "sv": "Timer 6 timmar",
+            "pl": "Timer 6 godzin",
+            "ru": "Таймер 6 часов",
+            "ko": "타이머 6시간",
+            "ar": "مؤقت 6 ساعات"
+          }
+        },
+        "button.8h": {
+          "title": {
+            "en": "Timer 8 hours",
+            "nl": "Timer 8 uur",
+            "fr": "Timer 8 heures",
+            "de": "Timer 8 Stunden",
+            "da": "Timer 8 timer",
+            "es": "Temporizador 8 horas",
+            "it": "Timer 8 ore",
+            "no": "Timer 8 timer",
+            "sv": "Timer 8 timmar",
+            "pl": "Timer 8 godzin",
+            "ru": "Таймер 8 часов",
+            "ko": "타이머 8시간",
+            "ar": "مؤقت 8 ساعات"
+          }
+        },
+        "button.mode_1": {
+          "title": {
+            "en": "Mode Breathing",
+            "nl": "Mode Ademend",
+            "fr": "Mode Respiration",
+            "de": "Modus Atmen",
+            "da": "Mode Åndedræt",
+            "es": "Modo Respiración",
+            "it": "Modalità Respiro",
+            "no": "Modus Pust",
+            "sv": "Andningsläge",
+            "pl": "Tryb Oddychania",
+            "ru": "Режим Дыхания",
+            "ko": "호흡 모드",
+            "ar": "وضع التنفس"
+          }
+        },
+        "button.mode_2": {
+          "title": {
+            "en": "Mode Static",
+            "nl": "Mode Statisch",
+            "fr": "Mode Statique",
+            "de": "Modus Statisch",
+            "da": "Mode Statisk",
+            "es": "Modo Estático",
+            "it": "Modalità Statica",
+            "no": "Modus Statisk",
+            "sv": "Statisk Läge",
+            "pl": "Tryb Statyczny",
+            "ru": "Статический Режим",
+            "ko": "정적 모드",
+            "ar": "الوضع الثابت"
+          }
+        },
+        "button.mode_3": {
+          "title": {
+            "en": "Mode Slow",
+            "nl": "Mode Langzaam",
+            "fr": "Mode Lent",
+            "de": "Modus Langsam",
+            "da": "Mode Langsom",
+            "es": "Modo Lento",
+            "it": "Modalità Lenta",
+            "no": "Modus Langsom",
+            "sv": "Långsam Läge",
+            "pl": "Tryb Powolny",
+            "ru": "Режим Медленный",
+            "ko": "느린 모드",
+            "ar": "الوضع البطيء"
+          }
+        },
+        "button.mode_4": {
+          "title": {
+            "en": "Mode Fast",
+            "nl": "Mode Snel",
+            "fr": "Mode Rapide",
+            "de": "Modus Schnell",
+            "da": "Mode Hurtig",
+            "es": "Modo Rápido",
+            "it": "Modalità Veloce",
+            "no": "Modus Rask",
+            "sv": "Snabb Läge",
+            "pl": "Tryb Szybki",
+            "ru": "Режим Быстрый",
+            "ko": "빠른 모드",
+            "ar": "الوضع السريع"
+          }
+        },
+        "button.dim_down": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Brightness -",
+            "nl": "Helderheid -",
+            "fr": "Luminosité -",
+            "de": "Helligkeit -",
+            "da": "Lysstyrke -",
+            "es": "Brillo -",
+            "it": "Luminosità -",
+            "no": "Lysstyrke -",
+            "sv": "Ljusstyrka -",
+            "pl": "Jasność -",
+            "ru": "Яркость -",
+            "ko": "밝기 -",
+            "ar": "سطوع -"
+          }
+        },
+        "button.dim_up": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Brightness +",
+            "nl": "Helderheid +",
+            "fr": "Luminosité +",
+            "de": "Helligkeit +",
+            "da": "Lysstyrke +",
+            "es": "Brillo +",
+            "it": "Luminosità +",
+            "no": "Lysstyrke +",
+            "sv": "Ljusstyrka +",
+            "pl": "Jasność +",
+            "ru": "Яркость +",
+            "ko": "밝기 +",
+            "ar": "سطوع +"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "infrared": {
+        "satelliteMode": true
+      },
+      "images": {
+        "small": "/drivers/flinq-12-button/assets/images/small.png",
+        "large": "/drivers/flinq-12-button/assets/images/large.png",
+        "xlarge": "/drivers/flinq-12-button/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "device_add_custom",
+          "options": {
+            "title": "drivers.base.pair_title",
+            "instruction": "drivers.common.pair_instruction",
+            "deviceIdPrefix": "flinq_13_button_",
+            "defaultDeviceName": {
+              "en": "Flinq 13 Button",
+              "nl": "Flinq 13 Knoppen",
+              "fr": "Flinq 13 Boutons",
+              "de": "Flinq 13 Tasten",
+              "da": "Flinq 13 Knapper",
+              "es": "Flinq 13 Botones",
+              "it": "Flinq 13 Bottoni",
+              "no": "Flinq 13 Knapper",
+              "sv": "Flinq 13 Knappar",
+              "pl": "Flinq 13 Przycisków",
+              "ru": "Flinq 13 Кнопок",
+              "ko": "Flinq 13 버튼",
+              "ar": "Flinq 13 زر"
+            }
+          }
+        }
+      ],
+      "id": "flinq-12-button",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "IR Settings",
+            "nl": "IR Instellingen",
+            "fr": "Paramètres IR",
+            "de": "IR-Einstellungen",
+            "da": "IR-indstillinger",
+            "es": "Ajustes de IR",
+            "it": "Impostazioni IR",
+            "no": "IR-innstillinger",
+            "sv": "IR-inställningar",
+            "pl": "Ustawienia IR",
+            "ru": "Настройки ИК",
+            "ko": "IR 설정",
+            "ar": "إعدادات IR"
+          },
+          "children": [
+            {
+              "id": "send_on_before_timer",
+              "type": "checkbox",
+              "label": {
+                "en": "Send ON before timer command",
+                "nl": "Stuur AAN voor timer commando",
+                "fr": "Envoyer ON avant la commande de minuterie",
+                "de": "Vor dem Timer-Befehl AN senden",
+                "da": "Send TÆND før timerkommando",
+                "es": "Enviar ENCENDER antes del comando de temporizador",
+                "it": "Invia ACCENSIONE prima del comando del timer",
+                "no": "Send PÅ før timerkommando",
+                "sv": "Skicka PÅ innan timerkommando",
+                "pl": "Wyślij WŁĄCZ przed komendą timera",
+                "ru": "Отправлять ВКЛ перед командой таймера",
+                "ko": "타이머 명령 전에 켜기 보내기",
+                "ar": "إرسال تشغيل قبل أمر المؤقّت"
+              },
+              "hint": {
+                "en": "When activating a timer (x hour), first send an ON command to ensure the device is turned on.",
+                "nl": "Bij activeren van een timer (x uur), eerst een AAN commando sturen om te zorgen dat het apparaat aan staat.",
+                "fr": "Lorsqu'une minuterie est activée (x heure), envoyer d'abord un signal ON pour s'assurer que l'appareil est allumé.",
+                "de": "Wenn ein Timer (x Stunden) aktiviert wird, zuerst einen AN-Befehl senden, um sicherzustellen, dass das Gerät eingeschaltet ist.",
+                "da": "Når du aktiverer en timer (x timer), så send først en TÆND-kommando for at sikre, at enheden er tændt.",
+                "es": "Al activar un temporizador (x horas), primero envía un comando de ENCENDER para asegurarte de que el dispositivo esté encendido.",
+                "it": "Quando attivi un timer (x ore), invia prima un comando di ACCENSIONE per assicurarti che il dispositivo sia acceso.",
+                "no": "Når du aktiverer en timer (x timer), send først en PÅ-kommando for å sikre at enheten er slått på.",
+                "sv": "När du aktiverar en timer (x timmar), skicka först ett PÅ-kommando för att säkerställa att enheten är påslagen.",
+                "pl": "Podczas uruchamiania timera (x godzin) najpierw wyślij komendę WŁĄCZ, aby upewnić się, że urządzenie jest włączone.",
+                "ru": "При включении таймера (x часов) сначала отправьте команду ВКЛ, чтобы убедиться, что устройство включено.",
+                "ko": "타이머(x시간)를 활성화할 때, 기기가 켜져 있는지 확실히 하려면 먼저 켜기(ON) 명령을 보내세요.",
+                "ar": "عند تفعيل مؤقّت (x ساعة)، أرسل أولاً أمر تشغيل للتأكد من أن الجهاز قيد التشغيل."
+              },
+              "value": true
+            },
+            {
+              "id": "swap_on_off_commands",
+              "type": "checkbox",
+              "label": {
+                "en": "Swap ON and OFF commands",
+                "nl": "Wissel AAN- en UIT-commando's om",
+                "fr": "Inverser les commandes ON et OFF",
+                "de": "AN- und AUS-Befehle tauschen",
+                "da": "Byt TÆND- og SLUK-kommandoer om",
+                "es": "Intercambiar comandos de ENCENDER y APAGAR",
+                "it": "Scambia i comandi ACCENSIONE e SPEGNIMENTO",
+                "no": "Bytt PÅ- og AV-kommandoer",
+                "sv": "Byt PÅ- och AV-kommandon",
+                "pl": "Zamień komendy WŁĄCZ i WYŁĄCZ",
+                "ru": "Поменять местами команды ВКЛ и ВЫКЛ",
+                "ko": "켜기(ON)와 끄기(OFF) 명령 바꾸기",
+                "ar": "تبديل أوامر التشغيل (ON) والإيقاف (OFF)"
+              },
+              "hint": {
+                "en": "Enable this if the remote's ON and OFF buttons are reversed for this device.",
+                "nl": "Schakel dit in als de AAN- en UIT-knoppen van de afstandsbediening voor dit apparaat omgedraaid zijn.",
+                "fr": "Activez ceci si les boutons ON et OFF de la télécommande sont inversés pour cet appareil.",
+                "de": "Aktivieren, wenn die AN- und AUS-Tasten der Fernbedienung für dieses Gerät vertauscht sind.",
+                "da": "Aktivér dette, hvis fjernbetjeningens TÆND- og SLUK-knapper er byttet om for denne enhed.",
+                "es": "Actívalo si los botones de ENCENDER y APAGAR del mando están invertidos para este dispositivo.",
+                "it": "Attivalo se i pulsanti ACCENSIONE e SPEGNIMENTO del telecomando sono invertiti per questo dispositivo.",
+                "no": "Aktiver dette hvis fjernkontrollens PÅ- og AV-knapper er byttet om for denne enheten.",
+                "sv": "Aktivera detta om fjärrkontrollens PÅ- och AV-knappar är omkastade för den här enheten.",
+                "pl": "Włącz, jeśli przyciski WŁĄCZ i WYŁĄCZ na pilocie są zamienione dla tego urządzenia.",
+                "ru": "Включите, если кнопки ВКЛ и ВЫКЛ на пульте для этого устройства перепутаны.",
+                "ko": "이 기기에서 리모컨의 켜기(ON)와 끄기(OFF) 버튼이 반대로 동작하면 켜세요.",
+                "ar": "فعّل هذا إذا كانت أزرار التشغيل (ON) والإيقاف (OFF) في جهاز التحكم معكوسة لهذا الجهاز."
+              },
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
         "en": "Generic 13 Button",
-        "nl": "Generic 13 Button",
-        "fr": "Generic 13 Button",
-        "de": "Generic 13 Button",
-        "da": "Generic 13 Button",
-        "es": "Generic 13 Button",
-        "it": "Generic 13 Button",
-        "no": "Generic 13 Button",
-        "sv": "Generic 13 Button",
-        "pl": "Generic 13 Button",
-        "ru": "Generic 13 Button",
-        "ko": "Generic 13 Button",
-        "ar": "Generic 13 Button"
+        "nl": "Algemene 13 Knoppen",
+        "fr": "Générique 13 Boutons",
+        "de": "Generische 13 Tasten",
+        "da": "Generisk 13 Knapper",
+        "es": "Genérico 13 Botones",
+        "it": "Generico 13 Bottoni",
+        "no": "Generisk 13 Knapper",
+        "sv": "Generisk 13 Knappar",
+        "pl": "Generisk 13 Przycisków",
+        "ru": "Генерик 13 Кнопок",
+        "ko": "일반 13 버튼",
+        "ar": "زر 13 عام"
       },
       "class": "light",
       "capabilities": [
@@ -5545,6 +6448,90 @@
         "type": "prontohex",
         "cmds": {
           "Repeat": "0000 006D 0000 0002 0156 0056 0156 0156"
+        }
+      },
+      "rc5": {
+        "carrier": 36000,
+        "manchesterUnit": 889,
+        "words": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "prefixData": [],
+        "cmds": {
+          "rc5_test": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "repetitions": 1,
+        "interval": 114,
+        "minimalLength": 14,
+        "maximalLength": 14
+      },
+      "rc5-hack copy": {
+        "carrier": 36000,
+        "sensitivity": 0.5,
+        "sof": [],
+        "eof": [],
+        "words": [
+          [
+            889,
+            889
+          ],
+          [
+            889,
+            889
+          ]
+        ],
+        "prefixData": [],
+        "interval": 1000,
+        "repetitions": 1,
+        "minimalLength": 1,
+        "maximalLength": 100,
+        "cmds": {
+          "power_on": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "rc5-pronto-flinq": {
+        "type": "prontohex",
+        "cmds": {
+          "ON": "0000 0073 0000 000C 0020 0020 0040 0040 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0CA8",
+          "OFF": "0000 0073 0000 000C 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0040 0040 0020 0020 0020 0020 0CC8",
+          "TIMER_2H": "0000 0073 0000 000C 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0040 0040 0040 0020 0020 0020 0020 0020 0020 0CC8",
+          "TIMER_4H": "0000 0073 0000 000B 0020 0020 0040 0040 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0020 0020 0040 0040 0020 0020 0CC8",
+          "TIMER_6H": "0000 0073 0000 000C 0020 0020 0040 0040 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0020 0020 0020 0020 0020 0020 0CC8",
+          "TIMER_8H": "0000 0073 0000 000B 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0040 0040 0040 0020 0020 0040 0040 0CC8",
+          "MODE_1": "0000 0073 0000 000B 0020 0020 0040 0040 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0020 0020 0040 0020 0020 0040 0CC8",
+          "MODE_2": "0000 0073 0000 000C 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0040 0020 0020 0020 0020 0040 0CC8",
+          "MODE_3": "0000 0073 0000 000C 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0040 0020 0020 0040 0020 0020 0CC8",
+          "MODE_4": "0000 0073 0000 000B 0020 0020 0040 0040 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0020 0020 0020 0020 0040 0040 0CC8",
+          "DIM_DOWN": "0000 0073 0000 000A 0020 0020 0040 0040 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0040 0040 0040 0040 0CC8",
+          "DIM_UP": "0000 0073 0000 000C 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0040 0020 0020 0040 0040 0040 0020 0020 0020 0CA8"
         }
       }
     }

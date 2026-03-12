@@ -1,5 +1,6 @@
 import Homey from 'homey';
 import { IRUtils } from '../../lib/IRUtils';
+import { RFDevice } from 'homey-rfdriver'; 
 
 module.exports = class TestRemoteDriver extends Homey.Driver {
 
@@ -9,11 +10,13 @@ module.exports = class TestRemoteDriver extends Homey.Driver {
   async onInit() {
     this.log(`[${this.constructor.name}] has been initialized`);
 
+
+
     // Register flow card actions
     this.homey.flow.getActionCard('test-remote_send_ir_command')
       .registerRunListener(async (args) => {
         const protocol = String(args.protocol || '').toLowerCase();
-        if (protocol !== 'nec') {
+        if (protocol !== 'nec' && protocol !== 'rc5') {
           throw new Error(`Unsupported protocol: ${args.protocol}`);
         }
 
@@ -27,17 +30,45 @@ module.exports = class TestRemoteDriver extends Homey.Driver {
           throw new Error('Invalid command. Use 0x00..0xFF or 0..255.');
         }
 
+        // TODO: Support multiple devices and allow user to select which device to send the command to
         const device = this.getDevices()[0] as any;
         if (!device || !device.ir) {
           throw new Error('No test remote device available to send IR command.');
         }
+        
+        this.log(`Sending ${protocol.toUpperCase()} IR command: protocol=${protocol}, address=0x${address.toString(16).padStart(2, '0')}, command=0x${command.toString(16).padStart(2, '0')}`);
 
         // if protocol is NEC, convert to Homey bits
-        const frameData = IRUtils.necCommandToHomeyBits(command, address);
+        let frameData : number[] = [];
 
-        this.log(`Sending ${protocol.toUpperCase()} IR command: address=0x${address.toString(16).padStart(2, '0')} command=0x${command.toString(16).padStart(2, '0')}`);
+        if (protocol === 'nec') {
+          frameData = IRUtils.necCommandToHomeyBits(command, address);
+          await device.ir.signal == device.homey.rf.getSignalInfrared('nec');
+          await device.ir.sendRawCommand(frameData, false);
+        } else if (protocol === 'rc5') {
+          // TODO: Implement RC5 command conversion and sending
 
-        await device.ir.sendRawCommand(frameData, false);
+
+          // frameData = IRUtils.rc5CommandToHomeyBits(command, address);
+          // const signal2 = device.homey.rf.getSignalInfrared('rc5-pronto-flinq');
+
+          // // frameData = [ 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ,0 ];
+          // // frameData = [ 1, 1, 0 ];
+          // // // frameData = [ 
+          // // //   1, 1, // Start bits
+          // // //   1, // Toggle bit (can be 0 or 1, here we use 0 for simplicity)
+          // // //   ];
+
+
+          
+          // // console.log('Sending RC5 frame data:', frameData, 
+          // //             `(address: 0x${address.toString(16)}, command: 0x${command.toString(16)})`);
+          // // await signal2.tx(frameData, { device: device, repetitions: 2 });
+          // await signal2.cmd("On", { device: device });
+        } else {
+          throw new Error(`Unsupported protocol: ${protocol}`);
+        }
+        
         return true;
       });
 
@@ -64,7 +95,13 @@ module.exports = class TestRemoteDriver extends Homey.Driver {
     ];
   }
 
-  private parseByte(value: unknown): number | null {
+  /**
+   * parseByte is a helper method to parse a string as a byte (0-255), supporting both decimal and hexadecimal formats.
+   * 
+   * @param value The string value to parse as a byte.
+   * @returns The parsed byte (0-255) or null if invalid.
+   */
+  private parseByte(value: string): number | null {
     const raw = String(value ?? '').trim();
     if (!raw) return null;
 

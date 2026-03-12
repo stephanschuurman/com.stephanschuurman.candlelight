@@ -1,0 +1,285 @@
+{
+  "name": {
+    "en": "Flinq 13 Button",
+    "nl": "Flinq 13 Knoppen",
+    "fr": "Flinq 13 Boutons",
+    "de": "Flinq 13 Tasten",
+    "da": "Flinq 13 Knapper",
+    "es": "Flinq 13 Botones",
+    "it": "Flinq 13 Bottoni",
+    "no": "Flinq 13 Knapper",
+    "sv": "Flinq 13 Knappar",
+    "pl": "Flinq 13 Przycisków",
+    "ru": "Flinq 13 Кнопок",
+    "ko": "Flinq 13 버튼",
+    "ar": "Flinq 13 زر"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "button.on",
+    "button.off",
+    "button.2h",
+    "button.4h",
+    "button.6h",
+    "button.8h",
+    "button.mode_1",
+    "button.mode_2",
+    "button.mode_3",
+    "button.mode_4",
+    "button.dim_down",
+    "button.dim_up"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "uiQuickAction": true
+    },
+    "button.on": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "On",
+        "nl": "Aan",
+        "fr": "Allumer",
+        "de": "An",
+        "da": "Tænd",
+        "es": "Encender",
+        "it": "Accendi",
+        "no": "På",
+        "sv": "På",
+        "pl": "Włącz",
+        "ru": "Вкл.",
+        "ko": "켜기",
+        "ar": "تشغيل"
+      }
+    },
+    "button.off": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "fr": "Éteindre",
+        "de": "Aus",
+        "da": "Sluk",
+        "es": "Apagar",
+        "it": "Spegni",
+        "no": "Av",
+        "sv": "Av",
+        "pl": "Wyłącz",
+        "ru": "Выкл.",
+        "ko": "끄기",
+        "ar": "إيقاف"
+      }
+    },
+    "button.2h": {
+      "title": {
+        "en": "Timer 2 hours",
+        "nl": "Timer 2 uur",
+        "fr": "Timer 2 heures",
+        "de": "Timer 2 Stunden",
+        "da": "Timer 2 timer",
+        "es": "Temporizador 2 horas",
+        "it": "Timer 2 ore",
+        "no": "Timer 2 timer",
+        "sv": "Timer 2 timmar",
+        "pl": "Timer 2 godzin",
+        "ru": "Таймер 2 часа",
+        "ko": "타이머 2시간",
+        "ar": "مؤقت 2 ساعات"
+      }
+    },
+    "button.4h": {
+      "title": {
+        "en": "Timer 4 hours",
+        "nl": "Timer 4 uur",
+        "fr": "Timer 4 heures",
+        "de": "Timer 4 Stunden",
+        "da": "Timer 4 timer",
+        "es": "Temporizador 4 horas",
+        "it": "Timer 4 ore",
+        "no": "Timer 4 timer",
+        "sv": "Timer 4 timmar",
+        "pl": "Timer 4 godzin",
+        "ru": "Таймер 4 часа",
+        "ko": "타이머 4시간",
+        "ar": "مؤقت 4 ساعات"
+      }
+    },
+    "button.6h": {
+      "title": {
+        "en": "Timer 6 hours",
+        "nl": "Timer 6 uur",
+        "fr": "Timer 6 heures",
+        "de": "Timer 6 Stunden",
+        "da": "Timer 6 timer",
+        "es": "Temporizador 6 horas",
+        "it": "Timer 6 ore",
+        "no": "Timer 6 timer",
+        "sv": "Timer 6 timmar",
+        "pl": "Timer 6 godzin",
+        "ru": "Таймер 6 часов",
+        "ko": "타이머 6시간",
+        "ar": "مؤقت 6 ساعات"
+      }
+    },
+    "button.8h": {
+      "title": {
+        "en": "Timer 8 hours",
+        "nl": "Timer 8 uur",
+        "fr": "Timer 8 heures",
+        "de": "Timer 8 Stunden",
+        "da": "Timer 8 timer",
+        "es": "Temporizador 8 horas",
+        "it": "Timer 8 ore",
+        "no": "Timer 8 timer",
+        "sv": "Timer 8 timmar",
+        "pl": "Timer 8 godzin",
+        "ru": "Таймер 8 часов",
+        "ko": "타이머 8시간",
+        "ar": "مؤقت 8 ساعات"
+      }
+    },
+    "button.mode_1": {
+      "title": {
+        "en": "Mode Breathing",
+        "nl": "Mode Ademend",
+        "fr": "Mode Respiration",
+        "de": "Modus Atmen",
+        "da": "Mode Åndedræt",
+        "es": "Modo Respiración",
+        "it": "Modalità Respiro",
+        "no": "Modus Pust",
+        "sv": "Andningsläge",
+        "pl": "Tryb Oddychania",
+        "ru": "Режим Дыхания",
+        "ko": "호흡 모드",
+        "ar": "وضع التنفس"
+      }
+    },
+    "button.mode_2": {
+      "title": {
+        "en": "Mode Static",
+        "nl": "Mode Statisch",
+        "fr": "Mode Statique",
+        "de": "Modus Statisch",
+        "da": "Mode Statisk",
+        "es": "Modo Estático",
+        "it": "Modalità Statica",
+        "no": "Modus Statisk",
+        "sv": "Statisk Läge",
+        "pl": "Tryb Statyczny",
+        "ru": "Статический Режим",
+        "ko": "정적 모드",
+        "ar": "الوضع الثابت"
+      }
+    },
+    "button.mode_3": {
+      "title": {
+        "en": "Mode Slow",
+        "nl": "Mode Langzaam",
+        "fr": "Mode Lent",
+        "de": "Modus Langsam",
+        "da": "Mode Langsom",
+        "es": "Modo Lento",
+        "it": "Modalità Lenta",
+        "no": "Modus Langsom",
+        "sv": "Långsam Läge",
+        "pl": "Tryb Powolny",
+        "ru": "Режим Медленный",
+        "ko": "느린 모드",
+        "ar": "الوضع البطيء"
+      }
+    },
+    "button.mode_4": {
+      "title": {
+        "en": "Mode Fast",
+        "nl": "Mode Snel",
+        "fr": "Mode Rapide",
+        "de": "Modus Schnell",
+        "da": "Mode Hurtig",
+        "es": "Modo Rápido",
+        "it": "Modalità Veloce",
+        "no": "Modus Rask",
+        "sv": "Snabb Läge",
+        "pl": "Tryb Szybki",
+        "ru": "Режим Быстрый",
+        "ko": "빠른 모드",
+        "ar": "الوضع السريع"
+      }
+    },
+    "button.dim_down": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Brightness -",
+        "nl": "Helderheid -",
+        "fr": "Luminosité -",
+        "de": "Helligkeit -",
+        "da": "Lysstyrke -",
+        "es": "Brillo -",
+        "it": "Luminosità -",
+        "no": "Lysstyrke -",
+        "sv": "Ljusstyrka -",
+        "pl": "Jasność -",
+        "ru": "Яркость -",
+        "ko": "밝기 -",
+        "ar": "سطوع -"
+      }
+    },
+    "button.dim_up": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Brightness +",
+        "nl": "Helderheid +",
+        "fr": "Luminosité +",
+        "de": "Helligkeit +",
+        "da": "Lysstyrke +",
+        "es": "Brillo +",
+        "it": "Luminosità +",
+        "no": "Lysstyrke +",
+        "sv": "Ljusstyrka +",
+        "pl": "Jasność +",
+        "ru": "Яркость +",
+        "ko": "밝기 +",
+        "ar": "سطوع +"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "device_add_custom",
+      "options": {
+        "title": "drivers.base.pair_title",
+        "instruction": "drivers.common.pair_instruction",
+        "deviceIdPrefix": "flinq_13_button_",
+        "defaultDeviceName": {
+          "en": "Flinq 13 Button",
+          "nl": "Flinq 13 Knoppen",
+          "fr": "Flinq 13 Boutons",
+          "de": "Flinq 13 Tasten",
+          "da": "Flinq 13 Knapper",
+          "es": "Flinq 13 Botones",
+          "it": "Flinq 13 Bottoni",
+          "no": "Flinq 13 Knapper",
+          "sv": "Flinq 13 Knappar",
+          "pl": "Flinq 13 Przycisków",
+          "ru": "Flinq 13 Кнопок",
+          "ko": "Flinq 13 버튼",
+          "ar": "Flinq 13 زر"
+        }
+      }
+    }
+  ]
+}

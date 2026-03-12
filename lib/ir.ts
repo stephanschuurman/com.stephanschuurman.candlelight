@@ -9,8 +9,9 @@ import { IRUtils } from './IRUtils';
 class Infrared extends Homey.SimpleClass {
 
   private device: RFDevice;
-  private signal: any;
+  public signal: any;
   private prontoSignal: any;
+  private rc5Signal: any;
   private lastCommandTime: number = 0;
   private readonly MIN_COMMAND_INTERVAL_MS: number = 100; // Minimum time in ms between commands
   private readonly MAX_QUEUE_SIZE: number = 5; // Maximum number of queued commands
@@ -29,6 +30,7 @@ class Infrared extends Homey.SimpleClass {
     try {
       this.signal = this.device.homey.rf.getSignalInfrared('nec');
       this.prontoSignal = this.device.homey.rf.getSignalInfrared('nec-pronto');
+      this.rc5Signal = this.device.homey.rf.getSignalInfrared('rc5');
       this.device.log('IR initialized');
     } catch (error) {
       this.device.error('Failed to initialize IR:', error);

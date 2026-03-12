@@ -63,3 +63,36 @@ Note the **Adress** is always **0x00** for this specific device.
 - Note then a button is presses longer there is a NEC repeat frame: 
     - Leader: 9 ms HIGH + 2.25 ms LOW
     - No data bits, only a short end pulse (≈ 562.5 µs HIGH).
+
+
+## RC5 Protocol (Philips)
+- https://en.wikipedia.org/wiki/RC-5
+- https://www.sbprojects.net/knowledge/ir/rc5.php
+- https://commons.wikimedia.org/wiki/File:Manchester_encoding_both_conventions.svg
+- https://github.com/TheHomeyAppBackupRepositories/nl.philips.ir-1/blob/da4a14719d0096bfa0b221838afc2b1da550e333/app.json
+
+ **Parameter**                      | **Value**   | **Code**
+------------------------------------|-------------|------------
+ Carrier Frequency                  | 36 kHz      | 36000 
+ Manchester Unit (half-bit time)   | 889 µs      | 889
+ Bit time (constant)                | 1.778 ms    | 1778
+ Start of Frame (SOF)               | None        | []
+ End of Frame (EOF)                 | None        | []
+ Logical "0" (bi-phase)            | HIGH-LOW    | [1, 0]
+ Logical "1" (bi-phase)            | LOW-HIGH    | [0, 1]
+ Interval (between repetitions)    | 114 ms      | 114000
+ Sensitivity                        | 0.0 - 0.5   | 0.5
+ Repetitions                        | 1 - 10      | 1
+ Bit Length                         | 14 bits     | 14
+
+### RC5 Protocol Frame Structure
+Total 14 bits using Manchester (bi-phase) encoding:
+
+| Start 1 | Start 2 | Toggle | Address | Command |
+|---------|---------|--------|---------|----------|
+| 1 bit   | 1 bit   | 1 bit  | 5 bits  | 6 bits   |
+
+- **Start bits**: Always logical '1' (both)
+- **Toggle bit**: Flips on each new key press (not on repeat)
+- **Address**: 5 bits, MSB first (device address 0x00-0x1F)
+- **Command**: 6 bits, MSB first (command 0x00-0x3F)

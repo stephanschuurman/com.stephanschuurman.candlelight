@@ -90,4 +90,30 @@ export class IRUtils {
         
         return [...addrBits, ...cmdBits]; // 32 bits totaal
     }
+
+    static rc5CommandToHomeyBits(cmd: number, address: number = 0x00): number[] {
+        // RC5 format: 2 start bits + 1 toggle + 5 address bits + 6 command bits = 14 bits
+        // In Homey's Manchester encoding:
+        //   words[0] = [1, 0] = HIGH-to-LOW = logical '0' in RC5
+        //   words[1] = [0, 1] = LOW-to-HIGH = logical '1' in RC5
+        const bits: number[] = [];
+        
+        // Start bits (always logical 1, 1 in RC5)
+        bits.push(1, 1);
+        
+        // Toggle bit (0 for now - could be made dynamic later)
+        bits.push(0);
+        
+        // Address (5 bits, MSB first)
+        for (let i = 4; i >= 0; i--) {
+            bits.push((address >> i) & 1);
+        }
+        
+        // Command (6 bits, MSB first)  
+        for (let i = 5; i >= 0; i--) {
+            bits.push((cmd >> i) & 1);
+        }
+        
+        return bits; // 14 bits total
+    }
 }

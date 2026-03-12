@@ -83,7 +83,9 @@
       "LED",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "nl": [
       "kaarslicht",
@@ -96,7 +98,9 @@
       "theelichtjes",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "fr": [
       "bougie",
@@ -108,7 +112,9 @@
       "candle",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "de": [
       "Kerzenlicht",
@@ -121,7 +127,9 @@
       "Kerze",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "da": [
       "stearinlys",
@@ -133,7 +141,9 @@
       "LED",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "es": [
       "luz de velas",
@@ -145,7 +155,9 @@
       "LED",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "it": [
       "luce di candela",
@@ -157,7 +169,9 @@
       "LED",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "no": [
       "stearinlys",
@@ -168,8 +182,11 @@
       "telys",
       "LED",
       "HEMA",
+      "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "sv": [
       "stearinljus",
@@ -181,7 +198,9 @@
       "LED",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "pl": [
       "światło świec",
@@ -193,7 +212,9 @@
       "LED",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "ru": [
       "свечной свет",
@@ -205,7 +226,9 @@
       "LED",
       "HEMA",
       "HomeArt",
-      "Action"
+      "Action",
+      "Lumiz",
+      "FlinQ"
     ],
     "ko": [
       "촛불",
