@@ -1,4 +1,4 @@
-## Homey + IR
+# Homey + IR
 - https://apps.developer.homey.app/wireless/rf-433mhz-868mhz
 - https://apps-sdk-v3.developer.homey.app/Signal.html#tx
 - https://apps.developer.homey.app/wireless/infrared
@@ -9,6 +9,8 @@
 ## Driver
 - https://github.com/athombv/node-homey-rfdriver
 - https://www.npmjs.com/package/homey-rfdriver/v/2.0.0
+
+# Protocols
 
 ## NEC IR Protocol
 - https://www.sbprojects.net/knowledge/ir/nec.php
@@ -74,13 +76,11 @@ Note the **Adress** is always **0x00** for this specific device.
  **Parameter**                      | **Value**   | **Code**
 ------------------------------------|-------------|------------
  Carrier Frequency                  | 36 kHz      | 36000 
- Manchester Unit (half-bit time)   | 889 µs      | 889
+ Manchester Unit (half-bit time)    | 889 µs      | 889
  Bit time (constant)                | 1.778 ms    | 1778
- Start of Frame (SOF)               | None        | []
- End of Frame (EOF)                 | None        | []
- Logical "0" (bi-phase)            | HIGH-LOW    | [1, 0]
- Logical "1" (bi-phase)            | LOW-HIGH    | [0, 1]
- Interval (between repetitions)    | 114 ms      | 114000
+ Logical "0" (bi-phase)             | HIGH-LOW    | [1, 0]
+ Logical "1" (bi-phase)             | LOW-HIGH    | [0, 1]
+ Interval (between repetitions)     | 114 ms      | 114
  Sensitivity                        | 0.0 - 0.5   | 0.5
  Repetitions                        | 1 - 10      | 1
  Bit Length                         | 14 bits     | 14

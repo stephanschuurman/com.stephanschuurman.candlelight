@@ -11,7 +11,8 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
   private queueSize: number = 0;
   private readonly MAX_QUEUE_SIZE: number = 5;
   private lastCommandTime: number = 0;
-  private readonly MIN_COMMAND_INTERVAL_MS: number = 100;
+  private readonly MIN_COMMAND_INTERVAL_MS: number = 50;
+  private toggleState: boolean = false; // For RC5 toggle bit management
 
   /**
    * onInit is called when the device is initialized.
@@ -90,7 +91,7 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
     await this.sendCommand('OFF');
     await this.updateOnOffState(false);
   }
-
+ 
   /**
    * Handle the onoff capability for quick actions
    */
@@ -137,6 +138,9 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
    * Send a command using the RC5 Pronto Hex signal
    */
   private async sendCommand(commandName: string): Promise<boolean> {
+
+    commandName = commandName.toUpperCase();
+
     // Check queue size limit
     if (this.queueSize >= this.MAX_QUEUE_SIZE) {
       const errorMsg = `Command queue full (${this.MAX_QUEUE_SIZE}). Please wait a moment before sending more commands.`;
@@ -186,6 +190,9 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
         await this.sleep(waitTime);
       }
 
+
+      commandName = this.toggleState ? `${commandName}_T` : commandName; // Append _T for toggle state if needed
+      this.toggleState = !this.toggleState; // Toggle the state for next command
       this.log(`📡 Sending IR command: ${commandName}`);
 
       // Send the command using the Pronto Hex signal

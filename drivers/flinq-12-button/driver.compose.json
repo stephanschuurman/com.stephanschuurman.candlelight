@@ -1,18 +1,18 @@
 {
   "name": {
-    "en": "Flinq 13 Button",
-    "nl": "Flinq 13 Knoppen",
-    "fr": "Flinq 13 Boutons",
-    "de": "Flinq 13 Tasten",
-    "da": "Flinq 13 Knapper",
-    "es": "Flinq 13 Botones",
-    "it": "Flinq 13 Bottoni",
-    "no": "Flinq 13 Knapper",
-    "sv": "Flinq 13 Knappar",
-    "pl": "Flinq 13 Przycisków",
-    "ru": "Flinq 13 Кнопок",
-    "ko": "Flinq 13 버튼",
-    "ar": "Flinq 13 زر"
+    "en": "Flinq 12 Button",
+    "nl": "Flinq 12 Knoppen",
+    "fr": "Flinq 12 Boutons",
+    "de": "Flinq 12 Tasten",
+    "da": "Flinq 12 Knapper",
+    "es": "Flinq 12 Botones",
+    "it": "Flinq 12 Bottoni",
+    "no": "Flinq 12 Knapper",
+    "sv": "Flinq 12 Knappar",
+    "pl": "Flinq 12 Przycisków",
+    "ru": "Flinq 12 Кнопок",
+    "ko": "Flinq 12 버튼",
+    "ar": "Flinq 12 زر"
   },
   "class": "light",
   "capabilities": [
@@ -263,21 +263,21 @@
       "options": {
         "title": "drivers.base.pair_title",
         "instruction": "drivers.common.pair_instruction",
-        "deviceIdPrefix": "flinq_13_button_",
+        "deviceIdPrefix": "flinq_12_button_",
         "defaultDeviceName": {
-          "en": "Flinq 13 Button",
-          "nl": "Flinq 13 Knoppen",
-          "fr": "Flinq 13 Boutons",
-          "de": "Flinq 13 Tasten",
-          "da": "Flinq 13 Knapper",
-          "es": "Flinq 13 Botones",
-          "it": "Flinq 13 Bottoni",
-          "no": "Flinq 13 Knapper",
-          "sv": "Flinq 13 Knappar",
-          "pl": "Flinq 13 Przycisków",
-          "ru": "Flinq 13 Кнопок",
-          "ko": "Flinq 13 버튼",
-          "ar": "Flinq 13 زر"
+          "en": "Flinq 12 Button",
+          "nl": "Flinq 12 Knoppen",
+          "fr": "Flinq 12 Boutons",
+          "de": "Flinq 12 Tasten",
+          "da": "Flinq 12 Knapper",
+          "es": "Flinq 12 Botones",
+          "it": "Flinq 12 Bottoni",
+          "no": "Flinq 12 Knapper",
+          "sv": "Flinq 12 Knappar",
+          "pl": "Flinq 12 Przycisków",
+          "ru": "Flinq 12 Кнопок",
+          "ko": "Flinq 12 버튼",
+          "ar": "Flinq 12 زر"
         }
       }
     }
