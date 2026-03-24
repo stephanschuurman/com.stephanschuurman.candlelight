@@ -6,6 +6,10 @@ All notable changes to this project are documented here.
 Upcoming items (new devices, fixes, known issues):
 - Add more brands
 
+
+## 0.1.9 (build 11) - Test
+- Bugfixes for FlinQ LED candles (after test by Danny Focquaert).
+
 ## 0.1.8 (build 10) - Test
 - Added support for FlinQ LED candles (provided by Danny Focquaert).
 

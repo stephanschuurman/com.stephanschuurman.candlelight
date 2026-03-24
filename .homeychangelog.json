@@ -34,5 +34,9 @@
   "0.1.8": {
     "en": "Added support for FlinQ LED candles (provided by Danny Focquaert).",
     "nl": "Ondersteuning toegevoegd voor FlinQ LED kaarsen (geleverd door Danny Focquaert)."
+  },
+  "0.1.9": {
+    "en": "Bugfixes for FlinQ LED candles (after test by Danny Focquaert).",
+    "nl": "Bugfixes voor FlinQ LED kaarsen (na test door Danny Focquaert)."
   }
 }
