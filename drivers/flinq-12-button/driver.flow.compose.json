@@ -1,4 +1,37 @@
 {
+  "triggers": [
+    {
+      "id": "flinq-13-button_pronto_hex",
+      "title": {
+        "en": "A command was sent",
+        "nl": "Een commando is verzonden"
+      },
+      "hint": {
+        "en": "Fires whenever this remote sends an IR command. Provides the raw Pronto Hex signal as a token, so it can be forwarded to another app or flow instead of (or in addition to) the built-in IR transmission.",
+        "nl": "Wordt geactiveerd wanneer deze afstandsbediening een IR-commando verzendt. Geeft het ruwe Pronto Hex-signaal mee als token, zodat het doorgestuurd kan worden naar een andere app of flow naast de ingebouwde IR-verzending."
+      },
+      "tokens": [
+        {
+          "name": "command",
+          "type": "string",
+          "title": {
+            "en": "Command",
+            "nl": "Commando"
+          },
+          "example": "ON"
+        },
+        {
+          "name": "pronto_hex",
+          "type": "string",
+          "title": {
+            "en": "Pronto Hex",
+            "nl": "Pronto Hex"
+          },
+          "example": "0000 0073 0000 000C 0020 0020 0040 0040 ..."
+        }
+      ]
+    }
+  ],
   "actions": [
     {
       "id": "flinq-13-button_on",

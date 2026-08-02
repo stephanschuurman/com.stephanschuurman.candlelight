@@ -1,5 +1,6 @@
 import Homey from 'homey';
 import { RFDevice } from 'homey-rfdriver'; // https://github.com/athombv/node-homey-rfdriver/
+import { IrConverter } from './IrConverter';
 import { IRUtils } from './IRUtils';
 
 /**
@@ -177,6 +178,62 @@ class Infrared extends Homey.SimpleClass {
 
       throw error;
     }
+  }
+
+  /**
+   * Transmit an arbitrary Pronto hex string via the nec-pronto signal.
+   * Uses the same queue and rate-limiting as other commands.
+   *
+   * @param prontoHex  Space-separated pronto hex string, e.g. "0000 006C 0022 0000 015B 00AD ..."
+   */
+  async sendProntoHex(prontoHex: string): Promise<boolean> {
+    // prontohex-type signals don't support tx(); convert to protocol-specific
+    // word indexes and use the appropriate signal instead.
+    const protocol = IrConverter.prontoProtocol(prontoHex);
+
+    let bits: number[];
+    let signalToUse: any;
+
+    if (protocol === 'nec') {
+      bits = IrConverter.prontoToNecBits(prontoHex);
+      signalToUse = this.signal;
+    } else if (protocol === 'rc5') {
+      bits = IrConverter.prontoToRc5Bits(prontoHex);
+      signalToUse = this.rc5Signal;
+    } else {
+      throw new Error(`sendProntoHex: unrecognised carrier frequency in pronto header`);
+    }
+
+    if (this.queueSize >= this.MAX_QUEUE_SIZE) {
+      this.device.error(`Command queue full (${this.MAX_QUEUE_SIZE}), dropping pronto hex command`);
+      return false;
+    }
+
+    this.queueSize++;
+    return new Promise((resolve, reject) => {
+      this.commandQueue = this.commandQueue
+        .then(async () => {
+          const now = Date.now();
+          const elapsed = now - this.lastCommandTime;
+          if (elapsed < this.MIN_COMMAND_INTERVAL_MS) {
+            await this.sleep(this.MIN_COMMAND_INTERVAL_MS - elapsed);
+          }
+
+          this.device.log(`📡 Sending pronto hex as ${protocol} bits:`, bits.length, 'bits');
+          const repetitions = this.device.getSetting('ir_repetitions') || 3;
+          await signalToUse.tx(bits, { device: this.device, repetitions });
+          this.lastCommandTime = Date.now();
+          this.emit('pronto-sent', { bits, success: true });
+          return true;
+        })
+        .then((result) => { this.queueSize--; resolve(result); })
+        .catch((error: any) => {
+          this.queueSize--;
+          this.device.error('Failed to send pronto hex:', error);
+          this.emit('pronto-error', { bits, error: error.message });
+          reject(error);
+        });
+    });
   }
 
   /**

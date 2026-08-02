@@ -1,4 +1,4 @@
-import Homey from 'homey';
+import Homey, { FlowCardTriggerDevice } from 'homey';
 
 /**
  * Flinq - 13 Button Remote device
@@ -13,6 +13,7 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
   private lastCommandTime: number = 0;
   private readonly MIN_COMMAND_INTERVAL_MS: number = 50;
   private toggleState: boolean = false; // For RC5 toggle bit management
+  private prontoHexTrigger!: FlowCardTriggerDevice;
 
   /**
    * onInit is called when the device is initialized.
@@ -31,6 +32,8 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
       this.error('Failed to initialize RC5 Pronto signal:', error);
       throw error;
     }
+
+    this.prontoHexTrigger = this.homey.flow.getDeviceTriggerCard('flinq-13-button_pronto_hex');
 
     // Register capability listeners
     this.registerCapabilityListener('onoff', this.onCapabilityOnOff.bind(this));
@@ -201,6 +204,10 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
       // Update last command timestamp
       this.lastCommandTime = Date.now();
 
+      // Fire the trigger card with the exact Pronto Hex that was just sent,
+      // so other flows/apps can pick up the raw signal alongside the IR transmission.
+      await this.fireProntoHexTrigger(commandName);
+
       return true;
     } catch (error: any) {
       this.error(`Failed to send IR command ${commandName}:`, error);
@@ -228,6 +235,24 @@ module.exports = class FlinqThirteenButtonDevice extends Homey.Device {
 
       return false;
     }
+  }
+
+  /**
+   * Fire the flow trigger card with the exact Pronto Hex string for the given
+   * command, read from the app's compiled manifest (single source of truth for
+   * the rc5-pronto-flinq signal cmds, also used to physically transmit the signal).
+   */
+  private async fireProntoHexTrigger(commandName: string): Promise<void> {
+    const prontoHex = this.homey.manifest?.signals?.ir?.['rc5-pronto-flinq']?.cmds?.[commandName];
+
+    if (!prontoHex) {
+      this.error(`No pronto hex found in manifest for command ${commandName}, skipping trigger`);
+      return;
+    }
+
+    await this.prontoHexTrigger
+      .trigger(this, { command: commandName, pronto_hex: prontoHex })
+      .catch((err: Error) => this.error('Failed to fire pronto hex trigger:', err));
   }
 
   /**
