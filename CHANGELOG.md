@@ -6,8 +6,10 @@ All notable changes to this project are documented here.
 Upcoming items (new devices, fixes, known issues):
 - Add more brands
 
+## 0.1.10 (build 12) - Test
+- Added flow card (for FlinQ LED candles) to link with another app (like Broadlink) to transmit the commands remotely.
 
-## 0.1.9 (build 11) - Test
+## 0.1.9 (build 11) - Released
 - Bugfixes for FlinQ LED candles (after test by Danny Focquaert).
 
 ## 0.1.8 (build 10) - Test

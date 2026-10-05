@@ -4,8 +4,6 @@
 // https://github.com/benfoxall/puckmote => https://benjaminbenben.com/puckmote/
 // https://ushomeautomation.com/Projects/Broadlink-RM3-MQTTBridge/index.html
 
-import { Buffer } from 'buffer';
-
 /**
  * IR format conversion utilities for Broadlink devices.
  */
@@ -16,7 +14,7 @@ export class IrConverter {
    * e.g. "26 00 20 ..."
    */
   static toHex(u8: Uint8Array): string {
-    return Buffer.from(u8).toString('hex').replace(/../g, '$& ').trimEnd();
+    return Array.from(u8, byte => byte.toString(16).padStart(2, '0')).join(' ');
   }
 
   /**
@@ -24,7 +22,7 @@ export class IrConverter {
    * e.g. "26002600..."
    */
   static toHexCompact(u8: Uint8Array): string {
-    return Buffer.from(u8).toString('hex');
+    return Array.from(u8, byte => byte.toString(16).padStart(2, '0')).join('');
   }
 
 

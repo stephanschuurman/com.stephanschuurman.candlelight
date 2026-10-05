@@ -38,5 +38,9 @@
   "0.1.9": {
     "en": "Bugfixes for FlinQ LED candles (after test by Danny Focquaert).",
     "nl": "Bugfixes voor FlinQ LED kaarsen (na test door Danny Focquaert)."
+  },
+  "0.1.10": {
+    "en": "Added flow card (for FlinQ LED candles) to link with another app (like Broadlink) to transmit the commands remotely.",
+    "nl": "Toegevoegd flow-kaart (voor FlinQ LED kaarsen) om te koppelen met een andere app (zoals Broadlink) om de commando's op afstand te verzenden."
   }
 }
